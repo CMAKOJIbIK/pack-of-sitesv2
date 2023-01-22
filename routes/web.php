@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\WebhookController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-//    return view('welcome');
+    $http = \Illuminate\Support\Facades\Http::get('https://api.tlgr.org/bot' . config('bots.admin_bot') . '/setWebhook?url=https://pack-of-sites.online/webhook');
     return view('index');
 });
+Route::get('/bot', [WebhookController::class, "test"])->name("bot");
+Route::post('/webhook' ,[WebhookController::class, "index"])->name("webhook");
