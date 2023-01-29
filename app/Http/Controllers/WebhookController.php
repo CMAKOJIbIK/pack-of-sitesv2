@@ -17,7 +17,7 @@ class WebhookController extends Controller
     public function index(Request $request): \Illuminate\Http\JsonResponse
     {
         Log::debug($request->all());
-        $callback_data = $request->input("callback_query") ?? null;
+        $callback_data = $request->input('callback_query')['data'] ?? null;
         Log::debug($callback_data);
         $this->telegram->send_message(5057038547, json_encode($callback_data));
         return response()->json(true, 200);
