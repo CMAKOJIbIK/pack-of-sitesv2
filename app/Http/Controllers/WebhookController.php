@@ -17,10 +17,25 @@ class WebhookController extends Controller
     public function index(Request $request): \Illuminate\Http\JsonResponse
     {
         Log::debug($request->all());
+
         $callback_data = $request->input('callback_query')['data'] ?? null;
-        Log::debug($callback_data);
-        $this->telegram->send_message(5057038547, json_encode($callback_data));
+        if ($callback_data) {
+            $this->callback_function($callback_data, $request);
+        } else {
+
+            $this->message_function($request);
+        }
         return response()->json(true, 200);
+    }
+    private function callback_function($callback_data, $request)
+    {
+        $data_request = explode('|', $callback_data);
+        $this->telegram->send_message(5057038547, json_encode($data_request));
+    }
+    private function message_function($request)
+    {
+        $message = $request->input('message');
+        $this->telegram->send_message(5057038547, json_encode($message));
     }
 
     public function test(){
