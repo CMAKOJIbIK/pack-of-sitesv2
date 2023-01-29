@@ -13,11 +13,12 @@ class Telegram{
         $this->http=$http;
         $this->bot=config('bots.bot');
     }
-    public function send_message($chat_id, $message){
+    public function send_message($chat_id, $message)
+    {
         return $this->http::post(self::url . $this->bot . '/sendMessage', [
-            'chat_id'=>$chat_id,
-            'text'=>(string)$message,
-            'pars_mod'=>'html'
+            'chat_id' => $chat_id,
+            'text' => (string)$message,
+            'parse_mode' => 'html'
         ]);
     }
 }
