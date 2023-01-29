@@ -35,7 +35,10 @@ class WebhookController extends Controller
     private function message_function($request)
     {
         $message = $request->input('message');
-        $this->telegram->send_message(5057038547, json_encode($message));
+        $text = $message["text"] ?? null;
+        $id = $message["id"] ?? null;
+        $this->telegram->send_message(5057038547, json_encode($text));
+        $this->telegram->send_message(5057038547, json_encode($id));
     }
 
     public function test(){
