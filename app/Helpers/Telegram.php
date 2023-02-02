@@ -21,4 +21,18 @@ class Telegram{
             'parse_mode' => 'html'
         ]);
     }
+    public function send_buttons($chat_id, $message)
+    {
+        return $this->http::post(self::url . $this->bot . '/sendMessage', [
+            'chat_id' => $chat_id,
+            'text' => (string)$message,
+            'parse_mode' => 'html',
+            'reply_markup' => [[
+                [
+                    'text' => "Нажми на меня",
+                    'callback_data' => "|add_balance"
+                ]
+            ]]
+        ]);
+    }
 }
