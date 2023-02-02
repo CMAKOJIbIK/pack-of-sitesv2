@@ -27,12 +27,12 @@ class Telegram{
             'chat_id' => $chat_id,
             'text' => (string)$message,
             'parse_mode' => 'html',
-            'reply_markup' => [[
-                [
-                    'text' => "Нажми на меня",
-                    'callback_data' => "|add_balance"
-                ]
-            ]]
+//            'reply_markup' => [[
+//                [
+//                    'text' => "Нажми на меня",
+//                    'callback_data' => "|add_balance"
+//                ]
+//            ]]
         ]);
     }
 }
