@@ -28,6 +28,10 @@ class Telegram{
             'text' => "Нажми на меня",
             'callback_data' => "|add_balance"
         ];
+        $button['inline_keyboard'][][0] = [
+            'text' => "Не нажимай",
+            'callback_data' => "yupi yo"
+        ];
         return $this->http::post(self::url . $this->bot . '/sendMessage', [
             'chat_id' => $chat_id,
             'text' => (string)$message,
