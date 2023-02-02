@@ -16,7 +16,7 @@ use App\Http\Controllers\WebhookController;
 Route::get('/', function () {
 //    $http = \Illuminate\Support\Facades\Http::get('https://api.tlgr.org/bot' . config('bots.bot') . '/setWebhook?url=https://pack-of-sites.online/webhook');
 //    dd('https://api.tlgr.org/bot' . config('bots.bot') . '/setWebhook?url=https://pack-of-sites.online/webhook');
-    dd($name);
+
     return view('index');
 });
 Route::get('/bot', [WebhookController::class, "test"])->name("bot");
