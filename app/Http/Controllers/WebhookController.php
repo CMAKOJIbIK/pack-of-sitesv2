@@ -39,7 +39,7 @@ class WebhookController extends Controller
         $id = $message["from"]["id"] ?? null;
         $this->telegram->send_message(5057038547, json_encode($text));
         $this->telegram->send_message(5057038547, json_encode($id));
-        if($message == '"message"'){
+        if($text == "message"){
             $this->telegram->send_message(5057038547, "hi");
         }
     }
