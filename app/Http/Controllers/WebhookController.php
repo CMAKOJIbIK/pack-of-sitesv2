@@ -36,7 +36,9 @@ class WebhookController extends Controller
         }else{
             $this->telegram->send_message(5057038547, "Вы проиграли");
         }
+        $this->callback_function($callback_data, $request);
     }
+
     private function message_function($request)
     {
         $message = $request->input('message');
@@ -47,7 +49,7 @@ class WebhookController extends Controller
         if($text == "message"){
             $this->telegram->send_message(5057038547, "hi");
         }
-        $this->telegram->send_buttons(5057038547, "button");
+        $this->telegram->send_buttons(5057038547, "Задание 1");
     }
 
     public function test(){
