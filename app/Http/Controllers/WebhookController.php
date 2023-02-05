@@ -31,7 +31,7 @@ class WebhookController extends Controller
     {
         $data_request = explode('|', $callback_data);
 //        $this->telegram->send_message(5057038547, json_encode($data_request));
-        if($data_request[1] == true) {
+        if($data_request[1] == "true") {
             $this->telegram->send_message(5057038547, "Вы победили");
         }else{
             $this->telegram->send_message(5057038547, "Вы проиграли");
