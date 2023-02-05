@@ -25,12 +25,20 @@ class Telegram{
     {
         $button = [];
         $button['inline_keyboard'][][0] = [
-            'text' => "Нажми на меня",
-            'callback_data' => "|add_balance"
+            'text' => "A) прямо",
+            'callback_data' => "|false"
         ];
         $button['inline_keyboard'][][0] = [
-            'text' => "Не нажимай",
-            'callback_data' => "yupi yo"
+            'text' => "B) назад",
+            'callback_data' => "|false"
+        ];
+        $button['inline_keyboard'][][0] = [
+            'text' => "C) лево",
+            'callback_data' => "|false"
+        ];
+        $button['inline_keyboard'][][0] = [
+            'text' => "D) право",
+            'callback_data' => "|true"
         ];
         return $this->http::post(self::url . $this->bot . '/sendMessage', [
             'chat_id' => $chat_id,
