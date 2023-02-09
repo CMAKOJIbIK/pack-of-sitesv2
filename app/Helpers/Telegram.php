@@ -21,7 +21,7 @@ class Telegram{
             'parse_mode' => 'html'
         ]);
     }
-    public function send_buttons($chat_id, $message, $test_id = 1)
+    public function send_buttons($chat_id, $message, $test_id)
     {
         $button = [];
         $button['inline_keyboard'][][0] = [
