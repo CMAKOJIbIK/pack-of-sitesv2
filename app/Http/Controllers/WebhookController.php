@@ -29,11 +29,15 @@ class WebhookController extends Controller
     }
     private function callback_function($callback_data, $request)
     {
+
+
+
         $data_request = explode('|', $callback_data);
+
 //        $this->telegram->send_message(5057038547, json_encode($data_request));
-        $this->telegram->send_message(5057038547, $data_request[0]);
+
         if($data_request[1] == "true") {
-            $this->telegram->send_buttons(5057038547, "Задание 1", 22);
+            $this->telegram->send_buttons(5057038547, "Задание 1", $data_request[0]);
 
         }else{
             $this->telegram->send_message(5057038547, "Вы проиграли");
