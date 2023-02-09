@@ -21,25 +21,26 @@ class Telegram{
             'parse_mode' => 'html'
         ]);
     }
-    public function send_buttons($chat_id, $message)
+    public function send_buttons($chat_id, $message, $test_id = 1)
     {
         $button = [];
         $button['inline_keyboard'][][0] = [
             'text' => "A) прямо",
-            'callback_data' => "|false"
+            'callback_data' => "hi|false"
         ];
         $button['inline_keyboard'][][0] = [
             'text' => "B) назад",
-            'callback_data' => "|false"
+            'callback_data' => "yes|false"
         ];
         $button['inline_keyboard'][][0] = [
             'text' => "C) лево",
-            'callback_data' => "|false"
+            'callback_data' => "kapec|false"
         ];
         $button['inline_keyboard'][][0] = [
             'text' => "D) право",
-            'callback_data' => "|true"
+            'callback_data' => "qwerty|true"
         ];
+
         return $this->http::post(self::url . $this->bot . '/sendMessage', [
             'chat_id' => $chat_id,
             'text' => (string)$message,
