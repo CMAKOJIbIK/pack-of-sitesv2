@@ -54,7 +54,7 @@ class WebhookController extends Controller
         if($text == "message"){
             $this->telegram->send_message(5057038547, "hi");
         }
-        $this->telegram->send_buttons(5057038547, "Задание 1");
+        $this->telegram->send_buttons(5057038547, "Задание 1", 1);
     }
 
     public function test(){
