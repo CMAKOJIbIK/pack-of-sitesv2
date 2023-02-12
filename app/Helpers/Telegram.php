@@ -44,6 +44,7 @@ class Telegram
             ],
         ];
         if (count($test_a) > $test_id) {
+
             $button = [];
             $button['keyboard'][][0] = [
                 'text' => "A) " . $test_a[$test_id]["data"][0],
@@ -64,7 +65,7 @@ class Telegram
 
             return $this->http::post(self::url . $this->bot . '/sendMessage', [
                 'chat_id' => $chat_id,
-                'text' => (string)$message . $test_id,
+                'text' => (string)$message . $test_id . "name",
                 'parse_mode' => 'html',
 
                 'reply_markup' => $button,
