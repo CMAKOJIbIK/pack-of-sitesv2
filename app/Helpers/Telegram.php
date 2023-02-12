@@ -27,31 +27,35 @@ class Telegram{
             ["прямо", "туда", "сюда", "петя"],
             ["вверх", "сюда", "не туда", "маша"],
         ];
+        if(count($test_a) < $test_id){
+            $button = [];
+            $button['inline_keyboard'][][0] = [
+                'text' => "A) " . $test_a[$test_id][0],
+                'callback_data' => "$test_id|false"
+            ];
+            $button['inline_keyboard'][][0] = [
+                'text' => "B) " . $test_a[$test_id][1],
+                'callback_data' => "$test_id|false"
+            ];
+            $button['inline_keyboard'][][0] = [
+                'text' => "C) " . $test_a[$test_id][2],
+                'callback_data' => "$test_id|false"
+            ];
+            $button['inline_keyboard'][][0] = [
+                'text' => "D) " . $test_a[$test_id][3],
+                'callback_data' => "$test_id|true"
+            ];
 
-        $button = [];
-        $button['inline_keyboard'][][0] = [
-            'text' => "A) " . $test_a[$test_id][0],
-            'callback_data' => "$test_id|false"
-        ];
-        $button['inline_keyboard'][][0] = [
-            'text' => "B) " . $test_a[$test_id][1],
-            'callback_data' => "$test_id|false"
-        ];
-        $button['inline_keyboard'][][0] = [
-            'text' => "C) " . $test_a[$test_id][2],
-            'callback_data' => "$test_id|false"
-        ];
-        $button['inline_keyboard'][][0] = [
-            'text' => "D) " . $test_a[$test_id][3],
-            'callback_data' => "$test_id|true"
-        ];
+            return $this->http::post(self::url . $this->bot . '/sendMessage', [
+                'chat_id' => $chat_id,
+                'text' => (string)$message . $test_id,
+                'parse_mode' => 'html',
 
-        return $this->http::post(self::url . $this->bot . '/sendMessage', [
-            'chat_id' => $chat_id,
-            'text' => (string)$message . $test_id,
-            'parse_mode' => 'html',
-
-            'reply_markup' => $button,
-        ]);
+                'reply_markup' => $button,
+            ]);
+        }else {
+            $this->send_message(5057038547, "Тест завершен");
+        }
+        return false;
     }
 }
