@@ -1,18 +1,23 @@
 <?php
+
 namespace App\Helpers;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
-class Telegram{
+
+class Telegram
+{
     protected Http $http;
     protected $bot;
     const url = 'https://api.telegram.org/bot';
     private int $is_connect;
 
-    public function __construct(Http $http){
-        $this->http=$http;
-        $this->bot=config('bots.bot');
+    public function __construct(Http $http)
+    {
+        $this->http = $http;
+        $this->bot = config('bots.bot');
     }
+
     public function send_message($chat_id, $message)
     {
         return $this->http::post(self::url . $this->bot . '/sendMessage', [
@@ -21,13 +26,20 @@ class Telegram{
             'parse_mode' => 'html'
         ]);
     }
+
     public function send_buttons($chat_id, $message, $test_id)
     {
         $test_a = [
             ["прямо", "туда", "сюда", "петя"],
             ["вверх", "сюда", "не туда", "маша"],
         ];
-        if(count($test_a) > $test_id){
+        $test_a = [
+            [
+                "name" => "куда можно идти",
+                "data" => ["прямо", "туда", "сюда", "петя"],
+            ]
+        ];
+        if (count($test_a) > $test_id) {
             $button = [];
             $button['inline_keyboard'][][0] = [
                 'text' => "A) " . $test_a[$test_id][0],
@@ -53,7 +65,7 @@ class Telegram{
 
                 'reply_markup' => $button,
             ]);
-        }else {
+        } else {
             $this->send_message(5057038547, "Тест завершен");
         }
         return false;
