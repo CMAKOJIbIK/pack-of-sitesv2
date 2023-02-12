@@ -46,19 +46,19 @@ class Telegram
         if (count($test_a) > $test_id) {
             $button = [];
             $button['inline_keyboard'][][0] = [
-                'text' => "A) " . $test_a["data"][0],
+                'text' => "A) " . $test_a[$test_id]["data"][0],
                 'callback_data' => "$test_id|false"
             ];
             $button['inline_keyboard'][][0] = [
-                'text' => "B) " . $test_a["data"][1],
+                'text' => "B) " . $test_a[$test_id]["data"][1],
                 'callback_data' => "$test_id|false"
             ];
             $button['inline_keyboard'][][0] = [
-                'text' => "C) " . $test_a["data"][2],
+                'text' => "C) " . $test_a[$test_id]["data"][2],
                 'callback_data' => "$test_id|false"
             ];
             $button['inline_keyboard'][][0] = [
-                'text' => "D) " . $test_a["data"][3],
+                'text' => "D) " . $test_a[$test_id]["data"][3],
                 'callback_data' => "$test_id|true"
             ];
 
