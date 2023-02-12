@@ -23,9 +23,10 @@ class Telegram{
     }
     public function send_buttons($chat_id, $message, $test_id)
     {
+        $array_a = ["прямо", "туда", "сюда", "петя"];
         $button = [];
         $button['inline_keyboard'][][0] = [
-            'text' => "A) прямо",
+            'text' => "A) $array_a[1]",
             'callback_data' => "$test_id|false"
         ];
         $button['inline_keyboard'][][0] = [
