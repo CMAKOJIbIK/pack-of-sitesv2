@@ -37,24 +37,28 @@ class Telegram
             [
                 "name" => "куда можно идти",
                 "data" => ["прямо", "туда", "сюда", "петя"],
-            ]
+            ],
+            [
+                "name" => "куда можно идти",
+                "data" => ["прямо", "туда", "сюда", "петя"],
+            ],
         ];
         if (count($test_a) > $test_id) {
             $button = [];
             $button['inline_keyboard'][][0] = [
-                'text' => "A) " . $test_a[$test_id][0],
+                'text' => "A) " . $test_a["data"][0],
                 'callback_data' => "$test_id|false"
             ];
             $button['inline_keyboard'][][0] = [
-                'text' => "B) " . $test_a[$test_id][1],
+                'text' => "B) " . $test_a["data"][1],
                 'callback_data' => "$test_id|false"
             ];
             $button['inline_keyboard'][][0] = [
-                'text' => "C) " . $test_a[$test_id][2],
+                'text' => "C) " . $test_a["data"][2],
                 'callback_data' => "$test_id|false"
             ];
             $button['inline_keyboard'][][0] = [
-                'text' => "D) " . $test_a[$test_id][3],
+                'text' => "D) " . $test_a["data"][3],
                 'callback_data' => "$test_id|true"
             ];
 
