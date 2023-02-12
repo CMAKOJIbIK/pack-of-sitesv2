@@ -27,7 +27,7 @@ class Telegram{
             ["прямо", "туда", "сюда", "петя"],
             ["вверх", "сюда", "не туда", "маша"],
         ];
-        if(count($test_a) < $test_id){
+        if(count($test_a) != $test_id){
             $button = [];
             $button['inline_keyboard'][][0] = [
                 'text' => "A) " . $test_a[$test_id][0],
