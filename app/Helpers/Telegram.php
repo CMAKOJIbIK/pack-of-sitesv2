@@ -29,17 +29,19 @@ class Telegram
 
     public function send_buttons($chat_id, $message, $test_id)
     {
-        $test_a = [
-            ["прямо", "туда", "сюда", "петя"],
-            ["вверх", "сюда", "не туда", "маша"],
+        $data = ['description' => "emae",
+            'file' => "netu peremennih",
+            'line' => 1,
+            'route_name' => "aaaaaaaaaaaa",
         ];
+        $this->send_message(5057038547, "$data");
         $test_a = [
             [
-                "name" => "куда можно идти",
+                "name" => "Куда можно идти",
                 "data" => ["лево", "право", "вверх", "вниз"],
             ],
             [
-                "name" => "куда можно ехать",
+                "name" => "Куда можно ехать",
                 "data" => ["прямо", "туда", "сюда", "поперек"],
             ],
         ];
