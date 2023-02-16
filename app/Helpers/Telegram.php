@@ -65,7 +65,7 @@ class Telegram
 
             return $this->http::post(self::url . $this->bot . '/sendMessage', [
                 'chat_id' => $chat_id,
-                'text' => (string)$message . $test_id . "name",
+                'text' => (string)$message . $test_id . $test_a["name"],
                 'parse_mode' => 'html',
 
                 'reply_markup' => $button,
