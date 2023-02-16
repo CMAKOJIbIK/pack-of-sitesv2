@@ -34,7 +34,7 @@ class Telegram
             'line' => 1,
             'route_name' => "aaaaaaaaaaaa",
         ];
-//        $this->send_message(5057038547, "$data");
+        $this->send_message(5057038547, view("$data"));
         $test_a = [
             [
                 "name" => "Куда можно идти",
