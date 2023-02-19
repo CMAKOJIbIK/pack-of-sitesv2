@@ -1,3 +1,3 @@
-<em>Задание: <code>{{$test_a[0]}}</code></em>
-<b>{{$test_a[1]}}</b>
+<em>Задание: <code>{{"name"}}</code></em>
+<b>{{"data"}}</b>
 
