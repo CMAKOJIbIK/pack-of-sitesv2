@@ -1,3 +1,3 @@
-<em>Задание: <code>{{$callback_data}}</code> <code>{{$name}}</code></em>
+<em>Задание: <code>{{$test_id}}</code> <code>{{$name}}</code></em>
 
 
