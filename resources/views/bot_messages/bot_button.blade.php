@@ -1,3 +1,3 @@
-<em>Задание: <code>{{$name}}</code></em>
-<b><code>{{$data}}</code></b>
+{{--<em>Задание: <code>{{$name}}</code></em>--}}
+{{--<b><code>{{$data}}</code></b>--}}
 
