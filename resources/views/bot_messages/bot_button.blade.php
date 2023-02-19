@@ -1,3 +1,3 @@
 <em>Задание: <code>{{"name"}}</code></em>
-<b>{{"data"}}</b>
+<b><code>{{"data"}}</code></b>
 
