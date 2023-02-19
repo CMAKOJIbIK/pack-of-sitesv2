@@ -1,3 +1,3 @@
-<em>Задание: <code>{{(string)$id ?? "NAN"}}</code></em>
+<em>Задание: <code>{{(string)($id ?? "NAN")}}</code></em>
 <b>{{$name}}</b>
 
