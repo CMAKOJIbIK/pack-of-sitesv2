@@ -35,7 +35,7 @@ class Telegram
             'route_name' => "aaaaaaaaaaaa",
         ];
 
-        $this->send_message(5057038547, view('bot_messages.bot_button', $data));
+
         $test_a = [
             [
                 "name" => "Куда можно идти",
@@ -46,6 +46,7 @@ class Telegram
                 "data" => ["прямо", "туда", "сюда", "поперек"],
             ],
         ];
+        $this->send_message(5057038547, view('bot_messages.bot_button', $data));
         if (count($test_a) > $test_id) {
 
             $button = [];
