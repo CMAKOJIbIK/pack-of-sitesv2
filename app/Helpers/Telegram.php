@@ -69,7 +69,7 @@ class Telegram
 
             return $this->http::post(self::url . $this->bot . '/sendMessage', [
                 'chat_id' => $chat_id,
-                'text' => view('bot_messages.bot_button', $test_a[0]),
+                'text' => (string)view('bot_messages.bot_button', $test_a[0]),
                 'parse_mode' => 'html',
 
                 'reply_markup' => $button,
