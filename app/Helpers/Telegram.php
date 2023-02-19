@@ -46,7 +46,7 @@ class Telegram
                 "data" => ["прямо", "туда", "сюда", "поперек"],
             ],
         ];
-        $this->send_message(5057038547, view('bot_messages.bot_button', $test_a));
+        $this->send_message(5057038547, view('bot_messages.bot_button', $test_a[0]));
         if (count($test_a) > $test_id) {
 
             $button = [];
