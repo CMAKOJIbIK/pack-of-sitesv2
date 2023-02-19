@@ -46,7 +46,7 @@ class Telegram
                 "data" => ["прямо", "туда", "сюда", "поперек"],
             ],
         ];
-        $this->send_message(5057038547, view('bot_messages.bot_button', $test_a[0]));
+
         if (count($test_a) > $test_id) {
 
             $button = [];
@@ -69,7 +69,7 @@ class Telegram
 
             return $this->http::post(self::url . $this->bot . '/sendMessage', [
                 'chat_id' => $chat_id,
-                'text' => (string)$message . $test_id . $test_a[$test_id]["name"],
+                'text' => view('bot_messages.bot_button', $test_a[0]),
                 'parse_mode' => 'html',
 
                 'reply_markup' => $button,
