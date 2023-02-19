@@ -1,3 +1,3 @@
-<em>Задание: <code>{{$test_id}}</code> <code>{{$name}}</code></em>
+<em>Задание: <code>{{$test_id}}</code><br><code>{{$name}}</code></em>
 
 
