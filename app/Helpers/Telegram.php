@@ -45,13 +45,13 @@ class Telegram
             'callback_data' => "|false"
         ];
         Log::debug("$message_id");
-//        Log::debug($this->http::post(self::url . $this->bot . '/editMessageText', [
-//            'chat_id' => $chat_id,
-//            'text' => $message,
-//            'parse_mode' => 'html',
-//            'reply_markup' => $button,
-//            'message_id' => $message_id,
-//        ]));
+        Log::debug($this->http::post(self::url . $this->bot . '/editMessageText', [
+            'chat_id' => $chat_id,
+            'text' => $message,
+            'parse_mode' => 'html',
+            'reply_markup' => $button,
+            'message_id' => $message_id,
+        ]));
         return $this->http::post(self::url . $this->bot . '/editMessageText', [
             'chat_id' => $chat_id,
             'text' => $message,
@@ -60,7 +60,12 @@ class Telegram
             'message_id' => $message_id,
         ]);
     }
-
+    public function delete_message($chat_id, $message_id){
+        return $this->http::post(self::url . $this->bot . '/deleteMessage', [
+            'chat_id' => $chat_id,
+            'message_id' => $message_id,
+        ]);
+    }
     public function send_buttons($chat_id, $message, $test_id)
     {
         $data = ['description' => "emae",
