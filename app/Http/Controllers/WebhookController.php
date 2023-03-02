@@ -29,9 +29,6 @@ class WebhookController extends Controller
     }
     private function callback_function($callback_data, $request)
     {
-
-
-
         $data_request = explode('|', $callback_data);
         $callback_id = $request->input('callback_query')['message']['message_id'];
         $chat_id = $request->input('callback_query')['message']['chat']['id'];

@@ -4,6 +4,7 @@ namespace App\Helpers;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class Telegram
 {
@@ -43,6 +44,13 @@ class Telegram
             'text' => "A) ",
             'callback_data' => "|false"
         ];
+        Log::debug($this->http::post(self::url . $this->bot . '/editMessageText', [
+            'chat_id' => $chat_id,
+            'text' => $message,
+            'parse_mode' => 'html',
+            'reply_markup' => $button,
+            'message_id' => $message_id,
+        ]));
         return $this->http::post(self::url . $this->bot . '/editMessageText', [
             'chat_id' => $chat_id,
             'text' => $message,
