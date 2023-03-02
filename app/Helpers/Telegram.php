@@ -26,7 +26,15 @@ class Telegram
             'parse_mode' => 'html'
         ]);
     }
+    public function edit_message($chat_id, $message, $message_id){
 
+        return $this->http::post(self::url . $this->bot . '/editMessageText', [
+            'chat_id' => $chat_id,
+            'text' => (string)$message,
+            'parse_mode' => 'html',
+            'message_id' => $message_id,
+        ]);
+    }
     public function send_buttons($chat_id, $message, $test_id)
     {
         $data = ['description' => "emae",
