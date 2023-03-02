@@ -61,10 +61,21 @@ class Telegram
         ]);
     }
     public function delete_message($chat_id, $message_id){
+        Log::debug(
+            $this->http::post(self::url . $this->bot . '/deleteMessage', [
+                'chat_id' => $chat_id,
+                'message_id' => $message_id,
+            ])
+        );
+        Log::debug(self::url . $this->bot . '/deleteMessage', [
+            'chat_id' => $chat_id,
+            'message_id' => $message_id,
+        ]);
         return $this->http::post(self::url . $this->bot . '/deleteMessage', [
             'chat_id' => $chat_id,
             'message_id' => $message_id,
         ]);
+
     }
     public function send_buttons($chat_id, $message, $test_id)
     {
