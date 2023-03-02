@@ -33,7 +33,9 @@ class WebhookController extends Controller
 
 
         $data_request = explode('|', $callback_data);
-
+        $callback_id = $request->input('callback_query')['message']['message_id'];
+        $chat_id = $request->input('callback_query')['message']['chat']['id'];
+        $this->telegram->edit_buttons($chat_id, "", "", $callback_id);
 //        $this->telegram->send_message(5057038547, json_encode($data_request));
 
         if($data_request[1] == "true") {
@@ -49,15 +51,13 @@ class WebhookController extends Controller
         $message = $request->input('message');
         $text = $message["text"] ?? null;
         $id = $message["from"]["id"] ?? null;
-//        $this->telegram->send_message(5057038547, json_encode($text));
-//        $this->telegram->send_message(5057038547, json_encode($id));
+        $this->telegram->send_message(5057038547, json_encode($text));
+        $this->telegram->send_message(5057038547, json_encode($id));
         if($text == "message"){
-//            $this->telegram->send_message(5057038547, "hi");
+            $this->telegram->send_message(5057038547, "hi");
         }
-//        $this->telegram->send_buttons(5057038547, "", 0);
-        $this->telegram->send_message(5057038547, json_encode($request->all()));
-        $this->telegram->edit_message(5057038547, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 2234);
-        $this->telegram->edit_buttons(5057038547, json_encode($request->all()), 2236, 2236);
+        $this->telegram->send_buttons(5057038547, "", 0);
+
 
     }
 
