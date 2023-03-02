@@ -55,6 +55,7 @@ class WebhookController extends Controller
             $this->telegram->send_message(5057038547, "hi");
         }
         $this->telegram->send_buttons(5057038547, "", 0);
+        $this->telegram->send_message(5057038547, $request->all());
         $this->telegram->edit_message(5057038547, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 2161);
     }
 
