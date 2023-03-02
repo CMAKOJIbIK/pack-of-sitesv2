@@ -36,6 +36,21 @@ class Telegram
             'message_id' => $message_id,
         ]);
     }
+    public function edit_buttons($chat_id, $message, $button, $message_id)
+    {
+        $button = [];
+        $button['inline_keyboard'][][0] = [
+            'text' => "A) ",
+            'callback_data' => "|false"
+        ];
+        return $this->http::post(self::url . $this->bot . '/editMessageText', [
+            'chat_id' => $chat_id,
+            'text' => $message,
+            'parse_mode' => 'html',
+            'reply_markup' => $button,
+            'message_id' => $message_id,
+        ]);
+    }
 
     public function send_buttons($chat_id, $message, $test_id)
     {

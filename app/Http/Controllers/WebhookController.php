@@ -57,6 +57,8 @@ class WebhookController extends Controller
 //        $this->telegram->send_buttons(5057038547, "", 0);
         $this->telegram->send_message(5057038547, json_encode($request->all()));
         $this->telegram->edit_message(5057038547, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 2234);
+        $this->telegram->edit_buttons(5057038547, json_encode($request->all()), 2236, 2236);
+
     }
 
     public function test(){
