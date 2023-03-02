@@ -44,13 +44,14 @@ class Telegram
             'text' => "A) ",
             'callback_data' => "|false"
         ];
-        Log::debug($this->http::post(self::url . $this->bot . '/editMessageText', [
-            'chat_id' => $chat_id,
-            'text' => $message,
-            'parse_mode' => 'html',
-            'reply_markup' => $button,
-            'message_id' => $message_id,
-        ]));
+        Log::debug("$message_id");
+//        Log::debug($this->http::post(self::url . $this->bot . '/editMessageText', [
+//            'chat_id' => $chat_id,
+//            'text' => $message,
+//            'parse_mode' => 'html',
+//            'reply_markup' => $button,
+//            'message_id' => $message_id,
+//        ]));
         return $this->http::post(self::url . $this->bot . '/editMessageText', [
             'chat_id' => $chat_id,
             'text' => $message,
