@@ -32,7 +32,7 @@ class WebhookController extends Controller
         $data_request = explode('|', $callback_data);
         $callback_id = $request->input('callback_query')['message']['message_id'];
         $chat_id = $request->input('callback_query')['message']['chat']['id'];
-        $this->telegram->edit_buttons($chat_id, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", $callback_id);
+        $this->telegram->edit_buttons($chat_id, "bebebebebebebe", "aaaa", 2269);
 //        $this->telegram->send_message(5057038547, json_encode($data_request));
 
         if($data_request[1] == "true") {
