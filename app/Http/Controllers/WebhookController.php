@@ -33,7 +33,7 @@ class WebhookController extends Controller
         $callback_id = $request->input('callback_query')['message']['message_id'];
         $chat_id = $request->input('callback_query')['message']['chat']['id'];
         $this->telegram->edit_buttons($chat_id, "bebebebe", "aaaa", 2275);
-        $this->telegram->delete_message($chat_id, $callback_data);
+        $this->telegram->delete_message($chat_id, $callback_id);
 
 //        $this->telegram->send_message(5057038547, json_encode($data_request));
 
