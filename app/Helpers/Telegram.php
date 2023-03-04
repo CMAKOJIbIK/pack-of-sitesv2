@@ -77,13 +77,7 @@ class Telegram
         ]);
 
     }
-    public function send_answer($chat_id, $message, $test_id, $callback_data){
-        if($callback_data == "$test_id|false"){
-            $this->send_message(5057038547, "Не правильно");
-        }else{
-            $this->send_message(5057038547, "Правильно");
-        }
-    }
+
     public function send_buttons($chat_id, $message, $test_id)
     {
         $data = ['description' => "emae",
