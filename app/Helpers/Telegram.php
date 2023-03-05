@@ -138,7 +138,7 @@ class Telegram
                 'reply_markup' => $button,
             ]);
         } else {
-            $this->send_message(5057038547, "Тест завершен", );
+            $this->send_message(5057038547, "Тест завершен");
         }
 
         return false;

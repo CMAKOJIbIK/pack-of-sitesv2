@@ -38,7 +38,7 @@ class WebhookController extends Controller
 
 //        $this->telegram->send_message(5057038547, json_encode($data_request));
 
-        $count_error = $callback_data[2];
+        $count_error = $data_request[2];
         $this->telegram->send_message(5057038547, $count_error);
         if($data_request[1] == "true") {
             $this->telegram->send_buttons(5057038547, "Задание ", $data_request[0]+1, $count_error);
