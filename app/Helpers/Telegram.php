@@ -78,7 +78,7 @@ class Telegram
 
     }
 
-    public function send_buttons($chat_id, $message, $test_id)
+    public function send_buttons($chat_id, $message, $test_id, $count_error=0)
     {
         $data = ['description' => "emae",
             'file' => "netu peremennih",
@@ -115,19 +115,19 @@ class Telegram
             $button = [];
             $button['inline_keyboard'][][0] = [
                 'text' => "A) " . $test_a[$test_id]["data"][0],
-                'callback_data' => "$test_id|false"
+                'callback_data' => "$test_id|false|$count_error"
             ];
             $button['inline_keyboard'][][0] = [
                 'text' => "B) " . $test_a[$test_id]["data"][1],
-                'callback_data' => "$test_id|false"
+                'callback_data' => "$test_id|false|$count_error"
             ];
             $button['inline_keyboard'][][0] = [
                 'text' => "C) " . $test_a[$test_id]["data"][2],
-                'callback_data' => "$test_id|false"
+                'callback_data' => "$test_id|false|$count_error"
             ];
             $button['inline_keyboard'][][0] = [
                 'text' => "D) " . $test_a[$test_id]["data"][3],
-                'callback_data' => "$test_id|true"
+                'callback_data' => "$test_id|true|$count_error"
             ];
 
             return $this->http::post(self::url . $this->bot . '/sendMessage', [
@@ -138,8 +138,9 @@ class Telegram
                 'reply_markup' => $button,
             ]);
         } else {
-            $this->send_message(5057038547, "Тест завершен");
+            $this->send_message(5057038547, "Тест завершен", );
         }
+
         return false;
     }
 }

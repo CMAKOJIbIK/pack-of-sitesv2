@@ -30,18 +30,25 @@ class WebhookController extends Controller
     private function callback_function($callback_data, $request)
     {
         $data_request = explode('|', $callback_data);
+        $count_mistakes = 1;
         $callback_id = $request->input('callback_query')['message']['message_id'];
         $chat_id = $request->input('callback_query')['message']['chat']['id'];
-        $this->telegram->edit_buttons($chat_id, "bebebebe", "aaaa", 2275);
-        $this->telegram->delete_message($chat_id, $callback_id);
+//        $this->telegram->edit_buttons($chat_id, "bebebebe", "aaaa", 2275);
+//        $this->telegram->delete_message($chat_id, $callback_id);
 
 //        $this->telegram->send_message(5057038547, json_encode($data_request));
-
+        $count_error = $callback_data[2];
         if($data_request[1] == "true") {
-            $this->telegram->send_buttons(5057038547, "Задание ", $data_request[0]+1);
+            $this->telegram->send_buttons(5057038547, "Задание ", $data_request[0]+1, $count_error);
 
         }else{
-            $this->telegram->send_message(5057038547, "Вы проиграли");
+//            $this->telegram->send_message(5057038547, "Вы проиграли");
+            if($count_error >= 2){
+                $this->telegram->send_message(5057038547, "Вы проиграли");
+            }else
+            $this->telegram->send_buttons(5057038547, "Задание ", $data_request[0]+1, ++$count_error);
+
+
         }
     }
 
