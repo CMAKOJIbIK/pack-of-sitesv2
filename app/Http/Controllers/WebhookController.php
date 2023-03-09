@@ -61,7 +61,7 @@ class WebhookController extends Controller
         $message = $request->input('message');
         $text = $message["text"] ?? null;
         $id = $message["from"]["id"] ?? null;
-//        $this->telegram->send_message(5057038547, json_encode($text));
+        $this->telegram->send_message(5057038547, json_encode($text));
         $this->telegram->send_message(5057038547, json_encode($id));
         if($text == "message"){
             $this->telegram->send_message(5057038547, "");
@@ -73,7 +73,7 @@ class WebhookController extends Controller
 
     public function test(){
         $test_bot = "sendMessage?chat_id=5057038547&text=poluchilosb";
-        $this->telegram->send_message(5057038547, "test");
+//        $this->telegram->send_message(5057038547, "test");
     }
 }
 //sdds
