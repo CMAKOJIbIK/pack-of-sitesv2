@@ -1,1 +1,644 @@
+code {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 
+.vex {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.vex .main_menu {
+  width: 130px;
+  background-color: #181818;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vex .main_menu .menu {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.vex .main_menu .menu .main_menu_top {
+  background: #000000;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.vex .main_menu .menu .main_menu_top .main_menu_logo {
+  color: white;
+}
+.vex .main_menu .menu .main_menu_top .main_menu_logo .img {
+  width: 60px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.vex .main_menu .menu .main_menu_top .main_menu_logo .img p {
+  font-size: 100px;
+  font-weight: 600;
+}
+.vex .main_menu .menu .main_menu_top .main_menu_logo .img .back_v {
+  position: absolute;
+  transform: translate(-13%, -101%);
+  color: #08fdd8;
+}
+.vex .main_menu .menu .main_menu_top .main_menu_logo .img .front_v {
+  position: relative;
+  z-index: 10;
+  color: #FD2155;
+}
+.vex .main_menu .menu .main_menu_top .main_menu_logo p {
+  color: #fff;
+  margin-top: 1px;
+  font-size: 27px;
+  text-align: center;
+  font-weight: 600;
+}
+.vex .main_menu .menu .main_menu_top .web_developer {
+  font-family: "Open Sans";
+  color: #a5a5a5;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+.vex .main_menu .menu .main_menu_naw {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #282828;
+}
+.vex .main_menu .menu .main_menu_naw ul {
+  width: 100%;
+}
+.vex .main_menu .menu .main_menu_naw ul li {
+  border-bottom: 1px solid #282828;
+  width: 100%;
+}
+.vex .main_menu .menu .main_menu_naw ul li a {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #909096;
+  line-height: 50px;
+}
+.vex .main_menu .menu .social {
+  color: #909096;
+  padding: 0;
+  text-align: center;
+  height: 200px;
+}
+.vex .main_menu .menu .social li {
+  text-align: center;
+  display: inline-block;
+}
+.vex .main_menu .menu .social li a {
+  padding: 20px 7px;
+}
+.vex .main_menu .menu .social li a svg {
+  fill: #909096;
+  width: 15px;
+  transition: 0.3s;
+}
+.vex .main_menu .menu .social li a:hover svg {
+  fill: #08fdd8;
+  transition: 0.3s;
+}
+.vex .home {
+  margin-left: 130px;
+}
+.vex .home .greeting {
+  padding: 90px 30px;
+  background: rgb(29, 29, 29);
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  font-family: "Times New Roman", sans-serif;
+}
+.vex .home .greeting code {
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+}
+.vex .home .greeting .setting {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+.vex .home .greeting .setting .sound {
+  position: relative;
+  display: flex;
+  float: right;
+  background: rgba(29, 29, 29, 0.8);
+  font-size: 16px;
+  padding: 5px;
+  top: 40px;
+  right: 20px;
+}
+.vex .home .greeting .setting .sound svg {
+  height: 20px;
+  margin-right: 5px;
+}
+.vex .home .greeting .setting .sound svg path {
+  fill: #FD1056;
+}
+.vex .home .greeting .setting .sound p {
+  color: white;
+}
+.vex .home .greeting .setting .sound a {
+  color: #FD1056;
+}
+.vex .home .greeting .setting .awwwards a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0164/2390/t/2/assets/awwwards_honorable_white_right.png?7286100469750561975);
+  width: 90px;
+  height: 135px;
+  background-repeat: no-repeat;
+  background-size: 90px 135px;
+  position: absolute;
+  right: 0;
+  display: block;
+  top: 120px;
+}
+.vex .home .greeting .title .text .head_text p {
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  position: static;
+}
+.vex .home .greeting .title .text .head_text p span {
+  transition: 0.5s;
+  font-size: 100px;
+  display: inline-block;
+}
+.vex .home .greeting .title .text .head_text p span:hover {
+  animation-name: text_anim;
+  animation-duration: 0.5s;
+}
+.vex .home .greeting .title .text .head_text p .back_V {
+  position: absolute;
+  transform: translate(-13%, 0);
+  color: #08fdd8;
+}
+.vex .home .greeting .title .text .head_text p .front_V {
+  position: relative;
+  z-index: 10;
+  color: #FD2155;
+}
+.vex .home .greeting .title .text .head_text p .front_V:hover {
+  font-size: 100px;
+  color: #FD2155;
+}
+.vex .home .greeting .title .text p {
+  font-size: 16px;
+  letter-spacing: 4px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: block;
+  color: #8d8d8d;
+}
+.vex .home .greeting .title button {
+  border: 1px solid #08fdd8;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 220px;
+  font-family: "Open Sans", sans-serif;
+}
+.vex .home .greeting .title button p {
+  z-index: 1;
+  position: relative;
+  color: #08fdd8;
+}
+.vex .home .greeting .title button:hover p {
+  color: #1d1d1d;
+}
+.vex .home .greeting .title button .an {
+  z-index: 0;
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transform: translate(-106%, -20%) rotate(25deg);
+  background: #08fdd8;
+  transition-duration: 0.5s;
+}
+.vex .home .greeting .title button:hover .an {
+  transform: translate(0, 0);
+}
+.vex .home .portfolio {
+  padding: 90px 30px;
+  background: rgb(29, 29, 29);
+  position: relative;
+  overflow: hidden;
+}
+.vex .home .portfolio .fake_big {
+  position: absolute;
+  z-index: 0;
+}
+.vex .home .portfolio .fake_big p {
+  position: relative;
+  font-size: 480px;
+  font-weight: 600;
+  transform: translate(60%, -22%);
+  color: rgb(38, 38, 38);
+}
+.vex .home .portfolio .text_zone {
+  position: relative;
+  display: flex;
+  -webkit-box-align: end;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 50px;
+}
+.vex .home .portfolio .text_zone h2 {
+  color: #08fdd8;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 73px;
+  position: relative;
+  left: -10px;
+}
+.vex .home .portfolio .text_zone .desc p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.vex .home .portfolio .text_zone .desc p a {
+  color: #08fdd8;
+}
+.vex .home .portfolio .text_zone div button {
+  border: 1px solid #08fdd8;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 220px;
+  font-family: "Open Sans", sans-serif;
+}
+.vex .home .portfolio .text_zone div button p {
+  z-index: 1;
+  position: relative;
+  color: #08fdd8;
+}
+.vex .home .portfolio .text_zone div button:hover p {
+  color: #1d1d1d;
+}
+.vex .home .portfolio .text_zone div button .an {
+  z-index: 0;
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transform: translate(-106%, -20%) rotate(25deg);
+  background: #08fdd8;
+  transition-duration: 0.5s;
+}
+.vex .home .portfolio .text_zone div button:hover .an {
+  transform: translate(0, 0);
+}
+.vex .home .sites .portfolio_site ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vex .home .myself {
+  padding: 90px 30px;
+  background: rgb(29, 29, 29);
+}
+.vex .home .myself .column {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.vex .home .myself .column .text {
+  width: 40%;
+  padding-left: 50px;
+}
+.vex .home .myself .column .text h2 {
+  color: #08fdd8;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 73px;
+  position: relative;
+  left: -10px;
+}
+.vex .home .myself .column .text p {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.vex .home .myself .column .text p a {
+  color: #08fdd8;
+  transition: 0.3s;
+}
+.vex .home .myself .column .text p a:hover {
+  color: rgb(4, 142, 121);
+  transition: 0.3s;
+}
+.vex .home .blog {
+  padding: 90px 30px;
+  background: rgb(29, 29, 29);
+}
+.vex .home .blog .fake_big {
+  position: absolute;
+  z-index: 0;
+}
+.vex .home .blog .fake_big p {
+  position: relative;
+  font-size: 480px;
+  font-weight: 600;
+  transform: translate(5%, -70%);
+  color: rgb(38, 38, 38);
+}
+.vex .home .blog .card_list {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.vex .home .blog .card_list .yellow {
+  border-top: solid 2px #E4EE89;
+}
+.vex .home .blog .card_list .yellow em {
+  color: #E4EE89;
+}
+.vex .home .blog .card_list .yellow h4 a:hover {
+  color: #E4EE89;
+  transition: 0.5s;
+}
+.vex .home .blog .card_list .red {
+  border-top: solid 2px #FD2155;
+}
+.vex .home .blog .card_list .red em {
+  color: #FD2155;
+}
+.vex .home .blog .card_list .red h4 a:hover {
+  color: #FD2155;
+  transition: 0.5s;
+}
+.vex .home .blog .card_list .blue {
+  border-top: solid 2px #81D8F7;
+}
+.vex .home .blog .card_list .blue em {
+  color: #81D8F7;
+}
+.vex .home .blog .card_list .blue h4 a:hover {
+  color: #81D8F7;
+  transition: 0.5s;
+}
+.vex .home .blog .card_list .orange {
+  border-top: solid 2px orange;
+}
+.vex .home .blog .card_list .orange em {
+  color: orange;
+}
+.vex .home .blog .card_list .orange h4 a:hover {
+  color: orange;
+  transition: 0.5s;
+}
+.vex .home .blog .card_list .aqua {
+  border-top: solid 2px #08fdd8;
+}
+.vex .home .blog .card_list .aqua em {
+  color: #08fdd8;
+}
+.vex .home .blog .card_list .aqua h4 a:hover {
+  color: #08fdd8;
+  transition: 0.5s;
+}
+.vex .home .blog .card_list .card {
+  width: 32%;
+  margin-bottom: 50px;
+  padding: 30px 30px 25px;
+  position: relative;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  background: rgb(29, 29, 29);
+}
+.vex .home .blog .card_list .card em {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.vex .home .blog .card_list .card h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+}
+.vex .home .blog .card_list .card h4 a {
+  font-size: 27px;
+  letter-spacing: 0;
+  color: #fff;
+  font-weight: 400;
+  line-height: 35px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.vex .home .blog .card_list .card p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #a7a7a7;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.vex .home .blog .blog_button {
+  text-align: center;
+}
+.vex .home .blog .blog_button a {
+  color: #08fdd8;
+  transition: 0.3s;
+}
+.vex .home .blog .blog_button a:hover {
+  color: rgb(3, 151, 128);
+  transition: 0.3s;
+}
+.vex .home .contact {
+  padding: 90px 30px;
+  padding-right: 0;
+  background: rgb(29, 29, 29);
+}
+.vex .home .contact .fake_big {
+  position: absolute;
+  z-index: 0;
+}
+.vex .home .contact .fake_big p {
+  position: relative;
+  font-size: 380px;
+  font-weight: 600;
+  transform: translate(190%, -15%);
+  color: rgb(38, 38, 38);
+}
+.vex .home .contact .column {
+  display: flex;
+}
+.vex .home .contact .column .text_zone {
+  width: 40%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.vex .home .contact .column .text_zone h2 {
+  color: #08fdd8;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 73px;
+  position: relative;
+  left: -10px;
+}
+.vex .home .contact .column .text_zone p {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.vex .home .contact .column .text_zone .contact_form {
+  padding-top: 50px;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.vex .home .contact .column .text_zone .contact_form form {
+  position: relative;
+}
+.vex .home .contact .column .text_zone .contact_form form li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  position: relative;
+  border: none;
+}
+.vex .home .contact .column .text_zone .contact_form form li label {
+  position: relative;
+  display: block;
+}
+.vex .home .contact .column .text_zone .contact_form form li label:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #08fdd8;
+  transition: 0.3s;
+  transform: translateX(-100%);
+}
+.vex .home .contact .column .text_zone .contact_form form li label:focus-within:after {
+  transition: 0.3s;
+  transform: translateX(0%);
+}
+.vex .home .contact .column .text_zone .contact_form form li input {
+  width: 100%;
+  border: 0;
+  background: #2b2b2b;
+  height: 50px;
+  font-size: 16px;
+  color: #8d8d8d;
+  padding: 0 20px;
+  box-sizing: border-box;
+  line-height: 1.15;
+  display: block;
+}
+.vex .home .contact .column .text_zone .contact_form form li textarea {
+  width: 100%;
+  border: 0;
+  background: #2b2b2b;
+  height: 50px;
+  font-size: 16px;
+  color: #8d8d8d;
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 1.15;
+  min-height: 150px;
+}
+.vex .home .contact .column .text_zone .contact_form form .half:first-child {
+  margin-left: 0;
+}
+.vex .home .contact .column .text_zone .contact_form form .half {
+  width: 49%;
+  float: left;
+  margin-left: 2%;
+  clear: none;
+}
+.vex .home .contact .column .text_zone .contact_form div button {
+  border: 1px solid #08fdd8;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 220px;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  clear: both;
+  float: right;
+}
+.vex .home .contact .column .text_zone .contact_form div button p {
+  z-index: 1;
+  position: relative;
+  color: #08fdd8;
+  margin: 0;
+}
+.vex .home .contact .column .text_zone .contact_form div button:hover p {
+  color: #1d1d1d;
+}
+.vex .home .contact .column .text_zone .contact_form div button .an {
+  z-index: 0;
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transform: translate(-106%, -20%) rotate(25deg);
+  background: #08fdd8;
+  transition-duration: 0.5s;
+}
+.vex .home .contact .column .text_zone .contact_form div button:hover .an {
+  transform: translate(0, 0);
+}
+.vex .home .contact .column .contact_map {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 890px;
+  margin-left: auto;
+}
+@keyframes text_anim {
+  0% {
+    transform: scaleY(1);
+    color: white;
+  }
+  25% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+    color: #08fdd8;
+  }
+}
