@@ -1,0 +1,277 @@
+.setting {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+
+
+    .sound {
+        position: relative;
+        display: flex;
+        float: right;
+        background: rgba(29, 29, 29, 0.8);
+        font-size: 16px;
+        padding: 5px;
+        top: 40px;
+        right: 20px;
+
+        svg {
+            height: 20px;
+            margin-right: 5px;
+
+            path {
+                fill: #FD1056;
+            }
+        }
+
+        p {
+            color: white;
+        }
+
+        a {
+            color: #FD1056;
+        }
+    }
+
+    .awwwards {
+        a {
+            background-image: url(https://cdn.shopify.com/s/files/1/0164/2390/t/2/assets/awwwards_honorable_white_right.png?7286100469750561975);
+            width: 90px;
+            height: 135px;
+            background-repeat: no-repeat;
+            background-size: 90px 135px;
+            position: absolute;
+
+            right: 0;
+            display: block;
+            top: 120px;
+        }
+    }
+}
+
+.skills {
+    background: #1d1d1d;
+    padding-left: 130px;
+
+    .skills_column {
+        padding: 90px 30px;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+
+        .text_zone {
+            padding-left: 50px;
+            padding-right: 50px;
+            width: 50%;
+
+            .head_text {
+                position: relative;
+                left: -10px;
+
+                p {
+                    color: #08fdd8;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+
+                    position: relative;
+                    left: -10px;
+
+                    span {
+                        transition: 0.5s;
+                        font-size: 73px;
+                        display: inline-block;
+                        color: #08fdd8;
+                        line-height: 73px;
+                    }
+
+                    .anim_text {
+                        animation-name: text_anim;
+                        animation-duration: 0.5s;
+                        transform: scaleY(0.5);
+                        color: #08fdd8;
+                    }
+                }
+            }
+
+            p {
+                color: white;
+                font-size: 16px;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+        }
+
+        .skills_status {
+            width: 50%;
+
+            .charts {
+                padding-left: 20px;
+
+                .chart {
+                    margin-bottom: 12px;
+                    width: 100%;
+
+                    .text {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            color: white;
+                            font-size: 17px;
+                        }
+
+                        em {
+                            color: #909096;
+                        }
+                    }
+
+                    .underline {
+                        height: 2px;
+                    }
+                }
+
+                .first {
+                    .text {
+                        p {
+                            //color: #08fdd8;
+                        }
+
+                        em {
+                            padding-right: 180px;
+                        }
+                    }
+
+                    .underline {
+                        background: #08fdd8;
+                        width: 80%;
+                    }
+                }
+
+                .second {
+                    .text {
+                        p {
+                            //color: orange;
+                        }
+
+                        em {
+                            padding-right: 265px;
+                        }
+                    }
+
+                    .underline {
+                        background: orange;
+                        width: 70%;
+                    }
+                }
+
+                .third {
+                    .text {
+                        p {
+                            //color: #E4EE89;
+                        }
+
+                        em {
+                            padding-right: 390px;
+                        }
+                    }
+
+                    .underline {
+                        background: #E4EE89;
+                        width: 55%;
+                    }
+                }
+
+                .fourth {
+                    .text {
+                        p {
+                            //color: #FD2155;
+                        }
+
+                        em {
+                            padding-right: 645px;
+                        }
+                    }
+
+                    .underline {
+                        background: #FD2155;
+                        width: 25%;
+                    }
+                }
+            }
+
+            .work_card {
+                margin-top: 100px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .card {
+                    margin-right: 20px;
+                    padding: 20px;
+                    background: #3b3b3b;
+                    border-radius: 5px;
+
+                    h3 {
+                        font-size: 18px;
+                        margin-bottom: 7px;
+                    }
+
+                    p {
+                        margin-bottom: 15px;
+                    }
+
+                    .desc {
+                        color: #909096;
+                        margin-bottom: 0;
+                        margin-top: 7px;
+                    }
+                }
+
+                .first {
+                    box-shadow: 0 2px 4px -1px rgb(8, 253, 216), 0 4px 5px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+
+                    h3 {
+                        color: #08fdd8;
+                    }
+
+                    p {
+                        color: rgba(8, 253, 216, 0.56);
+                    }
+
+                    time {
+                        color: white;
+                    }
+                    .desc {
+                        color: #909096;
+
+                    }
+                }
+
+                .second {
+                    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                }
+            }
+        }
+    }
+}
+
+@keyframes text_anim {
+
+    0% {
+        transform: scaleY(1);
+
+        //color: white;
+    }
+    25% {
+        transform: scaleY(0.5);
+
+    }
+    50% {
+        transform: scaleY(1.1);
+
+    }
+    100% {
+        transform: scaleY(1);
+        color: #08fdd8;
+    }
+
+}

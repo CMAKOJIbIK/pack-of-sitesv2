@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebhookController;
+use App\Http\Controllers\PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +14,9 @@ use App\Http\Controllers\WebhookController;
 |
 */
 
-Route::get('/', function () {
-//    $http = \Illuminate\Support\Facades\Http::get('https://api.tlgr.org/bot' . config('bots.bot') . '/setWebhook?url=https://pack-of-sites.online/webhook');
-//    dd('https://api.tlgr.org/bot' . config('bots.bot') . '/setWebhook?url=https://pack-of-sites.online/webhook');
 
-    return view('index');
-});
 Route::get('/bot', [WebhookController::class, "test"])->name("bot");
 Route::post('/webhook' ,[WebhookController::class, "index"])->name("webhook");
+Route::get('/' ,[PageController::class, "index"])->name("index");
+Route::get('/skills' ,[PageController::class, "skills"])->name("skills");
+Route::get('/about' ,[PageController::class, "about"])->name("about");

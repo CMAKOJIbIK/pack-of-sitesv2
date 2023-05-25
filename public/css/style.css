@@ -8,111 +8,6 @@ code {
   display: grid;
   grid-template-columns: auto 1fr;
 }
-.vex .main_menu {
-  width: 130px;
-  background-color: #181818;
-  height: 100vh;
-  position: fixed;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.vex .main_menu .menu {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
-}
-.vex .main_menu .menu .main_menu_top {
-  background: #000000;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-rows: auto auto auto;
-}
-.vex .main_menu .menu .main_menu_top .main_menu_logo {
-  color: white;
-}
-.vex .main_menu .menu .main_menu_top .main_menu_logo .img {
-  width: 60px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.vex .main_menu .menu .main_menu_top .main_menu_logo .img p {
-  font-size: 100px;
-  font-weight: 600;
-}
-.vex .main_menu .menu .main_menu_top .main_menu_logo .img .back_v {
-  position: absolute;
-  transform: translate(-13%, -101%);
-  color: #08fdd8;
-}
-.vex .main_menu .menu .main_menu_top .main_menu_logo .img .front_v {
-  position: relative;
-  z-index: 10;
-  color: #FD2155;
-}
-.vex .main_menu .menu .main_menu_top .main_menu_logo p {
-  color: #fff;
-  margin-top: 1px;
-  font-size: 27px;
-  text-align: center;
-  font-weight: 600;
-}
-.vex .main_menu .menu .main_menu_top .web_developer {
-  font-family: "Open Sans";
-  color: #a5a5a5;
-  font-size: 12px;
-  margin-top: 10px;
-  text-align: center;
-}
-.vex .main_menu .menu .main_menu_naw {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px solid #282828;
-}
-.vex .main_menu .menu .main_menu_naw ul {
-  width: 100%;
-}
-.vex .main_menu .menu .main_menu_naw ul li {
-  border-bottom: 1px solid #282828;
-  width: 100%;
-}
-.vex .main_menu .menu .main_menu_naw ul li a {
-  text-align: center;
-  width: 100%;
-  display: block;
-  font-size: 16px;
-  color: #909096;
-  line-height: 50px;
-}
-.vex .main_menu .menu .social {
-  color: #909096;
-  padding: 0;
-  text-align: center;
-  height: 200px;
-}
-.vex .main_menu .menu .social li {
-  text-align: center;
-  display: inline-block;
-}
-.vex .main_menu .menu .social li a {
-  padding: 20px 7px;
-}
-.vex .main_menu .menu .social li a svg {
-  fill: #909096;
-  width: 15px;
-  transition: 0.3s;
-}
-.vex .main_menu .menu .social li a:hover svg {
-  fill: #08fdd8;
-  transition: 0.3s;
-}
 .vex .home {
   margin-left: 130px;
 }
@@ -173,18 +68,20 @@ code {
   margin: 0;
   position: static;
 }
-.vex .home .greeting .title .text .head_text p span {
+.vex .home .greeting .title .text .head_text p span, .vex .home .greeting .title .text .head_text p em {
   transition: 0.5s;
   font-size: 100px;
   display: inline-block;
 }
-.vex .home .greeting .title .text .head_text p span:hover {
+.vex .home .greeting .title .text .head_text p .anim_text {
   animation-name: text_anim;
   animation-duration: 0.5s;
+  transform: scaleY(0.5);
+  color: #08fdd8;
 }
 .vex .home .greeting .title .text .head_text p .back_V {
   position: absolute;
-  transform: translate(-13%, 0);
+  transform: translate(-13%, 0) scale(1);
   color: #08fdd8;
 }
 .vex .home .greeting .title .text .head_text p .front_V {
@@ -260,13 +157,24 @@ code {
   align-items: flex-end;
   padding-left: 50px;
 }
-.vex .home .portfolio .text_zone h2 {
+.vex .home .portfolio .text_zone .head_text p {
   color: #08fdd8;
   font-weight: 600;
   margin-bottom: 40px;
-  font-size: 73px;
   position: relative;
   left: -10px;
+}
+.vex .home .portfolio .text_zone .head_text p span {
+  transition: 0.5s;
+  font-size: 73px;
+  display: inline-block;
+  color: #08fdd8;
+}
+.vex .home .portfolio .text_zone .head_text p .anim_text {
+  animation-name: text_anim;
+  animation-duration: 0.5s;
+  transform: scaleY(0.5);
+  color: #08fdd8;
 }
 .vex .home .portfolio .text_zone .desc p {
   color: white;
@@ -322,18 +230,30 @@ code {
   display: flex;
   position: relative;
   z-index: 1;
+  justify-content: space-between;
 }
 .vex .home .myself .column .text {
   width: 40%;
   padding-left: 50px;
 }
-.vex .home .myself .column .text h2 {
+.vex .home .myself .column .text .head_text p {
   color: #08fdd8;
   font-weight: 600;
   margin-bottom: 40px;
-  font-size: 73px;
   position: relative;
   left: -10px;
+}
+.vex .home .myself .column .text .head_text p span {
+  transition: 0.5s;
+  font-size: 73px;
+  display: inline-block;
+  color: #08fdd8;
+}
+.vex .home .myself .column .text .head_text p .anim_text {
+  animation-name: text_anim;
+  animation-duration: 0.5s;
+  transform: scaleY(0.5);
+  color: #08fdd8;
 }
 .vex .home .myself .column .text p {
   position: relative;
@@ -351,6 +271,17 @@ code {
 .vex .home .myself .column .text p a:hover {
   color: rgb(4, 142, 121);
   transition: 0.3s;
+}
+.vex .home .myself .column .skill {
+  padding-right: 200px;
+}
+.vex .home .myself .column .skill .content .tagcloud span {
+  color: #08fdd8;
+  font-size: 20px;
+}
+.vex .home .myself .column .skill .content .tagcloud span:hover {
+  background: none;
+  border: none;
 }
 .vex .home .blog {
   padding: 90px 30px;
@@ -629,7 +560,6 @@ code {
 @keyframes text_anim {
   0% {
     transform: scaleY(1);
-    color: white;
   }
   25% {
     transform: scaleY(0.5);

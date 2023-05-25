@@ -54,14 +54,17 @@ switch (coordination){
 function anim(){
     const header_text = document.querySelectorAll(".head_text span")
     header_text.forEach( (item)=>{
-       item.addEventListener("click", ()=>{
-           add_class()
+       item.addEventListener("mouseover", ()=>{
+           add_class(item)
        })
 
     })
 }
 function add_class(item){
-    console.log(item)
+    item.classList.add("anim_text")
+    setTimeout(()=>{
+        item.classList.remove("anim_text")
+    },300)
 }
 anim();
 

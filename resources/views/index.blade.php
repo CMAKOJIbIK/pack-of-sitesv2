@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/menu.css')}}">
-</head>
+@include("head")
 <body>
 <div class="vex">
     @include("main_menu")
@@ -39,8 +30,9 @@
                 <div class="text">
                     <code class="tags top-tags"> &lt;h1&gt;</code>
                     <h1 class="head_text">
-                        <p><span >H</span><span>i</span><span>,</span></p>
-                        <p><span>I</span><span>'</span><span>m</span> <span class="back_V">V</span><span class="front_V">V</span><span>e</span><span>x</span></p>
+                        <p><span>H</span><span>i</span><span>,</span></p>
+                        <p><span>I</span><span>'</span><span>m</span> <em class="back_V">V</em><em
+                                class="front_V">V</em><span>e</span><span>x</span></p>
                         <p><span>w</span><span>e</span><span>b</span>
                             <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
                         </p>
@@ -58,7 +50,9 @@
             <div class="fake_big"><p>Work</p></div>
             <div class="text_zone">
                 <div>
-                    <h2>My Portfolio</h2>
+                    <h2 class="head_text"><p><span>M</span><span>y</span>
+                            <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+                        </p></h2>
                     <div class="desc">
                         <p> A small gallery of recent projects chosen by me.
                             I've done them all together with amazing people from companies<br>around the globe. It's
@@ -123,8 +117,9 @@
         <div class="myself">
             <div class="column">
                 <div class="text">
-                    <h2>
-                        Me, Myself and I
+                    <h2 class="head_text">
+                        <p><span>M</span><span>e</span><span>,</span> <span>M</span><span>y</span><span>s</span><span>e</span><span>l</span><span>f</span>  <span>a</span><span>n</span><span>d</span> <span>I</span></p>
+
                     </h2>
                     <p> Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards
                         of
@@ -141,15 +136,7 @@
                     </p>
                 </div>
                 <div class="skill">
-                    <ul>
-                        <li>Larabel</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SQL</li>
-                        <li>PHP</li>
-                        <li>npm</li>
-                        <li>JavaScript</li>
-                    </ul>
+                    @include("cloud")
                 </div>
             </div>
         </div>

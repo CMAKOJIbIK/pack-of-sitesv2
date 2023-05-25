@@ -1,6 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
+    "/css/about.css": "/css/about.css",
+    "/css/cloud.css": "/css/cloud.css",
+    "/css/skills.css": "/css/skills.css",
     "/css/menu.css": "/css/menu.css",
-    "/css/style.css": "/css/style.css"
+    "/css/style.css": "/css/style.css",
+    "/css/app.css": "/css/app.css"
 }

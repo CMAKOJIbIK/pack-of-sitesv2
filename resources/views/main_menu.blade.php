@@ -1,7 +1,7 @@
 <div class="main_menu">
     <div class="menu">
         <div class="main_menu_top">
-            <a class="main_menu_logo">
+            <a class="main_menu_logo" href="{{asset("/")}}">
                 <div class="img">
                     <p class="front_v">V</p>
                     <p class="back_v">V</p>
@@ -12,8 +12,8 @@
         </div>
         <div class="main_menu_naw">
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">My Skills</a></li>
+                <li><a href="{{asset("about")}}">About</a></li>
+                <li><a href="{{asset("skills")}}">My Skills</a></li>
                 <li><a href="">Work</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">Blog</a></li>
