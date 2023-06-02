@@ -20,3 +20,5 @@ Route::post('/webhook' ,[WebhookController::class, "index"])->name("webhook");
 Route::get('/' ,[PageController::class, "index"])->name("index");
 Route::get('/skills' ,[PageController::class, "skills"])->name("skills");
 Route::get('/about' ,[PageController::class, "about"])->name("about");
+Route::get('/cursor_anim' ,[PageController::class, "cursor_anim"])->name("cursor_anim");
+Route::get('/contact' ,[PageController::class, "contact"])->name("contact");

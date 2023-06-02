@@ -1,4 +1,8 @@
+<!doctype html>
+<html lang="en">
+<title>About</title>
 @include("head")
+<body>
 @include("main_menu")
 <div class="setting">
     <div class="sound">
@@ -18,13 +22,45 @@
 </div>
 <div class="about">
     <div class="about_column">
+        <div class="about_mine_image">
+            <div class="head_image">
+                <div class="school"><img src="{{asset("res/school_about.png")}}" alt="" class="school_img">
+                    <p>School</p></div>
+                <div class="tehnar"><img src="{{asset("res/tehnar_about.jpg")}}" alt="" class="tehnar_img">
+                    <p>College</p></div>
+
+            </div>
+            <div class="middle_image">
+                <div class="univer"><img src="{{asset("res/univer_about.jpg")}}" alt="" class="univer_img">
+                    <p>University</p></div>
+            </div>
+            <div class="bottom_image">
+                {{--                <img src="{{asset("res/company_about.png")}}" alt="" class="company_img">--}}
+            </div>
+        </div>
         <div class="text_zone">
             <h2 class="head_text">
+                <code class="tags top-tags"> &lt;h2&gt;</code>
                 <p><span>M</span><span>e</span><span>,</span>
                     <span>M</span><span>y</span><span>s</span><span>e</span><span>l</span><span>f</span>
                     <span>a</span><span>n</span><span>d</span> <span>I</span></p>
+                <code class="tags top-tags"> &lt;/h2&gt;</code>
             </h2>
+            <code class="tags top-tags"> &lt;p&gt;</code>
+            <p>Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of the
+                current web I've been passionate about web.</p>
+            <p>For over a 3 decade I had many opportunities to work in a vast spectrum of web
+                technologies what let me gather a significant amount of various experience. Working for companies and
+                individuals around the globe I met and learnt from amazing and ambitious people.</p>
+            <p>I currently have a strong mentor who can give me an explanation. I met him while studying at school <a
+                    href="https://itfuture.online/?utm_source=google&utm_medium=cpc&utm_campaign=Branded&utm_content=cid%7C19840915583%7Cgid%7C145512237805%7Ckwid%7Ckwd-391170913676%7C651674120636&utm_term=itfuture&placement&match=e&device=c&devicemodel&utm_referrer=%7Bsource%7D&utm_nooverride=1&utm_matchtype=%7Baddphrases%7D&position&region_name=%7Bregion_name%7D&gclid=CjwKCAjwscGjBhAXEiwAswQqNEfLlJqT-ISOZjfrcBSae-7GYz1julPc4DjRYL92EbP4jkF4V0CcphoC0eUQAvD_BwE">itFuture</a>
+                which you can see in the pictures</p>
+            <p>I currently work remotely with a selected freelance client base being open for new opportunities.</p>
+            <code class="tags top-tags"> &lt;/p&gt;</code>
         </div>
-        <div class="about_mine_image"></div>
+
     </div>
 </div>
+<script src="{{asset("js/map.js")}}"></script>
+</body>
+</html>

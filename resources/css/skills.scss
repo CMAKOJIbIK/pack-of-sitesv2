@@ -52,10 +52,10 @@
 .skills {
     background: #1d1d1d;
     padding-left: 130px;
-
+    height: 100vh;
     .skills_column {
         padding: 90px 30px;
-        height: 100vh;
+        //height: 100vh;
         display: flex;
         justify-content: space-between;
 
@@ -107,10 +107,13 @@
             .charts {
                 padding-left: 20px;
 
+
+
                 .chart {
                     margin-bottom: 12px;
                     width: 100%;
 
+                    overflow: hidden;
                     .text {
                         display: flex;
                         justify-content: space-between;
@@ -121,12 +124,26 @@
                         }
 
                         em {
+                            position: relative;
                             color: #909096;
+                            transition-duration: 1.4s;
                         }
                     }
 
                     .underline {
+                        position: relative;
+                        margin-top: 5px;
                         height: 2px;
+                        opacity: 0.7;
+                        transition-duration: 1.4s;
+
+                    }
+
+
+                    &:hover .underline {
+
+                        transform: translate(-2%, 0);
+                        opacity: 1;
                     }
                 }
 
@@ -138,12 +155,15 @@
 
                         em {
                             padding-right: 180px;
+                            left: -65%;
                         }
                     }
 
                     .underline {
                         background: #08fdd8;
                         width: 80%;
+
+                        left: -80%;
                     }
                 }
 
@@ -155,13 +175,17 @@
 
                         em {
                             padding-right: 265px;
+                            left: -52%;
                         }
                     }
 
                     .underline {
                         background: orange;
                         width: 70%;
+
+                        left: -70%;
                     }
+
                 }
 
                 .third {
@@ -172,13 +196,17 @@
 
                         em {
                             padding-right: 390px;
+                            left: -40%;
                         }
                     }
 
                     .underline {
                         background: #E4EE89;
                         width: 55%;
+
+                        left: -55%;
                     }
+
                 }
 
                 .fourth {
@@ -189,13 +217,28 @@
 
                         em {
                             padding-right: 645px;
+                            left: -12%;
                         }
                     }
 
                     .underline {
                         background: #FD2155;
                         width: 25%;
+
+                        left: -25%;
                     }
+
+                }
+
+                .chart .default{
+
+                    left: 0%;
+
+                }
+                .chart .text .default{
+
+                    left: 0%;
+
                 }
             }
 
@@ -240,6 +283,7 @@
                     time {
                         color: white;
                     }
+
                     .desc {
                         color: #909096;
 

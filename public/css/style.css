@@ -2,6 +2,47 @@ code {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #181818;
+  z-index: 9999;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+.preloader p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #08fdd8 0%, #FD2155 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Segoe Script";
+}
+.preloader .loader {
+  width: 50px;
+  height: 50px;
+  border: 7px solid rgb(38, 38, 38);
+  border-radius: 50%;
+  border-top-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 1s preloader infinite linear;
+}
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .vex {
@@ -62,11 +103,16 @@ code {
   display: block;
   top: 120px;
 }
+.vex .home .greeting .title .text .head_text {
+  display: block;
+}
 .vex .home .greeting .title .text .head_text p {
+  width: content-box;
   font-weight: 700;
   color: white;
   margin: 0;
-  position: static;
+  position: relative;
+  z-index: 2;
 }
 .vex .home .greeting .title .text .head_text p span, .vex .home .greeting .title .text .head_text p em {
   transition: 0.5s;
@@ -92,6 +138,15 @@ code {
 .vex .home .greeting .title .text .head_text p .front_V:hover {
   font-size: 100px;
   color: #FD2155;
+}
+.vex .home .greeting .title .text .head_text .first_p {
+  width: 140px;
+}
+.vex .home .greeting .title .text .head_text .second_p {
+  width: 351px;
+}
+.vex .home .greeting .title .text .head_text .third_p {
+  width: 724px;
 }
 .vex .home .greeting .title .text p {
   font-size: 16px;
@@ -405,6 +460,7 @@ code {
 .vex .home .contact {
   padding: 90px 30px;
   padding-right: 0;
+  padding-bottom: 0;
   background: rgb(29, 29, 29);
 }
 .vex .home .contact .fake_big {
@@ -556,6 +612,20 @@ code {
   overflow: hidden;
   width: 890px;
   margin-left: auto;
+}
+@keyframes preloader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    border-top-color: #08fdd8;
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+    border-top-color: #FD2155;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    border-top-color: #08fdd8;
+  }
 }
 @keyframes text_anim {
   0% {

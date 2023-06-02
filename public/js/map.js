@@ -68,3 +68,69 @@ function add_class(item){
 }
 anim();
 
+function remove_site(){
+    const skill_status = document.querySelectorAll(".skills_status .underline,.skills_status em")
+    skill_status.forEach((item)=>{
+        item.classList.add("default")
+    })
+}
+
+setTimeout(()=>{
+    remove_site();
+}, 700)
+// remove_site();
+let first = document.querySelector(".skills_status .first .number");
+let second = 15;
+let third = 15;
+let fourth = 15;
+function plus_number(){
+    // if (first === 80 ){
+    //     setTimeout(()=>{
+    //         first++;
+    //         second++;
+    //         third++;
+    //         fourth++;
+    //         plus_number()
+    //     }, 300)
+    //     return false
+    // }
+    if (first === 80 ){
+        console.log("hahha")
+        setTimeout(()=>{
+            first++;
+            plus_number()
+
+        }, 300)
+
+        return false
+    }
+}
+plus_number()
+document.body.onload = function (){
+    setTimeout(function (){
+        var preloader = document.getElementById('page-preloader');
+        if(!preloader.classList.contains('done')){
+            preloader.classList.add('done');
+        }
+    }, 700);
+};
+
+(function() {
+   const anim_chart = document.querySelector()
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,7 +15,7 @@
                 <li><a href="{{asset("about")}}">About</a></li>
                 <li><a href="{{asset("skills")}}">My Skills</a></li>
                 <li><a href="">Work</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="{{asset("contact")}}">Contact</a></li>
                 <li><a href="">Blog</a></li>
             </ul>
         </div>

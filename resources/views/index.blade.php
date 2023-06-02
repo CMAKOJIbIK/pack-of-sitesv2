@@ -1,11 +1,19 @@
 <!doctype html>
 <html lang="en">
+<title>Home</title>
 @include("head")
 <body>
+<div id="page-preloader" class="preloader">
+    <p>Can You See What I Can</p>
+    <div class="loader"></div>
+</div>
+{{--@include('cursor_anim')--}}
+
 <div class="vex">
     @include("main_menu")
     <div class="home">
         <div class="greeting">
+@include('cursor_anim')
             {{--    <pre><h1></h1></pre>--}}
             <code class="tags top-tags"> &lt;html&gt;</code>
             <code class="tags top-tags"> &lt;body&gt;</code>
@@ -30,10 +38,10 @@
                 <div class="text">
                     <code class="tags top-tags"> &lt;h1&gt;</code>
                     <h1 class="head_text">
-                        <p><span>H</span><span>i</span><span>,</span></p>
-                        <p><span>I</span><span>'</span><span>m</span> <em class="back_V">V</em><em
+                        <p class="first_p"><span>H</span><span>i</span><span>,</span></p>
+                        <p class="second_p"><span>I</span><span>'</span><span>m</span> <em class="back_V">V</em><em
                                 class="front_V">V</em><span>e</span><span>x</span></p>
-                        <p><span>w</span><span>e</span><span>b</span>
+                        <p class="third_p"><span>w</span><span>e</span><span>b</span>
                             <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
                         </p>
                     </h1>
@@ -215,17 +223,17 @@
                                 <li class="half">
 
                                     <label>
-                                        <input type="text" placeholder="name">
+                                        <input type="text" placeholder="surname">
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="text" placeholder="name">
+                                        <input type="text" placeholder="e-mail">
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <textarea placeholder="name"></textarea>
+                                        <textarea placeholder="message"></textarea>
                                     </label>
                                 </li>
                             </ul>
@@ -253,5 +261,6 @@
 {{--</div>--}}
 {{--<iframe src="https://ru.wikipedia.org/wiki/CUDA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 <script src="{{asset("js/map.js")}}"></script>
+<script src="{{asset("js/cursor_anim.js")}}"></script>
 </body>
 </html>

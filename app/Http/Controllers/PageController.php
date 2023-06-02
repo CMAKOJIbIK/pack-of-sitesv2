@@ -20,4 +20,12 @@ class PageController extends Controller
     {
         return view("index");
     }
+    public function cursor_anim()
+    {
+        return view("cursor_anim");
+    }
+    public function contact()
+    {
+        return view("contact");
+    }
 }
