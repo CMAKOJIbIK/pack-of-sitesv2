@@ -1,55 +1,6 @@
-.setting {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 20;
 
 
-    .sound {
-        position: relative;
-        display: flex;
-        float: right;
-        background: rgba(29, 29, 29, 0.8);
-        font-size: 16px;
-        padding: 5px;
-        top: 40px;
-        right: 20px;
-
-        svg {
-            height: 20px;
-            margin-right: 5px;
-
-            path {
-                fill: #FD1056;
-            }
-        }
-
-        p {
-            color: white;
-        }
-
-        a {
-            color: #FD1056;
-        }
-    }
-
-    .awwwards {
-        a {
-            background-image: url(https://cdn.shopify.com/s/files/1/0164/2390/t/2/assets/awwwards_honorable_white_right.png?7286100469750561975);
-            width: 90px;
-            height: 135px;
-            background-repeat: no-repeat;
-            background-size: 90px 135px;
-            position: absolute;
-
-            right: 0;
-            display: block;
-            top: 120px;
-        }
-    }
-}
-
-.skills {
+.skills_theme_blue {
     background: #1d1d1d;
     padding-left: 130px;
     height: 100vh;
@@ -67,11 +18,11 @@
             .head_text {
                 position: relative;
                 left: -10px;
-
+                margin-bottom: 40px;
                 p {
                     color: #08fdd8;
                     font-weight: 600;
-                    margin-bottom: 40px;
+
 
                     position: relative;
                     left: -10px;
@@ -270,14 +221,15 @@
                 }
 
                 .first {
-                    box-shadow: 0 2px 4px -1px rgb(8, 253, 216), 0 4px 5px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 
                     h3 {
                         color: #08fdd8;
                     }
 
                     p {
-                        color: rgba(8, 253, 216, 0.56);
+                        color: white;
+
                     }
 
                     time {

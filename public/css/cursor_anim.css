@@ -108,7 +108,7 @@ canvas {
   z-index: 1;
   top: 48px;
   left: 0;
-  width: 80px;
+  width: 1640px;
   color: #13E8E9;
   font-size: 0.8em;
   text-align: left;
@@ -141,7 +141,7 @@ canvas {
 
 /* ---- particles.js container ---- */
 #particles-js {
-  width: 1540px;
+  width: 1640px;
   height: 565px;
   position: absolute;
   background-size: cover;

@@ -19338,6 +19338,201 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/css/breakout.scss":
+/*!*************************************!*\
+  !*** ./resources/css/breakout.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/work.scss":
+/*!*********************************!*\
+  !*** ./resources/css/work.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/settings.scss":
+/*!*************************************!*\
+  !*** ./resources/css/settings.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/theme_green.scss":
+/*!****************************************!*\
+  !*** ./resources/css/theme_green.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/menu_theme_green.scss":
+/*!*********************************************!*\
+  !*** ./resources/css/menu_theme_green.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/menu_theme_red.scss":
+/*!*******************************************!*\
+  !*** ./resources/css/menu_theme_red.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/about_theme_green.scss":
+/*!**********************************************!*\
+  !*** ./resources/css/about_theme_green.scss ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/skills_theme_green.scss":
+/*!***********************************************!*\
+  !*** ./resources/css/skills_theme_green.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/work_theme_green.scss":
+/*!*********************************************!*\
+  !*** ./resources/css/work_theme_green.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/contact_theme_green.scss":
+/*!************************************************!*\
+  !*** ./resources/css/contact_theme_green.scss ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/theme_red.scss":
+/*!**************************************!*\
+  !*** ./resources/css/theme_red.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/about_theme_red.scss":
+/*!********************************************!*\
+  !*** ./resources/css/about_theme_red.scss ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/skills_theme_red.scss":
+/*!*********************************************!*\
+  !*** ./resources/css/skills_theme_red.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/work_theme_red.scss":
+/*!*******************************************!*\
+  !*** ./resources/css/work_theme_red.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/contact_theme_red.scss":
+/*!**********************************************!*\
+  !*** ./resources/css/contact_theme_red.scss ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -19732,12 +19927,26 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
+/******/ 			"css/theme_red": 0,
 /******/ 			"css/about": 0,
 /******/ 			"css/cloud": 0,
 /******/ 			"css/skills": 0,
 /******/ 			"css/menu": 0,
 /******/ 			"css/style": 0,
 /******/ 			"css/app": 0,
+/******/ 			"css/contact_theme_red": 0,
+/******/ 			"css/work_theme_red": 0,
+/******/ 			"css/skills_theme_red": 0,
+/******/ 			"css/about_theme_red": 0,
+/******/ 			"css/contact_theme_green": 0,
+/******/ 			"css/work_theme_green": 0,
+/******/ 			"css/skills_theme_green": 0,
+/******/ 			"css/about_theme_green": 0,
+/******/ 			"css/menu_theme_green": 0,
+/******/ 			"css/theme_green": 0,
+/******/ 			"css/settings": 0,
+/******/ 			"css/work": 0,
+/******/ 			"css/breakout": 0,
 /******/ 			"css/contact": 0,
 /******/ 			"css/cursor_anim": 0
 /******/ 		};
@@ -19789,15 +19998,30 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/app2.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/menu.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/skills.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/cloud.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/about.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/cursor_anim.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/contact.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/app2.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/menu.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/skills.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/cloud.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/about.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/cursor_anim.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/contact.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/breakout.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/work.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/settings.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/theme_green.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/menu_theme_green.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/menu_theme_red.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/about_theme_green.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/skills_theme_green.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/work_theme_green.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/contact_theme_green.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/theme_red.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/about_theme_red.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/skills_theme_red.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/work_theme_red.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/contact_theme_red.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/theme_red","css/about","css/cloud","css/skills","css/menu","css/style","css/app","css/contact_theme_red","css/work_theme_red","css/skills_theme_red","css/about_theme_red","css/contact_theme_green","css/work_theme_green","css/skills_theme_green","css/about_theme_green","css/menu_theme_green","css/theme_green","css/settings","css/work","css/breakout","css/contact","css/cursor_anim"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

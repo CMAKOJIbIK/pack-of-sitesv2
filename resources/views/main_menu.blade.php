@@ -1,4 +1,7 @@
-<div class="main_menu">
+{{--@dd($themes[$theme])--}}
+{{--@dd($theme)--}}
+<div class="menu_{{$themes[$theme]->theme}}">
+
     <div class="menu">
         <div class="main_menu_top">
             <a class="main_menu_logo" href="{{asset("/")}}">
@@ -14,9 +17,9 @@
             <ul>
                 <li><a href="{{asset("about")}}">About</a></li>
                 <li><a href="{{asset("skills")}}">My Skills</a></li>
-                <li><a href="">Work</a></li>
+                <li><a href="{{asset("work")}}">Work</a></li>
                 <li><a href="{{asset("contact")}}">Contact</a></li>
-                <li><a href="">Blog</a></li>
+
             </ul>
         </div>
         <ul class="social">

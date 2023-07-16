@@ -1,1 +1,252 @@
+.contact_theme_blue {
+  background: #1d1d1d;
+  padding-left: 130px;
+  height: 100vh;
+}
+.contact_theme_blue .contact_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 90px 30px;
+  justify-content: space-between;
+}
+.contact_theme_blue .contact_content .contact_form .head_text {
+  position: relative;
+  left: -10px;
+  margin-bottom: 40px;
+}
+.contact_theme_blue .contact_content .contact_form .head_text p {
+  color: #FD2155;
+  font-weight: 600;
+  position: static;
+  left: -10px;
+}
+.contact_theme_blue .contact_content .contact_form .head_text p em {
+  margin-left: 10px;
+}
+.contact_theme_blue .contact_content .contact_form .head_text p em span {
+  transition: 0.5s;
+  font-size: 73px;
+  display: inline-block;
+  color: #FD2155;
+  line-height: 73px;
+}
+.contact_theme_blue .contact_content .contact_form .head_text p .anim_text {
+  animation-name: text_anim;
+  animation-duration: 0.5s;
+  transform: scaleY(0.5);
+  color: #08fdd8;
+}
+.contact_theme_blue .contact_content .contact_form form {
+  position: relative;
+}
+.contact_theme_blue .contact_content .contact_form form li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  position: relative;
+  border: none;
+}
+.contact_theme_blue .contact_content .contact_form form li label {
+  position: relative;
+  display: block;
+}
+.contact_theme_blue .contact_content .contact_form form li label:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #08fdd8;
+  transition: 0.3s;
+  transform: translateX(-100%);
+}
+.contact_theme_blue .contact_content .contact_form form li label:focus-within:after {
+  transition: 0.3s;
+  transform: translateX(0%);
+}
+.contact_theme_blue .contact_content .contact_form form li input {
+  width: 100%;
+  border: 0;
+  background: #2b2b2b;
+  height: 50px;
+  font-size: 16px;
+  color: #8d8d8d;
+  padding: 0 20px;
+  box-sizing: border-box;
+  line-height: 1.15;
+  display: block;
+}
+.contact_theme_blue .contact_content .contact_form form li textarea {
+  width: 865px;
+  border: none;
+  background: #2b2b2b;
+  height: 50px;
+  font-size: 16px;
+  color: #8d8d8d;
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 1.15;
+  min-height: 229px;
+  min-width: 865px;
+  max-width: 865px;
+}
+.contact_theme_blue .contact_content .contact_form form .half:first-child {
+  margin-left: 0;
+}
+.contact_theme_blue .contact_content .contact_form form .half {
+  width: 49%;
+  float: left;
+  margin-left: 2%;
+  clear: none;
+}
+.contact_theme_blue .contact_content .text_zone {
+  margin-left: 30px;
+}
+.contact_theme_blue .contact_content .text_zone .head_text {
+  position: relative;
+  margin-bottom: 40px;
+}
+.contact_theme_blue .contact_content .text_zone .head_text p {
+  color: #08fdd8;
+  font-weight: 600;
+  position: static;
+}
+.contact_theme_blue .contact_content .text_zone .head_text p em {
+  margin-left: 10px;
+}
+.contact_theme_blue .contact_content .text_zone .head_text p em span {
+  transition: 0.5s;
+  font-size: 73px;
+  display: inline-block;
+  color: #08fdd8;
+  line-height: 73px;
+}
+.contact_theme_blue .contact_content .text_zone .head_text p .anim_text {
+  animation-name: text_anim;
+  animation-duration: 0.5s;
+  transform: scaleY(0.5);
+  color: #08fdd8;
+}
+.contact_theme_blue .contact_content .text_zone h4 {
+  color: #a5a5a5;
+  font-size: 18px;
+}
+.contact_theme_blue .contact_content .text_zone .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact_theme_blue .contact_content .text_zone .cards .card {
+  margin-left: 30px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+}
+.contact_theme_blue .contact_content .text_zone .cards .card p {
+  color: #a3a3a3;
+  font-size: 18px;
+  margin-bottom: 17px;
+}
+.contact_theme_blue .contact_content .text_zone .cards .card em {
+  font-size: 16px;
+  margin-bottom: 9px;
+  color: #909096;
+}
+.contact_theme_blue .contact_content .text_zone .cards .card em a {
+  color: #08fdd8;
+  opacity: 0.6;
+  transition-duration: 0.3s;
+}
+.contact_theme_blue .contact_content .text_zone .cards .card em a:hover {
+  opacity: 1;
+}
+.contact_theme_blue .contact_content .text_zone div {
+  margin-top: 20px;
+}
+.contact_theme_blue .contact_content .text_zone div button {
+  border: 1px solid #08fdd8;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 220px;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  clear: both;
+  float: left;
+}
+.contact_theme_blue .contact_content .text_zone div button p {
+  z-index: 1;
+  position: relative;
+  color: #08fdd8;
+  margin: 0;
+  font-size: 17px;
+}
+.contact_theme_blue .contact_content .text_zone div button:hover p {
+  color: #1d1d1d;
+}
+.contact_theme_blue .contact_content .text_zone div button .an {
+  z-index: 0;
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transform: translate(-106%, -20%) rotate(25deg);
+  background: #08fdd8;
+  transition-duration: 0.5s;
+}
+.contact_theme_blue .contact_content .text_zone div button:hover .an {
+  transform: translate(0, 0);
+}
+.contact_theme_blue .grid {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 150px;
+  margin-top: 100px;
+  border: none;
+}
+.contact_theme_blue .user {
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #909096;
+  border-radius: 5px;
+}
+.contact_theme_blue .block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #2b2b2b;
+  border-radius: 2px;
+}
+.contact_theme_blue .ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #d2d2d2;
+}
 
+@keyframes text_anim {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+    color: #08fdd8;
+  }
+}

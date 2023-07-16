@@ -1,0 +1,223 @@
+.about_theme_green {
+    background: #1b1d24;
+    padding-left: 130px;
+    height: 100vh;
+
+    code {
+
+    }
+
+    .about_column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 90px 30px;
+
+        justify-content: space-between;
+
+        .about_mine_image {
+            margin-left: auto;
+            margin-right: auto;
+
+            .head_image {
+                margin-right: 10px;
+                margin-bottom: 10px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .school {
+                    position: relative;
+
+                    opacity: 0.3;
+                    transition-duration: 0.3s;
+                    p {
+                        text-align: center;
+                        position: absolute;
+                        z-index: 2;
+                        font-size: 120px;
+                        font-weight: 600;
+                        opacity: 0;
+                        color: black;
+                        //opacity: 0.5;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition-duration: 0.3s;
+
+                        -ms-user-select: none;
+                        -moz-user-select: none;
+                        -webkit-user-select: none;
+                        user-select: none;
+                    }
+
+                    .school_img {
+                        height: 230px;
+                        width: 410px;
+                        margin-right: 10px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                    }
+
+                    &:hover p {
+                        //opacity: 0;
+                        opacity: 0.5;
+                        transition-duration: 0.3s;
+                    }
+                }
+
+                .school:hover {
+                    opacity: 1;
+                    transition-duration: 0.3s;
+                }
+
+                .tehnar {
+                    position: relative;
+                    opacity: 0.3;
+                    transition-duration: 0.3s;
+                    p {
+                        position: absolute;
+
+                        z-index: 2;
+                        font-size: 110px;
+                        font-weight: 600;
+                        opacity: 0;
+                        //color: white;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -ms-user-select: none;
+                        -moz-user-select: none;
+                        -webkit-user-select: none;
+                        user-select: none;
+                    }
+
+                    .tehnar_img {
+                        height: 230px;
+                        width: 410px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                    }
+                    &:hover p {
+                        //opacity: 0;
+                        opacity: 0.5;
+                        transition-duration: 0.3s;
+                    }
+                }
+                .tehnar:hover {
+                    opacity: 1;
+                    transition-duration: 0.3s;
+                }
+            }
+
+            .middle_image {
+                margin-right: 10px;
+                .univer {
+                    position: relative;
+                    opacity: 0.3;
+                    transition-duration: 0.3s;
+
+                    p {
+                        position: absolute;
+
+                        z-index: 2;
+                        font-size: 110px;
+                        font-weight: 600;
+                        opacity: 0;
+                        //color: white;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -ms-user-select: none;
+                        -moz-user-select: none;
+                        -webkit-user-select: none;
+                        user-select: none;
+
+                    }
+
+                    .univer_img {
+                        height: 252px;
+                        width: 830px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                    }
+
+                    &:hover p {
+                        //opacity: 0;
+                        opacity: 0.5;
+                        transition-duration: 0.3s;
+                    }
+                }
+                .univer:hover {
+                    opacity: 1;
+                    transition-duration: 0.3s;
+                }
+            }
+
+            .bottom_image {
+                .company_img {
+                    height: 292px;
+                    width: 984px;
+                    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                }
+            }
+        }
+
+        .text_zone {
+            .head_text {
+                p {
+                    font-size: 73px;
+                    font-weight: 700;
+                    color: #72eb3a;
+                    margin: 0;
+                    position: static;
+
+
+                    span, em {
+                        transition: 0.5s;
+                        //font-size: 100px;
+                        display: inline-block;
+                    }
+
+
+                    .anim_text {
+                        animation-name: text_anim_theme_green;
+                        animation-duration: 0.5s;
+                        transform: scaleY(0.5);
+                        color: #72eb3a;
+                    }
+                }
+            }
+
+            p {
+                //position: relative;
+                margin-bottom: 15px;
+                margin-top: 15px;
+                font-family: "Open Sans", sans-serif;
+                color: #fff;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+@keyframes text_anim_theme_green {
+
+    0% {
+        transform: scaleY(1);
+
+        //color: white;
+    }
+    25% {
+        transform: scaleY(0.5);
+
+    }
+    50% {
+        transform: scaleY(1.1);
+
+    }
+    100% {
+        transform: scaleY(1);
+        color: #72eb3a;
+    }
+
+}

@@ -1,205 +1,164 @@
-.setting {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 20;
-}
-.setting .sound {
-  position: relative;
-  display: flex;
-  float: right;
-  background: rgba(29, 29, 29, 0.8);
-  font-size: 16px;
-  padding: 5px;
-  top: 40px;
-  right: 20px;
-}
-.setting .sound svg {
-  height: 20px;
-  margin-right: 5px;
-}
-.setting .sound svg path {
-  fill: #FD1056;
-}
-.setting .sound p {
-  color: white;
-}
-.setting .sound a {
-  color: #FD1056;
-}
-.setting .awwwards a {
-  background-image: url(https://cdn.shopify.com/s/files/1/0164/2390/t/2/assets/awwwards_honorable_white_right.png?7286100469750561975);
-  width: 90px;
-  height: 135px;
-  background-repeat: no-repeat;
-  background-size: 90px 135px;
-  position: absolute;
-  right: 0;
-  display: block;
-  top: 120px;
-}
-
-.skills {
+.skills_theme_blue {
   background: #1d1d1d;
   padding-left: 130px;
   height: 100vh;
 }
-.skills .skills_column {
+.skills_theme_blue .skills_column {
   padding: 90px 30px;
   display: flex;
   justify-content: space-between;
 }
-.skills .skills_column .text_zone {
+.skills_theme_blue .skills_column .text_zone {
   padding-left: 50px;
   padding-right: 50px;
   width: 50%;
 }
-.skills .skills_column .text_zone .head_text {
+.skills_theme_blue .skills_column .text_zone .head_text {
   position: relative;
   left: -10px;
+  margin-bottom: 40px;
 }
-.skills .skills_column .text_zone .head_text p {
+.skills_theme_blue .skills_column .text_zone .head_text p {
   color: #08fdd8;
   font-weight: 600;
-  margin-bottom: 40px;
   position: relative;
   left: -10px;
 }
-.skills .skills_column .text_zone .head_text p span {
+.skills_theme_blue .skills_column .text_zone .head_text p span {
   transition: 0.5s;
   font-size: 73px;
   display: inline-block;
   color: #08fdd8;
   line-height: 73px;
 }
-.skills .skills_column .text_zone .head_text p .anim_text {
+.skills_theme_blue .skills_column .text_zone .head_text p .anim_text {
   animation-name: text_anim;
   animation-duration: 0.5s;
   transform: scaleY(0.5);
   color: #08fdd8;
 }
-.skills .skills_column .text_zone p {
+.skills_theme_blue .skills_column .text_zone p {
   color: white;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 15px;
 }
-.skills .skills_column .skills_status {
+.skills_theme_blue .skills_column .skills_status {
   width: 50%;
 }
-.skills .skills_column .skills_status .charts {
+.skills_theme_blue .skills_column .skills_status .charts {
   padding-left: 20px;
 }
-.skills .skills_column .skills_status .charts .chart {
+.skills_theme_blue .skills_column .skills_status .charts .chart {
   margin-bottom: 12px;
   width: 100%;
   overflow: hidden;
 }
-.skills .skills_column .skills_status .charts .chart .text {
+.skills_theme_blue .skills_column .skills_status .charts .chart .text {
   display: flex;
   justify-content: space-between;
 }
-.skills .skills_column .skills_status .charts .chart .text p {
+.skills_theme_blue .skills_column .skills_status .charts .chart .text p {
   color: white;
   font-size: 17px;
 }
-.skills .skills_column .skills_status .charts .chart .text em {
+.skills_theme_blue .skills_column .skills_status .charts .chart .text em {
   position: relative;
   color: #909096;
   transition-duration: 1.4s;
 }
-.skills .skills_column .skills_status .charts .chart .underline {
+.skills_theme_blue .skills_column .skills_status .charts .chart .underline {
   position: relative;
   margin-top: 5px;
   height: 2px;
   opacity: 0.7;
   transition-duration: 1.4s;
 }
-.skills .skills_column .skills_status .charts .chart:hover .underline {
+.skills_theme_blue .skills_column .skills_status .charts .chart:hover .underline {
   transform: translate(-2%, 0);
   opacity: 1;
 }
-.skills .skills_column .skills_status .charts .first .text em {
+.skills_theme_blue .skills_column .skills_status .charts .first .text em {
   padding-right: 180px;
   left: -65%;
 }
-.skills .skills_column .skills_status .charts .first .underline {
+.skills_theme_blue .skills_column .skills_status .charts .first .underline {
   background: #08fdd8;
   width: 80%;
   left: -80%;
 }
-.skills .skills_column .skills_status .charts .second .text em {
+.skills_theme_blue .skills_column .skills_status .charts .second .text em {
   padding-right: 265px;
   left: -52%;
 }
-.skills .skills_column .skills_status .charts .second .underline {
+.skills_theme_blue .skills_column .skills_status .charts .second .underline {
   background: orange;
   width: 70%;
   left: -70%;
 }
-.skills .skills_column .skills_status .charts .third .text em {
+.skills_theme_blue .skills_column .skills_status .charts .third .text em {
   padding-right: 390px;
   left: -40%;
 }
-.skills .skills_column .skills_status .charts .third .underline {
+.skills_theme_blue .skills_column .skills_status .charts .third .underline {
   background: #E4EE89;
   width: 55%;
   left: -55%;
 }
-.skills .skills_column .skills_status .charts .fourth .text em {
+.skills_theme_blue .skills_column .skills_status .charts .fourth .text em {
   padding-right: 645px;
   left: -12%;
 }
-.skills .skills_column .skills_status .charts .fourth .underline {
+.skills_theme_blue .skills_column .skills_status .charts .fourth .underline {
   background: #FD2155;
   width: 25%;
   left: -25%;
 }
-.skills .skills_column .skills_status .charts .chart .default {
+.skills_theme_blue .skills_column .skills_status .charts .chart .default {
   left: 0%;
 }
-.skills .skills_column .skills_status .charts .chart .text .default {
+.skills_theme_blue .skills_column .skills_status .charts .chart .text .default {
   left: 0%;
 }
-.skills .skills_column .skills_status .work_card {
+.skills_theme_blue .skills_column .skills_status .work_card {
   margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.skills .skills_column .skills_status .work_card .card {
+.skills_theme_blue .skills_column .skills_status .work_card .card {
   margin-right: 20px;
   padding: 20px;
   background: #3b3b3b;
   border-radius: 5px;
 }
-.skills .skills_column .skills_status .work_card .card h3 {
+.skills_theme_blue .skills_column .skills_status .work_card .card h3 {
   font-size: 18px;
   margin-bottom: 7px;
 }
-.skills .skills_column .skills_status .work_card .card p {
+.skills_theme_blue .skills_column .skills_status .work_card .card p {
   margin-bottom: 15px;
 }
-.skills .skills_column .skills_status .work_card .card .desc {
+.skills_theme_blue .skills_column .skills_status .work_card .card .desc {
   color: #909096;
   margin-bottom: 0;
   margin-top: 7px;
 }
-.skills .skills_column .skills_status .work_card .first {
-  box-shadow: 0 2px 4px -1px rgb(8, 253, 216), 0 4px 5px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+.skills_theme_blue .skills_column .skills_status .work_card .first {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.skills .skills_column .skills_status .work_card .first h3 {
+.skills_theme_blue .skills_column .skills_status .work_card .first h3 {
   color: #08fdd8;
 }
-.skills .skills_column .skills_status .work_card .first p {
-  color: rgba(8, 253, 216, 0.56);
-}
-.skills .skills_column .skills_status .work_card .first time {
+.skills_theme_blue .skills_column .skills_status .work_card .first p {
   color: white;
 }
-.skills .skills_column .skills_status .work_card .first .desc {
+.skills_theme_blue .skills_column .skills_status .work_card .first time {
+  color: white;
+}
+.skills_theme_blue .skills_column .skills_status .work_card .first .desc {
   color: #909096;
 }
-.skills .skills_column .skills_status .work_card .second {
+.skills_theme_blue .skills_column .skills_status .work_card .second {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 

@@ -1,4 +1,4 @@
-<div id="particles-js"></div>
+<div id="particles-js" style="color: #1b1b1d"></div>
 
 <script src="{{asset("library/particles.js-master/particles.js")}}"></script>
 <script src="{{asset("library/particles.js-master/demo/js/app.js")}}"></script>

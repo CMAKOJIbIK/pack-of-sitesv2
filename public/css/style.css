@@ -45,31 +45,31 @@ code {
   visibility: hidden;
 }
 
-.vex {
+.theme_blue {
   display: grid;
   grid-template-columns: auto 1fr;
 }
-.vex .home {
+.theme_blue .home {
   margin-left: 130px;
 }
-.vex .home .greeting {
+.theme_blue .home .greeting {
   padding: 90px 30px;
   background: rgb(29, 29, 29);
   display: grid;
   grid-template-rows: auto auto 1fr auto auto;
   font-family: "Times New Roman", sans-serif;
 }
-.vex .home .greeting code {
+.theme_blue .home .greeting code {
   font-family: "La Belle Aurore", cursive;
   color: #515152;
 }
-.vex .home .greeting .setting {
+.theme_blue .home .greeting .setting {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 20;
 }
-.vex .home .greeting .setting .sound {
+.theme_blue .home .greeting .setting .sound {
   position: relative;
   display: flex;
   float: right;
@@ -79,34 +79,36 @@ code {
   top: 40px;
   right: 20px;
 }
-.vex .home .greeting .setting .sound svg {
+.theme_blue .home .greeting .setting .sound svg {
   height: 20px;
   margin-right: 5px;
 }
-.vex .home .greeting .setting .sound svg path {
+.theme_blue .home .greeting .setting .sound svg path {
   fill: #FD1056;
 }
-.vex .home .greeting .setting .sound p {
+.theme_blue .home .greeting .setting .sound p {
   color: white;
 }
-.vex .home .greeting .setting .sound a {
+.theme_blue .home .greeting .setting .sound a {
   color: #FD1056;
 }
-.vex .home .greeting .setting .awwwards a {
-  background-image: url(https://cdn.shopify.com/s/files/1/0164/2390/t/2/assets/awwwards_honorable_white_right.png?7286100469750561975);
+.theme_blue .home .greeting .setting .settings a {
   width: 90px;
   height: 135px;
   background-repeat: no-repeat;
-  background-size: 90px 135px;
   position: absolute;
   right: 0;
   display: block;
   top: 120px;
 }
-.vex .home .greeting .title .text .head_text {
+.theme_blue .home .greeting .setting .settings a img {
+  width: 90px;
+  height: 135px;
+}
+.theme_blue .home .greeting .title .text .head_text {
   display: block;
 }
-.vex .home .greeting .title .text .head_text p {
+.theme_blue .home .greeting .title .text .head_text p {
   width: content-box;
   font-weight: 700;
   color: white;
@@ -114,41 +116,41 @@ code {
   position: relative;
   z-index: 2;
 }
-.vex .home .greeting .title .text .head_text p span, .vex .home .greeting .title .text .head_text p em {
+.theme_blue .home .greeting .title .text .head_text p span, .theme_blue .home .greeting .title .text .head_text p em {
   transition: 0.5s;
   font-size: 100px;
   display: inline-block;
 }
-.vex .home .greeting .title .text .head_text p .anim_text {
+.theme_blue .home .greeting .title .text .head_text p .anim_text {
   animation-name: text_anim;
   animation-duration: 0.5s;
   transform: scaleY(0.5);
   color: #08fdd8;
 }
-.vex .home .greeting .title .text .head_text p .back_V {
+.theme_blue .home .greeting .title .text .head_text p .back_V {
   position: absolute;
   transform: translate(-13%, 0) scale(1);
   color: #08fdd8;
 }
-.vex .home .greeting .title .text .head_text p .front_V {
+.theme_blue .home .greeting .title .text .head_text p .front_V {
   position: relative;
   z-index: 10;
   color: #FD2155;
 }
-.vex .home .greeting .title .text .head_text p .front_V:hover {
+.theme_blue .home .greeting .title .text .head_text p .front_V:hover {
   font-size: 100px;
   color: #FD2155;
 }
-.vex .home .greeting .title .text .head_text .first_p {
+.theme_blue .home .greeting .title .text .head_text .first_p {
   width: 140px;
 }
-.vex .home .greeting .title .text .head_text .second_p {
+.theme_blue .home .greeting .title .text .head_text .second_p {
   width: 351px;
 }
-.vex .home .greeting .title .text .head_text .third_p {
+.theme_blue .home .greeting .title .text .head_text .third_p {
   width: 724px;
 }
-.vex .home .greeting .title .text p {
+.theme_blue .home .greeting .title .text p {
   font-size: 16px;
   letter-spacing: 4px;
   margin-top: 30px;
@@ -156,7 +158,7 @@ code {
   display: block;
   color: #8d8d8d;
 }
-.vex .home .greeting .title button {
+.theme_blue .home .greeting .title button {
   border: 1px solid #08fdd8;
   background: none;
   position: relative;
@@ -165,15 +167,16 @@ code {
   width: 220px;
   font-family: "Open Sans", sans-serif;
 }
-.vex .home .greeting .title button p {
+.theme_blue .home .greeting .title button p {
   z-index: 1;
   position: relative;
   color: #08fdd8;
+  font-size: 17px;
 }
-.vex .home .greeting .title button:hover p {
+.theme_blue .home .greeting .title button:hover p {
   color: #1d1d1d;
 }
-.vex .home .greeting .title button .an {
+.theme_blue .home .greeting .title button .an {
   z-index: 0;
   position: absolute;
   top: -35px;
@@ -184,27 +187,27 @@ code {
   background: #08fdd8;
   transition-duration: 0.5s;
 }
-.vex .home .greeting .title button:hover .an {
+.theme_blue .home .greeting .title button:hover .an {
   transform: translate(0, 0);
 }
-.vex .home .portfolio {
+.theme_blue .home .portfolio {
   padding: 90px 30px;
   background: rgb(29, 29, 29);
   position: relative;
   overflow: hidden;
 }
-.vex .home .portfolio .fake_big {
+.theme_blue .home .portfolio .fake_big {
   position: absolute;
   z-index: 0;
 }
-.vex .home .portfolio .fake_big p {
+.theme_blue .home .portfolio .fake_big p {
   position: relative;
   font-size: 480px;
   font-weight: 600;
   transform: translate(60%, -22%);
   color: rgb(38, 38, 38);
 }
-.vex .home .portfolio .text_zone {
+.theme_blue .home .portfolio .text_zone {
   position: relative;
   display: flex;
   -webkit-box-align: end;
@@ -212,34 +215,36 @@ code {
   align-items: flex-end;
   padding-left: 50px;
 }
-.vex .home .portfolio .text_zone .head_text p {
+.theme_blue .home .portfolio .text_zone .head_text {
+  margin-bottom: 40px;
+}
+.theme_blue .home .portfolio .text_zone .head_text p {
   color: #08fdd8;
   font-weight: 600;
-  margin-bottom: 40px;
   position: relative;
   left: -10px;
 }
-.vex .home .portfolio .text_zone .head_text p span {
+.theme_blue .home .portfolio .text_zone .head_text p span {
   transition: 0.5s;
   font-size: 73px;
   display: inline-block;
   color: #08fdd8;
 }
-.vex .home .portfolio .text_zone .head_text p .anim_text {
+.theme_blue .home .portfolio .text_zone .head_text p .anim_text {
   animation-name: text_anim;
   animation-duration: 0.5s;
   transform: scaleY(0.5);
   color: #08fdd8;
 }
-.vex .home .portfolio .text_zone .desc p {
+.theme_blue .home .portfolio .text_zone .desc p {
   color: white;
   font-size: 16px;
   line-height: 1.5;
 }
-.vex .home .portfolio .text_zone .desc p a {
+.theme_blue .home .portfolio .text_zone .desc p a {
   color: #08fdd8;
 }
-.vex .home .portfolio .text_zone div button {
+.theme_blue .home .portfolio .text_zone a button {
   border: 1px solid #08fdd8;
   background: none;
   position: relative;
@@ -248,15 +253,16 @@ code {
   width: 220px;
   font-family: "Open Sans", sans-serif;
 }
-.vex .home .portfolio .text_zone div button p {
+.theme_blue .home .portfolio .text_zone a button p {
   z-index: 1;
   position: relative;
   color: #08fdd8;
+  font-size: 17px;
 }
-.vex .home .portfolio .text_zone div button:hover p {
+.theme_blue .home .portfolio .text_zone a button:hover p {
   color: #1d1d1d;
 }
-.vex .home .portfolio .text_zone div button .an {
+.theme_blue .home .portfolio .text_zone a button .an {
   z-index: 0;
   position: absolute;
   top: -35px;
@@ -267,50 +273,45 @@ code {
   background: #08fdd8;
   transition-duration: 0.5s;
 }
-.vex .home .portfolio .text_zone div button:hover .an {
+.theme_blue .home .portfolio .text_zone a button:hover .an {
   transform: translate(0, 0);
 }
-.vex .home .sites .portfolio_site ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.vex .home .myself {
+.theme_blue .home .myself {
   padding: 90px 30px;
   background: rgb(29, 29, 29);
 }
-.vex .home .myself .column {
+.theme_blue .home .myself .column {
   display: flex;
   position: relative;
   z-index: 1;
   justify-content: space-between;
 }
-.vex .home .myself .column .text {
+.theme_blue .home .myself .column .text {
   width: 40%;
   padding-left: 50px;
 }
-.vex .home .myself .column .text .head_text p {
+.theme_blue .home .myself .column .text .head_text {
+  margin-bottom: 40px;
+}
+.theme_blue .home .myself .column .text .head_text p {
   color: #08fdd8;
   font-weight: 600;
-  margin-bottom: 40px;
   position: relative;
   left: -10px;
 }
-.vex .home .myself .column .text .head_text p span {
+.theme_blue .home .myself .column .text .head_text p span {
   transition: 0.5s;
   font-size: 73px;
   display: inline-block;
   color: #08fdd8;
 }
-.vex .home .myself .column .text .head_text p .anim_text {
+.theme_blue .home .myself .column .text .head_text p .anim_text {
   animation-name: text_anim;
   animation-duration: 0.5s;
   transform: scaleY(0.5);
   color: #08fdd8;
 }
-.vex .home .myself .column .text p {
+.theme_blue .home .myself .column .text .desc_myself {
   position: relative;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -319,97 +320,97 @@ code {
   font-size: 16px;
   line-height: 1.5;
 }
-.vex .home .myself .column .text p a {
+.theme_blue .home .myself .column .text .desc_myself a {
   color: #08fdd8;
   transition: 0.3s;
 }
-.vex .home .myself .column .text p a:hover {
+.theme_blue .home .myself .column .text .desc_myself a:hover {
   color: rgb(4, 142, 121);
   transition: 0.3s;
 }
-.vex .home .myself .column .skill {
+.theme_blue .home .myself .column .skill {
   padding-right: 200px;
 }
-.vex .home .myself .column .skill .content .tagcloud span {
+.theme_blue .home .myself .column .skill .content .tagcloud span {
   color: #08fdd8;
   font-size: 20px;
 }
-.vex .home .myself .column .skill .content .tagcloud span:hover {
+.theme_blue .home .myself .column .skill .content .tagcloud span:hover {
   background: none;
   border: none;
 }
-.vex .home .blog {
+.theme_blue .home .blog {
   padding: 90px 30px;
   background: rgb(29, 29, 29);
 }
-.vex .home .blog .fake_big {
+.theme_blue .home .blog .fake_big {
   position: absolute;
   z-index: 0;
 }
-.vex .home .blog .fake_big p {
+.theme_blue .home .blog .fake_big p {
   position: relative;
   font-size: 480px;
   font-weight: 600;
   transform: translate(5%, -70%);
   color: rgb(38, 38, 38);
 }
-.vex .home .blog .card_list {
+.theme_blue .home .blog .card_list {
   padding: 0 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.vex .home .blog .card_list .yellow {
+.theme_blue .home .blog .card_list .yellow {
   border-top: solid 2px #E4EE89;
 }
-.vex .home .blog .card_list .yellow em {
+.theme_blue .home .blog .card_list .yellow em {
   color: #E4EE89;
 }
-.vex .home .blog .card_list .yellow h4 a:hover {
+.theme_blue .home .blog .card_list .yellow h4 a:hover {
   color: #E4EE89;
   transition: 0.5s;
 }
-.vex .home .blog .card_list .red {
+.theme_blue .home .blog .card_list .red {
   border-top: solid 2px #FD2155;
 }
-.vex .home .blog .card_list .red em {
+.theme_blue .home .blog .card_list .red em {
   color: #FD2155;
 }
-.vex .home .blog .card_list .red h4 a:hover {
+.theme_blue .home .blog .card_list .red h4 a:hover {
   color: #FD2155;
   transition: 0.5s;
 }
-.vex .home .blog .card_list .blue {
+.theme_blue .home .blog .card_list .blue {
   border-top: solid 2px #81D8F7;
 }
-.vex .home .blog .card_list .blue em {
+.theme_blue .home .blog .card_list .blue em {
   color: #81D8F7;
 }
-.vex .home .blog .card_list .blue h4 a:hover {
+.theme_blue .home .blog .card_list .blue h4 a:hover {
   color: #81D8F7;
   transition: 0.5s;
 }
-.vex .home .blog .card_list .orange {
+.theme_blue .home .blog .card_list .orange {
   border-top: solid 2px orange;
 }
-.vex .home .blog .card_list .orange em {
+.theme_blue .home .blog .card_list .orange em {
   color: orange;
 }
-.vex .home .blog .card_list .orange h4 a:hover {
+.theme_blue .home .blog .card_list .orange h4 a:hover {
   color: orange;
   transition: 0.5s;
 }
-.vex .home .blog .card_list .aqua {
+.theme_blue .home .blog .card_list .aqua {
   border-top: solid 2px #08fdd8;
 }
-.vex .home .blog .card_list .aqua em {
+.theme_blue .home .blog .card_list .aqua em {
   color: #08fdd8;
 }
-.vex .home .blog .card_list .aqua h4 a:hover {
+.theme_blue .home .blog .card_list .aqua h4 a:hover {
   color: #08fdd8;
   transition: 0.5s;
 }
-.vex .home .blog .card_list .card {
+.theme_blue .home .blog .card_list .card {
   width: 32%;
   margin-bottom: 50px;
   padding: 30px 30px 25px;
@@ -417,19 +418,19 @@ code {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   background: rgb(29, 29, 29);
 }
-.vex .home .blog .card_list .card em {
+.theme_blue .home .blog .card_list .card em {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.vex .home .blog .card_list .card h4 {
+.theme_blue .home .blog .card_list .card h4 {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   line-height: 1.5;
 }
-.vex .home .blog .card_list .card h4 a {
+.theme_blue .home .blog .card_list .card h4 a {
   font-size: 27px;
   letter-spacing: 0;
   color: #fff;
@@ -438,7 +439,7 @@ code {
   text-decoration: none;
   transition: 0.5s;
 }
-.vex .home .blog .card_list .card p {
+.theme_blue .home .blog .card_list .card p {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: #a7a7a7;
@@ -446,69 +447,83 @@ code {
   margin-bottom: 20px;
   margin-top: 15px;
 }
-.vex .home .blog .blog_button {
+.theme_blue .home .blog .blog_button {
   text-align: center;
 }
-.vex .home .blog .blog_button a {
+.theme_blue .home .blog .blog_button a {
   color: #08fdd8;
   transition: 0.3s;
 }
-.vex .home .blog .blog_button a:hover {
+.theme_blue .home .blog .blog_button a:hover {
   color: rgb(3, 151, 128);
   transition: 0.3s;
 }
-.vex .home .contact {
+.theme_blue .home .contact {
   padding: 90px 30px;
   padding-right: 0;
   padding-bottom: 0;
   background: rgb(29, 29, 29);
 }
-.vex .home .contact .fake_big {
+.theme_blue .home .contact .fake_big {
   position: absolute;
   z-index: 0;
 }
-.vex .home .contact .fake_big p {
+.theme_blue .home .contact .fake_big p {
   position: relative;
   font-size: 380px;
   font-weight: 600;
   transform: translate(190%, -15%);
   color: rgb(38, 38, 38);
 }
-.vex .home .contact .column {
+.theme_blue .home .contact .column {
   display: flex;
 }
-.vex .home .contact .column .text_zone {
+.theme_blue .home .contact .column .text_zone {
   width: 40%;
   padding-left: 50px;
   padding-right: 50px;
 }
-.vex .home .contact .column .text_zone h2 {
+.theme_blue .home .contact .column .text_zone .head_text {
+  margin-bottom: 40px;
+}
+.theme_blue .home .contact .column .text_zone .head_text p {
   color: #08fdd8;
   font-weight: 600;
-  margin-bottom: 40px;
-  font-size: 73px;
   position: relative;
   left: -10px;
 }
-.vex .home .contact .column .text_zone p {
+.theme_blue .home .contact .column .text_zone .head_text p em {
+  margin-left: 10px;
+}
+.theme_blue .home .contact .column .text_zone .head_text p em span {
+  transition: 0.5s;
+  font-size: 73px;
+  display: inline-block;
+  color: #08fdd8;
+}
+.theme_blue .home .contact .column .text_zone .head_text p em .anim_text {
+  animation-name: text_anim;
+  animation-duration: 0.5s;
+  transform: scaleY(0.5);
+  color: #08fdd8;
+}
+.theme_blue .home .contact .column .text_zone .desc_contact {
   position: relative;
-  margin-bottom: 15px;
-  margin-top: 15px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   font-size: 16px;
   line-height: 1.5;
 }
-.vex .home .contact .column .text_zone .contact_form {
+.theme_blue .home .contact .column .text_zone .contact_form {
   padding-top: 50px;
   display: block;
   position: relative;
   width: 100%;
 }
-.vex .home .contact .column .text_zone .contact_form form {
+.theme_blue .home .contact .column .text_zone .contact_form form {
   position: relative;
 }
-.vex .home .contact .column .text_zone .contact_form form li {
+.theme_blue .home .contact .column .text_zone .contact_form form li {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -519,11 +534,11 @@ code {
   position: relative;
   border: none;
 }
-.vex .home .contact .column .text_zone .contact_form form li label {
+.theme_blue .home .contact .column .text_zone .contact_form form li label {
   position: relative;
   display: block;
 }
-.vex .home .contact .column .text_zone .contact_form form li label:after {
+.theme_blue .home .contact .column .text_zone .contact_form form li label:after {
   content: "";
   position: absolute;
   height: 2px;
@@ -534,11 +549,11 @@ code {
   transition: 0.3s;
   transform: translateX(-100%);
 }
-.vex .home .contact .column .text_zone .contact_form form li label:focus-within:after {
+.theme_blue .home .contact .column .text_zone .contact_form form li label:focus-within:after {
   transition: 0.3s;
   transform: translateX(0%);
 }
-.vex .home .contact .column .text_zone .contact_form form li input {
+.theme_blue .home .contact .column .text_zone .contact_form form li input {
   width: 100%;
   border: 0;
   background: #2b2b2b;
@@ -550,7 +565,7 @@ code {
   line-height: 1.15;
   display: block;
 }
-.vex .home .contact .column .text_zone .contact_form form li textarea {
+.theme_blue .home .contact .column .text_zone .contact_form form li textarea {
   width: 100%;
   border: 0;
   background: #2b2b2b;
@@ -562,16 +577,16 @@ code {
   line-height: 1.15;
   min-height: 150px;
 }
-.vex .home .contact .column .text_zone .contact_form form .half:first-child {
+.theme_blue .home .contact .column .text_zone .contact_form form .half:first-child {
   margin-left: 0;
 }
-.vex .home .contact .column .text_zone .contact_form form .half {
+.theme_blue .home .contact .column .text_zone .contact_form form .half {
   width: 49%;
   float: left;
   margin-left: 2%;
   clear: none;
 }
-.vex .home .contact .column .text_zone .contact_form div button {
+.theme_blue .home .contact .column .text_zone .contact_form div button {
   border: 1px solid #08fdd8;
   background: none;
   position: relative;
@@ -583,16 +598,16 @@ code {
   clear: both;
   float: right;
 }
-.vex .home .contact .column .text_zone .contact_form div button p {
+.theme_blue .home .contact .column .text_zone .contact_form div button p {
   z-index: 1;
   position: relative;
   color: #08fdd8;
   margin: 0;
 }
-.vex .home .contact .column .text_zone .contact_form div button:hover p {
+.theme_blue .home .contact .column .text_zone .contact_form div button:hover p {
   color: #1d1d1d;
 }
-.vex .home .contact .column .text_zone .contact_form div button .an {
+.theme_blue .home .contact .column .text_zone .contact_form div button .an {
   z-index: 0;
   position: absolute;
   top: -35px;
@@ -603,16 +618,24 @@ code {
   background: #08fdd8;
   transition-duration: 0.5s;
 }
-.vex .home .contact .column .text_zone .contact_form div button:hover .an {
+.theme_blue .home .contact .column .text_zone .contact_form div button:hover .an {
   transform: translate(0, 0);
 }
-.vex .home .contact .column .contact_map {
+.theme_blue .home .contact .column .contact_map {
   display: block;
   position: relative;
   overflow: hidden;
-  width: 890px;
-  margin-left: auto;
+  margin-left: 20px;
 }
+.theme_blue .home .contact .column .contact_map img {
+  width: 880px;
+  height: 640px;
+}
+.theme_blue .home .contact .code {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
 @keyframes preloader {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);

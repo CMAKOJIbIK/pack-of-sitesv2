@@ -1,0 +1,299 @@
+.work_theme_blue {
+  background: #1d1d1d;
+  padding-left: 130px;
+  height: 100vh;
+}
+.work_theme_blue .work_content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 90px 30px;
+  justify-content: space-between;
+}
+.work_theme_blue .work_content .text_zone {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+.work_theme_blue .work_content .text_zone .head_text {
+  position: relative;
+}
+.work_theme_blue .work_content .text_zone .head_text p {
+  color: #08fdd8;
+  font-weight: 600;
+  position: static;
+  margin-bottom: 20px;
+}
+.work_theme_blue .work_content .text_zone .head_text p em {
+  margin-left: 10px;
+}
+.work_theme_blue .work_content .text_zone .head_text p em span {
+  transition: 0.5s;
+  font-size: 73px;
+  display: inline-block;
+  color: #08fdd8;
+  line-height: 73px;
+}
+.work_theme_blue .work_content .text_zone .head_text p .anim_text {
+  animation-name: text_anim;
+  animation-duration: 0.5s;
+  transform: scaleY(0.5);
+  color: #08fdd8;
+}
+.work_theme_blue .work_content .text_zone .more_works .text {
+  margin-bottom: 40px;
+}
+.work_theme_blue .work_content .text_zone .more_works .text p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+}
+.work_theme_blue .work_content .text_zone .more_works div {
+  margin-top: 20px;
+}
+.work_theme_blue .work_content .text_zone .more_works div button {
+  border: 1px solid #08fdd8;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 220px;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  clear: both;
+  float: left;
+}
+.work_theme_blue .work_content .text_zone .more_works div button p {
+  z-index: 1;
+  position: relative;
+  color: #08fdd8;
+  margin: 0;
+  font-size: 17px;
+}
+.work_theme_blue .work_content .text_zone .more_works div button:hover p {
+  color: #1d1d1d;
+}
+.work_theme_blue .work_content .text_zone .more_works div button .an {
+  z-index: 0;
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transform: translate(-106%, -20%) rotate(25deg);
+  background: #08fdd8;
+  transition-duration: 0.5s;
+}
+.work_theme_blue .work_content .text_zone .more_works div button:hover .an {
+  transform: translate(0, 0);
+}
+.work_theme_blue .work_content .text_zone .instrument {
+  margin-top: 40px;
+  padding-left: 15px;
+}
+.work_theme_blue .work_content .text_zone .instrument h3 {
+  font-size: 30px;
+  color: #8d8d8d;
+}
+.work_theme_blue .work_content .text_zone .instrument ul li {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border: 1px solid #8d8d8d;
+  width: 50%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.work_theme_blue .work_content .text_zone .instrument ul li .around {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #08fdd8;
+}
+.work_theme_blue .work_content .text_zone .instrument ul li .triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #08fdd8;
+}
+.work_theme_blue .work_content .text_zone .instrument ul li .square {
+  height: 20px;
+  width: 20px;
+  background: #08fdd8;
+}
+.work_theme_blue .work_content .text_zone .instrument ul li p {
+  font-size: 18px;
+  color: #8d8d8d;
+  vertical-align: center;
+  margin-left: 10px;
+}
+.work_theme_blue .work_content .season {
+  margin-left: 20px;
+}
+.work_theme_blue .work_content .season .cards .column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .card {
+  border: 1px solid #8d8d8d;
+  margin-left: 10px;
+  padding: 20px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.work_theme_blue .work_content .season .cards .column .card h4 {
+  color: white;
+  position: relative;
+  font-size: 20px;
+  width: 100px;
+  left: 20%;
+  margin-bottom: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .card ul {
+  margin-left: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .card ul li {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 5px;
+}
+.work_theme_blue .work_content .season .cards .column .card ul li p {
+  margin-top: 7px;
+  font-size: 17px;
+  color: white;
+  vertical-align: center;
+}
+.work_theme_blue .work_content .season .cards .column .card ul li .around {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .card ul li .triangle {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid;
+  margin-left: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .card ul li .square {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .autumn {
+  transition-duration: 0.2s;
+}
+.work_theme_blue .work_content .season .cards .column .autumn img {
+  width: 509px;
+  height: 200px;
+  position: absolute;
+  transform: translate(-4%, -10%);
+  opacity: 0.2;
+  border-radius: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .autumn ul li div {
+  background: #ffbf00;
+}
+.work_theme_blue .work_content .season .cards .column .autumn ul li .triangle {
+  border-bottom: 20px solid #ffbf00;
+}
+.work_theme_blue .work_content .season .cards .column .autumn:hover {
+  box-shadow: 0 2px 4px -1px rgb(255, 191, 0), 0 4px 5px 0 rgb(251, 206, 177), 0 1px 10px 0 rgb(242, 210, 189);
+}
+.work_theme_blue .work_content .season .cards .column .winter {
+  transition-duration: 0.2s;
+}
+.work_theme_blue .work_content .season .cards .column .winter img {
+  width: 509px;
+  height: 200px;
+  position: absolute;
+  z-index: 0;
+  transform: translate(-6%, -10%);
+  opacity: 0.2;
+  border-radius: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .winter ul li div {
+  background: #66bae5;
+}
+.work_theme_blue .work_content .season .cards .column .winter ul li .triangle {
+  border-bottom: 20px solid #66bae5;
+}
+.work_theme_blue .work_content .season .cards .column .winter:hover {
+  box-shadow: 0 2px 4px -1px rgb(172, 213, 243), 0 4px 5px 0 rgb(102, 186, 229), 0 1px 10px 0 rgb(182, 189, 231);
+}
+.work_theme_blue .work_content .season .cards .column .spring {
+  transition-duration: 0.2s;
+}
+.work_theme_blue .work_content .season .cards .column .spring img {
+  width: 509px;
+  height: 200px;
+  position: absolute;
+  z-index: 0;
+  transform: translate(-4%, -10%);
+  opacity: 0.2;
+  border-radius: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .spring ul li div {
+  background: #6ec531;
+}
+.work_theme_blue .work_content .season .cards .column .spring ul li .triangle {
+  border-bottom: 20px solid #6ec531;
+}
+.work_theme_blue .work_content .season .cards .column .spring:hover {
+  box-shadow: 0 2px 4px -1px rgb(110, 197, 49), 0 4px 5px 0 rgb(0, 204, 153), 0 1px 10px 0 rgb(87, 242, 135);
+}
+.work_theme_blue .work_content .season .cards .column .summer {
+  transition-duration: 0.2s;
+}
+.work_theme_blue .work_content .season .cards .column .summer img {
+  width: 509px;
+  height: 200px;
+  position: absolute;
+  z-index: 0;
+  transform: translate(-6%, -10%);
+  opacity: 0.2;
+  border-radius: 10px;
+}
+.work_theme_blue .work_content .season .cards .column .summer ul li div {
+  background: #c60c30;
+}
+.work_theme_blue .work_content .season .cards .column .summer ul li .triangle {
+  border-bottom: 20px solid #c60c30;
+}
+.work_theme_blue .work_content .season .cards .column .summer:hover {
+  box-shadow: 0 2px 4px -1px rgb(209, 81, 98), 0 4px 5px 0 rgb(198, 12, 48), 0 1px 10px 0 rgb(214, 18, 162);
+}
+
+@keyframes text_anim {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+    color: #08fdd8;
+  }
+}

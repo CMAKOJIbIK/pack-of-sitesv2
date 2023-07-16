@@ -7,30 +7,23 @@
     <p>Can You See What I Can</p>
     <div class="loader"></div>
 </div>
+{{--@dd($themes)--}}
 {{--@include('cursor_anim')--}}
+@include("main_menu")
+{{--@dd($themes[$theme])--}}
+<div class="{{$themes[$theme]->theme}}">
+{{--    <div class="vex">--}}
 
-<div class="vex">
-    @include("main_menu")
     <div class="home">
         <div class="greeting">
-@include('cursor_anim')
+            @include('cursor_anim')
             {{--    <pre><h1></h1></pre>--}}
             <code class="tags top-tags"> &lt;html&gt;</code>
             <code class="tags top-tags"> &lt;body&gt;</code>
             <div class="setting">
-                <div class="sound">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="soundcloud" role="img"
-                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
-                         class="svg-inline--fa fa-soundcloud fa-w-20 fa-5x">
-                        <path fill="currentColor"
-                              d="M111.4 256.3l5.8 65-5.8 68.3c-.3 2.5-2.2 4.4-4.4 4.4s-4.2-1.9-4.2-4.4l-5.6-68.3 5.6-65c0-2.2 1.9-4.2 4.2-4.2 2.2 0 4.1 2 4.4 4.2zm21.4-45.6c-2.8 0-4.7 2.2-5 5l-5 105.6 5 68.3c.3 2.8 2.2 5 5 5 2.5 0 4.7-2.2 4.7-5l5.8-68.3-5.8-105.6c0-2.8-2.2-5-4.7-5zm25.5-24.1c-3.1 0-5.3 2.2-5.6 5.3l-4.4 130 4.4 67.8c.3 3.1 2.5 5.3 5.6 5.3 2.8 0 5.3-2.2 5.3-5.3l5.3-67.8-5.3-130c0-3.1-2.5-5.3-5.3-5.3zM7.2 283.2c-1.4 0-2.2 1.1-2.5 2.5L0 321.3l4.7 35c.3 1.4 1.1 2.5 2.5 2.5s2.2-1.1 2.5-2.5l5.6-35-5.6-35.6c-.3-1.4-1.1-2.5-2.5-2.5zm23.6-21.9c-1.4 0-2.5 1.1-2.5 2.5l-6.4 57.5 6.4 56.1c0 1.7 1.1 2.8 2.5 2.8s2.5-1.1 2.8-2.5l7.2-56.4-7.2-57.5c-.3-1.4-1.4-2.5-2.8-2.5zm25.3-11.4c-1.7 0-3.1 1.4-3.3 3.3L47 321.3l5.8 65.8c.3 1.7 1.7 3.1 3.3 3.1 1.7 0 3.1-1.4 3.1-3.1l6.9-65.8-6.9-68.1c0-1.9-1.4-3.3-3.1-3.3zm25.3-2.2c-1.9 0-3.6 1.4-3.6 3.6l-5.8 70 5.8 67.8c0 2.2 1.7 3.6 3.6 3.6s3.6-1.4 3.9-3.6l6.4-67.8-6.4-70c-.3-2.2-2-3.6-3.9-3.6zm241.4-110.9c-1.1-.8-2.8-1.4-4.2-1.4-2.2 0-4.2.8-5.6 1.9-1.9 1.7-3.1 4.2-3.3 6.7v.8l-3.3 176.7 1.7 32.5 1.7 31.7c.3 4.7 4.2 8.6 8.9 8.6s8.6-3.9 8.6-8.6l3.9-64.2-3.9-177.5c-.4-3-2-5.8-4.5-7.2zm-26.7 15.3c-1.4-.8-2.8-1.4-4.4-1.4s-3.1.6-4.4 1.4c-2.2 1.4-3.6 3.9-3.6 6.7l-.3 1.7-2.8 160.8s0 .3 3.1 65.6v.3c0 1.7.6 3.3 1.7 4.7 1.7 1.9 3.9 3.1 6.4 3.1 2.2 0 4.2-1.1 5.6-2.5 1.7-1.4 2.5-3.3 2.5-5.6l.3-6.7 3.1-58.6-3.3-162.8c-.3-2.8-1.7-5.3-3.9-6.7zm-111.4 22.5c-3.1 0-5.8 2.8-5.8 6.1l-4.4 140.6 4.4 67.2c.3 3.3 2.8 5.8 5.8 5.8 3.3 0 5.8-2.5 6.1-5.8l5-67.2-5-140.6c-.2-3.3-2.7-6.1-6.1-6.1zm376.7 62.8c-10.8 0-21.1 2.2-30.6 6.1-6.4-70.8-65.8-126.4-138.3-126.4-17.8 0-35 3.3-50.3 9.4-6.1 2.2-7.8 4.4-7.8 9.2v249.7c0 5 3.9 8.6 8.6 9.2h218.3c43.3 0 78.6-35 78.6-78.3.1-43.6-35.2-78.9-78.5-78.9zm-296.7-60.3c-4.2 0-7.5 3.3-7.8 7.8l-3.3 136.7 3.3 65.6c.3 4.2 3.6 7.5 7.8 7.5 4.2 0 7.5-3.3 7.5-7.5l3.9-65.6-3.9-136.7c-.3-4.5-3.3-7.8-7.5-7.8zm-53.6-7.8c-3.3 0-6.4 3.1-6.4 6.7l-3.9 145.3 3.9 66.9c.3 3.6 3.1 6.4 6.4 6.4 3.6 0 6.4-2.8 6.7-6.4l4.4-66.9-4.4-145.3c-.3-3.6-3.1-6.7-6.7-6.7zm26.7 3.4c-3.9 0-6.9 3.1-6.9 6.9L227 321.3l3.9 66.4c.3 3.9 3.1 6.9 6.9 6.9s6.9-3.1 6.9-6.9l4.2-66.4-4.2-141.7c0-3.9-3-6.9-6.9-6.9z"
-                              class=""></path>
-                    </svg>
-                    <p>Sound</p>
-                    <a href="">OFF</a>
-                </div>
-                <div class="awwwards">
-                    <a href=""></a>
+
+                <div class="settings">
+                    <a href="{{asset("settings")}}"><img src="{{asset("res/settings.png")}}" alt=""></a>
                 </div>
             </div>
             <div class="title">
@@ -48,100 +41,66 @@
                     <code class="tags top-tags"> &lt;/h1&gt;</code>
                     <p>Front End Developer / WordPress Expert</p>
                 </div>
-                <button><span class="an"></span>
-                    <p>Contact me!</p></button>
+                <a href="{{asset("contact")}}">
+                    <button><span class="an"></span>
+                        <p>Contact me!</p></button>
+                </a>
+
             </div>
-            <code class="tags top-tags"> &lt;/body&gt;</code>
-            <code class="tags top-tags"> &lt;/html&gt;</code>
+
         </div>
         <div class="portfolio">
             <div class="fake_big"><p>Work</p></div>
             <div class="text_zone">
                 <div>
-                    <h2 class="head_text"><p><span>M</span><span>y</span>
+                    <h2 class="head_text">
+                        <code class="tags top-tags"> &lt;h2&gt;</code>
+                        <p><span>M</span><span>y</span>
                             <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
-                        </p></h2>
+                        </p>
+                        <code class="tags top-tags"> &lt;/h2&gt;</code></h2>
                     <div class="desc">
+                        <code class="tags top-tags"> &lt;p&gt;</code>
                         <p> A small gallery of recent projects chosen by me.
                             I've done them all together with amazing people from companies<br>around the globe. It's
                             only a
                             drop in
-                            the ocean compared to the entire list.<br>Interested to see some more? Visit <a href="">my
+                            the ocean compared to the entire list.<br>Interested to see some more? Visit <a href="{{asset("work")}}">my
                                 work</a> page.</p>
+                        <code class="tags top-tags"> &lt;p&gt;</code>
                     </div>
                 </div>
-                <div>
+                <a href="{{asset("about")}}">
                     <button><span class="an"></span>
                         <p>See more!</p></button>
-                </div>
-            </div>
-        </div>
-        <div class="sites">
-            <div class="portfolio_site">
-                <ul>
-                    {{--                <li>--}}
-                    {{--                    <div><img src="{{asset("res/Silversurfer.png")}}" alt=""></div>--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <div><img src="{{asset("res/janeanson.png")}}" alt=""></div>--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <img src="{{asset("res/projectset.png")}}" alt="">--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <img src="{{asset("res/fluxposure.jpg")}}" alt="">--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <img src="{{asset("res/adrianflux.jpg")}}" alt="">--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <img src="{{asset("res/tte.png")}}" alt="">--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <img src="{{asset("res/bebrave.jpg")}}" alt="">--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <img src="{{asset("res/aspectproperty.jpg")}}" alt="">--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <img src="{{asset("res/unnamed.jpg")}}" alt="">--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                    {{--                <li>--}}
-                    {{--                    <img src="{{asset("res/lucasbespoke.png")}}" alt="">--}}
-                    {{--                    --}}{{--                    <a href="">VIEW PROJECT</a>--}}
-                    {{--                </li>--}}
-                </ul>
+                </a>
             </div>
         </div>
         <div class="myself">
             <div class="column">
                 <div class="text">
                     <h2 class="head_text">
-                        <p><span>M</span><span>e</span><span>,</span> <span>M</span><span>y</span><span>s</span><span>e</span><span>l</span><span>f</span>  <span>a</span><span>n</span><span>d</span> <span>I</span></p>
-
+                        <code class="tags top-tags"> &lt;h2&gt;</code>
+                        <p><span>M</span><span>e</span><span>,</span>
+                            <span>M</span><span>y</span><span>s</span><span>e</span><span>l</span><span>f</span>
+                            <span>a</span><span>n</span><span>d</span> <span>I</span></p>
+                        <code class="tags top-tags"> &lt;/h2&gt;</code>
                     </h2>
-                    <p> Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards
+                    <code class="tags top-tags"> &lt;p&gt;</code>
+                    <p class="desc_myself"> Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards
                         of
                         the current web I've been passionate about web.</p>
-                    <p> For over a decade I had many opportunities to work in a vast spectrum of <a href="">web<br>
+                    <p class="desc_myself"> For over a decade I had many opportunities to work in a vast spectrum of <a href="">web<br>
                             technologies</a> what let me gather a significant amount of various experience.
                         Working for companies and individuals around the globe I met and learnt from amazing and
                         ambitious
                         people.
                     </p>
-                    <p>
+                    <p class="desc_myself">
                         I currently work remotely with a selected freelance client base being open for new
                         opportunities.
                     </p>
+                    <code class="tags top-tags"> &lt;/p&gt;</code>
                 </div>
                 <div class="skill">
                     @include("cloud")
@@ -201,39 +160,45 @@
                     <p>How to use System Fonts in CSS to improve your site...</p>
                 </div>
             </div>
-            <p class="blog_button"><a href="">See all articles...</a></p>
+{{--            <p class="blog_button"><a href="">See all articles...</a></p>--}}
         </div>
         <div class="contact">
             <div class="fake_big"><p>@</p></div>
             <div class="column">
                 <div class="text_zone">
-                    <h2>Contact me</h2>
-                    <p>I’m interested in freelance opportunities – especially ambitious or large projects. However, if
+                    <h2 class="head_text">
+                        <code class="tags top-tags"> &lt;h2&gt;</code>
+                        <p><em style="margin-left: 0;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></em>
+                            <em><span>m</span> <span>e</span></em></p>
+                        <code class="tags top-tags"> &lt;/h2&gt;</code></h2>
+                    <code class="tags top-tags" style="margin-top: 15px;"> &lt;p&gt;</code>
+                    <p class="desc_contact">I’m interested in freelance opportunities – especially ambitious or large projects. However, if
                         you have
                         other request or question, don’t hesitate to use the form.</p>
+                    <code class="tags top-tags" style="margin-bottom: 15px;"> &lt;/p&gt;</code>
                     <div class="contact_form">
                         <form action="">
                             <ul>
                                 <li class="half">
                                     <label>
                                         <span class="an"></span>
-                                        <input type="text" placeholder="name">
+                                        <input type="text" placeholder="Name">
                                     </label>
                                 </li>
                                 <li class="half">
 
                                     <label>
-                                        <input type="text" placeholder="surname">
+                                        <input type="text" placeholder="Surname">
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="text" placeholder="e-mail">
+                                        <input type="text" placeholder="G-mail">
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <textarea placeholder="message"></textarea>
+                                        <textarea placeholder="Message"></textarea>
                                     </label>
                                 </li>
                             </ul>
@@ -246,9 +211,14 @@
                 </div>
                 <div class="contact_map">
                     <div class="info"></div>
-                    <img src="{{asset("res/map.png")}}" alt="">
+                    <img src="{{asset("res/simple_map.png")}}" alt="">
                 </div>
             </div>
+            <div class="code">
+                <code class="tags top-tags"> &lt;/body&gt;</code>
+                <code class="tags top-tags"> &lt;/html&gt;</code>
+            </div>
+
         </div>
     </div>
 </div>

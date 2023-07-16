@@ -52,7 +52,7 @@ code {
 }
 
 
-.vex {
+.theme_blue {
     display: grid;
     grid-template-columns: auto 1fr;
 
@@ -109,18 +109,22 @@ code {
                     }
                 }
 
-                .awwwards {
+                .settings {
                     a {
-                        background-image: url(https://cdn.shopify.com/s/files/1/0164/2390/t/2/assets/awwwards_honorable_white_right.png?7286100469750561975);
+
                         width: 90px;
                         height: 135px;
                         background-repeat: no-repeat;
-                        background-size: 90px 135px;
+
                         position: absolute;
 
                         right: 0;
                         display: block;
                         top: 120px;
+                        img{
+                            width: 90px;
+                            height: 135px;
+                        }
                     }
                 }
             }
@@ -128,7 +132,8 @@ code {
             .title {
                 .text {
                     .head_text {
-display: block;
+                        display: block;
+
                         p {
                             width: content-box;
                             font-weight: 700;
@@ -178,13 +183,16 @@ display: block;
                                 color: #FD2155;
                             }
                         }
-                        .first_p{
+
+                        .first_p {
                             width: 140px;
                         }
-                        .second_p{
+
+                        .second_p {
                             width: 351px;
                         }
-                        .third_p{
+
+                        .third_p {
                             width: 724px;
                         }
 
@@ -215,6 +223,7 @@ display: block;
                         z-index: 1;
                         position: relative;
                         color: #08fdd8;
+                        font-size: 17px;
                     }
 
                     &:hover p {
@@ -272,13 +281,13 @@ display: block;
                 justify-content: space-between;
                 align-items: flex-end;
                 padding-left: 50px;
-
                 .head_text {
+                    margin-bottom: 40px;
 
                     p {
                         color: #08fdd8;
                         font-weight: 600;
-                        margin-bottom: 40px;
+
 
                         position: relative;
                         left: -10px;
@@ -311,7 +320,7 @@ display: block;
                     }
                 }
 
-                div {
+               a {
 
                     button {
                         border: 1px solid #08fdd8;
@@ -326,6 +335,7 @@ display: block;
                             z-index: 1;
                             position: relative;
                             color: #08fdd8;
+                            font-size: 17px;
                         }
 
                         &:hover p {
@@ -356,27 +366,6 @@ display: block;
             }
         }
 
-        .sites {
-
-            .portfolio_site {
-
-                ul {
-                    padding: 0;
-                    margin: 0;
-                    list-style: none;
-                    display: flex;
-                    flex-wrap: wrap;
-
-                    li {
-
-                        img {
-
-                        }
-                    }
-                }
-            }
-        }
-
         .myself {
             padding: 90px 30px;
             background: rgb(29, 29, 29);
@@ -393,11 +382,11 @@ display: block;
                     padding-left: 50px;
 
                     .head_text {
-
+                        margin-bottom: 40px;
                         p {
                             color: #08fdd8;
                             font-weight: 600;
-                            margin-bottom: 40px;
+
 
                             position: relative;
                             left: -10px;
@@ -418,7 +407,7 @@ display: block;
                         }
                     }
 
-                    p {
+                    .desc_myself {
                         position: relative;
                         margin-bottom: 15px;
                         margin-top: 15px;
@@ -644,23 +633,46 @@ display: block;
                     padding-left: 50px;
                     padding-right: 50px;
 
-                    h2 {
-                        color: #08fdd8;
-                        font-weight: 600;
+                    .head_text {
                         margin-bottom: 40px;
-                        font-size: 73px;
-                        position: relative;
-                        left: -10px;
+                        p {
+                            color: #08fdd8;
+                            font-weight: 600;
+
+
+                            position: relative;
+                            left: -10px;
+
+                            em {
+                                margin-left: 10px;
+                                span {
+                                    transition: 0.5s;
+                                    font-size: 73px;
+                                    display: inline-block;
+                                    color: #08fdd8;
+                                }
+                                .anim_text {
+                                    animation-name: text_anim;
+                                    animation-duration: 0.5s;
+                                    transform: scaleY(0.5);
+                                    color: #08fdd8;
+                                }
+                            }
+
+
+
+                        }
                     }
 
-                    p {
+                    .desc_contact {
                         position: relative;
-                        margin-bottom: 15px;
-                        margin-top: 15px;
+                        //margin-bottom: 15px;
+                        //margin-top: 15px;
                         font-family: "Open Sans", sans-serif;
                         color: #fff;
                         font-size: 16px;
                         line-height: 1.5;
+
                     }
 
                     .contact_form {
@@ -806,13 +818,19 @@ display: block;
                     display: block;
                     position: relative;
                     overflow: hidden;
-                    width: 890px;
-                    margin-left: auto;
+                    //width: 890px;
+                    //max-height: 879px;
+                    margin-left: 20px;
 
                     img {
-
+                        width: 880px;
+                        height: 640px;
                     }
                 }
+            }
+            .code{
+                display: grid;
+                grid-template-rows: auto auto;
             }
         }
     }
