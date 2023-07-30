@@ -3,7 +3,8 @@
 <title>Setting</title>
 @include("head")
 <body>
-<div class="settings_vex">
+
+<div class="settings_{{$themes[$theme]->theme}}">
 {{--    {{$theme}}--}}
     <div class="settings_vex_content">
         <div class="left_column">
@@ -22,16 +23,11 @@
 
                     <ul class="tag">
                         <h4>.HTML</h4>
-                        <li><p><code class="tags top-tags">&lt;h1&gt;&lt;/h1&gt;</code></p><span
-                                class="count">100 times</span></li>
-                        <li><p><code class="tags top-tags">&lt;h2&gt;&lt;/h2&gt;</code></p><span
-                                class="count">100 times</span></li>
-                        <li><p><code class="tags top-tags">&lt;p&gt;&lt;/p&gt;</code></p><span
-                                class="count">100 times</span></li>
-                        <li><p><code class="tags top-tags">&lt;em&gt;&lt;/em&gt;</code></p><span
-                                class="count">100 times</span></li>
-                        <li><p><code class="tags top-tags">&lt;div&gt;&lt;/div&gt;</code></p><span class="count">100 times</span>
-                        </li>
+                        <li><p><code class="tags top-tags">&lt;h1&gt;&lt;/h1&gt;</code></p></li>
+                        <li><p><code class="tags top-tags">&lt;h2&gt;&lt;/h2&gt;</code></p></li>
+                        <li><p><code class="tags top-tags">&lt;p&gt;&lt;/p&gt;</code></p></li>
+                        <li><p><code class="tags top-tags">&lt;em&gt;&lt;/em&gt;</code></p></li>
+                        <li><p><code class="tags top-tags">&lt;div&gt;&lt;/div&gt;</code></p></li>
                     </ul>
                     <ul class="sizes">
                         <h4>.Scss</h4>
@@ -57,7 +53,11 @@
             </div>
         </div>
         <div class="right_column">
-            <h3>Themes</h3>
+            <h2 class="head_text">
+                <p>
+                    <em><span>T</span><span>h</span><span>e</span><span>m</span><span>e</span><span>s</span></em>
+                </p>
+            </h2>
             <div class="colors">
 
                 <div class="cards">
@@ -78,19 +78,14 @@
                 </div>
             </div>
         </div>
-        {{--            <div class="style_vex">--}}
-        {{--                <div class="cards">--}}
-        {{--                    <div class="card">--}}
-        {{--                        <img src="" alt="">--}}
-        {{--                    </div>--}}
-        {{--                    <div class="card">--}}
-        {{--                        <img src="" alt="">--}}
-        {{--                    </div>--}}
-        {{--                    <div class="card">--}}
-        {{--                        <img src="" alt="">--}}
-        {{--                    </div>--}}
-        {{--                </div>--}}
-        {{--            </div>--}}
+
+        <a href="{{$return_back}}" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
+            <button><span class="an"></span>
+                <p>Back!</p></button>
+        </a>
     </div>
 </div>
 </div>

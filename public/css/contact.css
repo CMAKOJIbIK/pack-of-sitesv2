@@ -6,7 +6,11 @@
 .contact_theme_blue .contact_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 90px 30px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
   justify-content: space-between;
 }
 .contact_theme_blue .contact_content .contact_form .head_text {
@@ -104,6 +108,45 @@
   margin-left: 2%;
   clear: none;
 }
+.contact_theme_blue .contact_content .contact_form form div {
+  margin-top: 20px;
+}
+.contact_theme_blue .contact_content .contact_form form div button {
+  border: 1px solid #08fdd8;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 220px;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  clear: both;
+  float: left;
+}
+.contact_theme_blue .contact_content .contact_form form div button p {
+  z-index: 1;
+  position: relative;
+  color: #08fdd8;
+  margin: 0;
+  font-size: 17px;
+}
+.contact_theme_blue .contact_content .contact_form form div button:hover p {
+  color: #1d1d1d;
+}
+.contact_theme_blue .contact_content .contact_form form div button .an {
+  z-index: 0;
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transform: translate(-106%, -20%) rotate(25deg);
+  background: #08fdd8;
+  transition-duration: 0.5s;
+}
+.contact_theme_blue .contact_content .contact_form form div button:hover .an {
+  transform: translate(0, 0);
+}
 .contact_theme_blue .contact_content .text_zone {
   margin-left: 30px;
 }
@@ -164,45 +207,6 @@
 }
 .contact_theme_blue .contact_content .text_zone .cards .card em a:hover {
   opacity: 1;
-}
-.contact_theme_blue .contact_content .text_zone div {
-  margin-top: 20px;
-}
-.contact_theme_blue .contact_content .text_zone div button {
-  border: 1px solid #08fdd8;
-  background: none;
-  position: relative;
-  overflow: hidden;
-  height: 50px;
-  width: 220px;
-  font-family: "Open Sans", sans-serif;
-  display: block;
-  clear: both;
-  float: left;
-}
-.contact_theme_blue .contact_content .text_zone div button p {
-  z-index: 1;
-  position: relative;
-  color: #08fdd8;
-  margin: 0;
-  font-size: 17px;
-}
-.contact_theme_blue .contact_content .text_zone div button:hover p {
-  color: #1d1d1d;
-}
-.contact_theme_blue .contact_content .text_zone div button .an {
-  z-index: 0;
-  position: absolute;
-  top: -35px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  transform: translate(-106%, -20%) rotate(25deg);
-  background: #08fdd8;
-  transition-duration: 0.5s;
-}
-.contact_theme_blue .contact_content .text_zone div button:hover .an {
-  transform: translate(0, 0);
 }
 .contact_theme_blue .grid {
   position: relative;

@@ -5,7 +5,12 @@
     padding-left: 130px;
     height: 100vh;
     .skills_column {
-        padding: 90px 30px;
+        position: relative;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        top: 50%;
+        transform: translate(0, -50%);
         //height: 100vh;
         display: flex;
         justify-content: space-between;

@@ -1,6 +1,6 @@
-.settings_theme_blue {
+.settings_theme_red {
     height: 100vh;
-    background: #1d1d1d;
+    background: #2D2727;
 
     .settings_vex_content {
         position: relative;
@@ -17,7 +17,7 @@
                     margin-bottom: 40px;
 
                     p {
-                        color: #08fdd8;
+                        color: #8F43EE;
                         font-weight: 600;
 
 
@@ -31,14 +31,14 @@
                                 transition: 0.5s;
                                 font-size: 73px;
                                 display: inline-block;
-                                color: #08fdd8;
+                                color: #8F43EE;
                             }
 
                             .anim_text {
                                 animation-name: text_anim;
                                 animation-duration: 0.5s;
                                 transform: scaleY(0.5);
-                                color: #08fdd8;
+                                color: #8F43EE;
                             }
                         }
 
@@ -47,7 +47,7 @@
                 }
 
                 h3 {
-                    color: #08fdd8;;
+                    color: #8F43EE;
                     font-size: 30px;
                     font-weight: 600;
                 }
@@ -59,15 +59,15 @@
                     p {
                         font-size: 23px;
                         font-weight: 600;
-                        color: #fff;
+                        color: #F0EB8D;
                     }
                 }
 
                 .tags_content {
-                    border: 2px solid #08fdd8;
+                    border: 2px solid #8F43EE;
                     border-radius: 10px;
                     padding: 20px;
-                    background: #1d1d1d;
+                    background: #2D2727;
                     display: grid;
                     grid-template-columns: auto auto auto auto;
 
@@ -151,7 +151,7 @@
                 margin-bottom: 40px;
 
                 p {
-                    color: #08fdd8;
+                    color: #8F43EE;
                     font-weight: 600;
 
 
@@ -165,14 +165,14 @@
                             transition: 0.5s;
                             font-size: 73px;
                             display: inline-block;
-                            color: #08fdd8;
+                            color: #8F43EE;
                         }
 
                         .anim_text {
                             animation-name: text_anim;
                             animation-duration: 0.5s;
                             transform: scaleY(0.5);
-                            color: #08fdd8;
+                            color: #8F43EE;
                         }
                     }
 
@@ -262,7 +262,7 @@
 
 
             button {
-                border: 1px solid #08fdd8;
+                border: 1px solid #8F43EE;
                 background: none;
                 position: relative;
                 overflow: hidden;
@@ -275,13 +275,13 @@
                 p {
                     z-index: 1;
                     position: relative;
-                    color: #08fdd8;
+                    color: #8F43EE;
                     margin: 0;
                     font-size: 20px;
                 }
 
                 &:hover p {
-                    color: #1d1d1d;
+                    color: #F0EB8D;
                 }
 
                 .an {
@@ -292,7 +292,7 @@
                     right: -10px;
                     bottom: -10px;
                     transform: translate(-106%, -20%) rotate(25deg);
-                    background: #08fdd8;
+                    background: #8F43EE;
                     transition-duration: 0.5s;
 
 

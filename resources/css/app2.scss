@@ -8,13 +8,35 @@ code {
     //position: absolute;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1D1D1DFF;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #909096;
+    border-radius: 3px;
+    height: 20px;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #08fdd8;
+
+
+}
+
 .preloader {
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    background: #181818;;
+    background: #1D1D1DFF;
     z-index: 9999;
     transition: 1s all;
     opacity: 1;
@@ -55,14 +77,14 @@ code {
 .theme_blue {
     display: grid;
     grid-template-columns: auto 1fr;
-
+    scroll-behavior: unset;
 
     .home {
         margin-left: 130px;
 
         .greeting {
             padding: 90px 30px;
-            background: rgb(29, 29, 29);
+            background: #1D1D1DFF;
 
             //width: 100%;
             display: grid;
@@ -78,6 +100,7 @@ code {
                 position: fixed;
                 top: 0;
                 right: 0;
+                //padding-left: 20px;
                 z-index: 20;
 
 
@@ -121,7 +144,8 @@ code {
                         right: 0;
                         display: block;
                         top: 120px;
-                        img{
+
+                        img {
                             width: 90px;
                             height: 135px;
                         }
@@ -223,7 +247,7 @@ code {
                         z-index: 1;
                         position: relative;
                         color: #08fdd8;
-                        font-size: 17px;
+                        font-size: 20px;
                     }
 
                     &:hover p {
@@ -281,6 +305,7 @@ code {
                 justify-content: space-between;
                 align-items: flex-end;
                 padding-left: 50px;
+
                 .head_text {
                     margin-bottom: 40px;
 
@@ -320,7 +345,7 @@ code {
                     }
                 }
 
-               a {
+                a {
 
                     button {
                         border: 1px solid #08fdd8;
@@ -335,7 +360,7 @@ code {
                             z-index: 1;
                             position: relative;
                             color: #08fdd8;
-                            font-size: 17px;
+                            font-size: 20px;
                         }
 
                         &:hover p {
@@ -383,6 +408,7 @@ code {
 
                     .head_text {
                         margin-bottom: 40px;
+
                         p {
                             color: #08fdd8;
                             font-weight: 600;
@@ -635,6 +661,7 @@ code {
 
                     .head_text {
                         margin-bottom: 40px;
+
                         p {
                             color: #08fdd8;
                             font-weight: 600;
@@ -645,12 +672,14 @@ code {
 
                             em {
                                 margin-left: 10px;
+
                                 span {
                                     transition: 0.5s;
                                     font-size: 73px;
                                     display: inline-block;
                                     color: #08fdd8;
                                 }
+
                                 .anim_text {
                                     animation-name: text_anim;
                                     animation-duration: 0.5s;
@@ -658,7 +687,6 @@ code {
                                     color: #08fdd8;
                                 }
                             }
-
 
 
                         }
@@ -762,55 +790,57 @@ code {
                                 margin-left: 2%;
                                 clear: none;
                             }
-                        }
-
-                        div {
+                            div {
 
 
-                            button {
-                                border: 1px solid #08fdd8;
-                                background: none;
-                                position: relative;
-                                overflow: hidden;
-                                height: 50px;
-                                width: 220px;
-                                font-family: "Open Sans", sans-serif;
-                                display: block;
-                                clear: both;
-                                float: right;
-
-                                p {
-                                    z-index: 1;
+                                button {
+                                    border: 1px solid #08fdd8;
+                                    background: none;
                                     position: relative;
-                                    color: #08fdd8;
-                                    margin: 0;
+                                    overflow: hidden;
+                                    height: 50px;
+                                    width: 220px;
+                                    font-family: "Open Sans", sans-serif;
+                                    display: block;
+                                    clear: both;
+                                    float: right;
+
+                                    p {
+                                        z-index: 1;
+                                        position: relative;
+                                        color: #08fdd8;
+                                        margin: 0;
+                                        font-size: 20px;
+                                    }
+
+                                    &:hover p {
+                                        color: #1d1d1d;
+                                    }
+
+                                    .an {
+                                        z-index: 0;
+                                        position: absolute;
+                                        top: -35px;
+                                        left: -10px;
+                                        right: -10px;
+                                        bottom: -10px;
+                                        transform: translate(-106%, -20%) rotate(25deg);
+                                        background: #08fdd8;
+                                        transition-duration: 0.5s;
+
+
+                                    }
+
+                                    &:hover .an {
+                                        transform: translate(0, 0);
+
+                                    }
+
                                 }
-
-                                &:hover p {
-                                    color: #1d1d1d;
-                                }
-
-                                .an {
-                                    z-index: 0;
-                                    position: absolute;
-                                    top: -35px;
-                                    left: -10px;
-                                    right: -10px;
-                                    bottom: -10px;
-                                    transform: translate(-106%, -20%) rotate(25deg);
-                                    background: #08fdd8;
-                                    transition-duration: 0.5s;
-
-
-                                }
-
-                                &:hover .an {
-                                    transform: translate(0, 0);
-
-                                }
-
                             }
                         }
+
+
                     }
                 }
 
@@ -828,7 +858,8 @@ code {
                     }
                 }
             }
-            .code{
+
+            .code {
                 display: grid;
                 grid-template-rows: auto auto;
             }

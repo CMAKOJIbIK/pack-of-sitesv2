@@ -22,7 +22,10 @@
 </div>
 <div class="about_{{$themes[$theme]->theme}}">
     <div class="about_column">
-        <div class="about_mine_image">
+        <div class="about_mine_image" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
             <div class="head_image">
                 <div class="school"><img src="{{asset("res/school_about.png")}}" alt="" class="school_img">
                     <p>School</p></div>
@@ -39,7 +42,10 @@
             </div>
         </div>
         <div class="text_zone">
-            <h2 class="head_text">
+            <h2 class="head_text" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                 <code class="tags top-tags"> &lt;h2&gt;</code>
                 <p><span>M</span><span>e</span><span>,</span>
                     <span>M</span><span>y</span><span>s</span><span>e</span><span>l</span><span>f</span>
@@ -54,7 +60,7 @@
                 individuals around the globe I met and learnt from amazing and ambitious people.</p>
             <p>I currently have a strong mentor who can give me an explanation. I met him while studying at school <a
                     href="https://itfuture.online/?utm_source=google&utm_medium=cpc&utm_campaign=Branded&utm_content=cid%7C19840915583%7Cgid%7C145512237805%7Ckwid%7Ckwd-391170913676%7C651674120636&utm_term=itfuture&placement&match=e&device=c&devicemodel&utm_referrer=%7Bsource%7D&utm_nooverride=1&utm_matchtype=%7Baddphrases%7D&position&region_name=%7Bregion_name%7D&gclid=CjwKCAjwscGjBhAXEiwAswQqNEfLlJqT-ISOZjfrcBSae-7GYz1julPc4DjRYL92EbP4jkF4V0CcphoC0eUQAvD_BwE">itFuture</a>
-                which you can see in the pictures</p>
+                </p>
             <p>I currently work remotely with a selected freelance client base being open for new opportunities.</p>
             <code class="tags top-tags"> &lt;/p&gt;</code>
         </div>

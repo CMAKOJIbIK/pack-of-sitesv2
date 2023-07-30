@@ -12,7 +12,7 @@
 @include("main_menu")
 {{--@dd($themes[$theme])--}}
 <div class="{{$themes[$theme]->theme}}">
-{{--    <div class="vex">--}}
+    {{--    <div class="vex">--}}
 
     <div class="home">
         <div class="greeting">
@@ -22,7 +22,10 @@
             <code class="tags top-tags"> &lt;body&gt;</code>
             <div class="setting">
 
-                <div class="settings">
+                <div class="settings" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                     <a href="{{asset("settings")}}"><img src="{{asset("res/settings.png")}}" alt=""></a>
                 </div>
             </div>
@@ -30,7 +33,10 @@
 
                 <div class="text">
                     <code class="tags top-tags"> &lt;h1&gt;</code>
-                    <h1 class="head_text">
+                    <h1 class="head_text" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                         <p class="first_p"><span>H</span><span>i</span><span>,</span></p>
                         <p class="second_p"><span>I</span><span>'</span><span>m</span> <em class="back_V">V</em><em
                                 class="front_V">V</em><span>e</span><span>x</span></p>
@@ -50,10 +56,16 @@
 
         </div>
         <div class="portfolio">
-            <div class="fake_big"><p>Work</p></div>
+            <div class="fake_big" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;"><p>Work</p></div>
             <div class="text_zone">
                 <div>
-                    <h2 class="head_text">
+                    <h2 class="head_text" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                         <code class="tags top-tags"> &lt;h2&gt;</code>
                         <p><span>M</span><span>y</span>
                             <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
@@ -65,12 +77,16 @@
                             I've done them all together with amazing people from companies<br>around the globe. It's
                             only a
                             drop in
-                            the ocean compared to the entire list.<br>Interested to see some more? Visit <a href="{{asset("work")}}">my
+                            the ocean compared to the entire list.<br>Interested to see some more? Visit <a
+                                href="{{asset("work")}}">my
                                 work</a> page.</p>
                         <code class="tags top-tags"> &lt;p&gt;</code>
                     </div>
                 </div>
-                <a href="{{asset("about")}}">
+                <a href="{{asset("about")}}" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                     <button><span class="an"></span>
                         <p>See more!</p></button>
                 </a>
@@ -79,7 +95,10 @@
         <div class="myself">
             <div class="column">
                 <div class="text">
-                    <h2 class="head_text">
+                    <h2 class="head_text" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                         <code class="tags top-tags"> &lt;h2&gt;</code>
                         <p><span>M</span><span>e</span><span>,</span>
                             <span>M</span><span>y</span><span>s</span><span>e</span><span>l</span><span>f</span>
@@ -87,10 +106,12 @@
                         <code class="tags top-tags"> &lt;/h2&gt;</code>
                     </h2>
                     <code class="tags top-tags"> &lt;p&gt;</code>
-                    <p class="desc_myself"> Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards
+                    <p class="desc_myself"> Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML
+                        4.01 as standards
                         of
                         the current web I've been passionate about web.</p>
-                    <p class="desc_myself"> For over a decade I had many opportunities to work in a vast spectrum of <a href="">web<br>
+                    <p class="desc_myself"> For over a decade I had many opportunities to work in a vast spectrum of <a
+                            href="">web<br>
                             technologies</a> what let me gather a significant amount of various experience.
                         Working for companies and individuals around the globe I met and learnt from amazing and
                         ambitious
@@ -102,13 +123,19 @@
                     </p>
                     <code class="tags top-tags"> &lt;/p&gt;</code>
                 </div>
-                <div class="skill">
+                <div class="skill" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                     @include("cloud")
                 </div>
             </div>
         </div>
         <div class="blog">
-            <div class="fake_big"><p>Blog</p></div>
+            <div class="fake_big" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;"><p>Blog</p></div>
             <div class="card_list">
                 <div class="card yellow">
                     <em> SQL & Databases</em>
@@ -160,19 +187,27 @@
                     <p>How to use System Fonts in CSS to improve your site...</p>
                 </div>
             </div>
-{{--            <p class="blog_button"><a href="">See all articles...</a></p>--}}
+            {{--            <p class="blog_button"><a href="">See all articles...</a></p>--}}
         </div>
         <div class="contact">
-            <div class="fake_big"><p>@</p></div>
+            <div class="fake_big" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;"><p>@</p></div>
             <div class="column">
                 <div class="text_zone">
-                    <h2 class="head_text">
+                    <h2 class="head_text" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                         <code class="tags top-tags"> &lt;h2&gt;</code>
-                        <p><em style="margin-left: 0;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></em>
+                        <p>
+                            <em style="margin-left: 0;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></em>
                             <em><span>m</span> <span>e</span></em></p>
                         <code class="tags top-tags"> &lt;/h2&gt;</code></h2>
                     <code class="tags top-tags" style="margin-top: 15px;"> &lt;p&gt;</code>
-                    <p class="desc_contact">I’m interested in freelance opportunities – especially ambitious or large projects. However, if
+                    <p class="desc_contact">I’m interested in freelance opportunities – especially ambitious or large
+                        projects. However, if
                         you have
                         other request or question, don’t hesitate to use the form.</p>
                     <code class="tags top-tags" style="margin-bottom: 15px;"> &lt;/p&gt;</code>
@@ -202,11 +237,15 @@
                                     </label>
                                 </li>
                             </ul>
+                            <div style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
+                                <button><span class="an"></span>
+                                    <p>Send message!</p></button>
+                            </div>
                         </form>
-                        <div>
-                            <button><span class="an"></span>
-                                <p>Send message!</p></button>
-                        </div>
+
                     </div>
                 </div>
                 <div class="contact_map">

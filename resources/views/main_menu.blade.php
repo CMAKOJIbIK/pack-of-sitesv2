@@ -4,7 +4,10 @@
 
     <div class="menu">
         <div class="main_menu_top">
-            <a class="main_menu_logo" href="{{asset("/")}}">
+            <a class="main_menu_logo" href="{{asset("/")}}" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                 <div class="img">
                     <p class="front_v">V</p>
                     <p class="back_v">V</p>

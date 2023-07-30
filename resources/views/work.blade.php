@@ -9,7 +9,10 @@
     <img src="{{asset("res/Osen.png")}}" alt="">
     <div class="work_content">
         <div class="text_zone">
-            <h2 class="head_text">
+            <h2 class="head_text" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                 <code class="tags top-tags"> &lt;h2&gt;</code>
                 <p><em><span>W</span><span>o</span><span>r</span><span>k</span></em>
                     <em><span>,</span></em><em><span>S</span><span>c</span><span>h</span><span>e</span><span>d</span><span>u</span><span>l</span><span>e</span></em>
@@ -24,21 +27,30 @@
                     <p>If you have any questions, <a href="{{asset("contact")}}">contact</a> me</p>
                     <code class="tags top-tags"> &lt;/p&gt;</code>
                 </div>
-                <div>
+                <div style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                     <button><span class="an"></span>
                         <p><a href="">More Work!</a></p></button>
                 </div>
             </div>
             <div class="instrument">
                 <h3>Filter</h3>
-                <ul>
+                <ul style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                     <li><div class="around"></div><p>- very busy</p></li>
                     <li><div class="triangle"></div><p>- not very busy</p></li>
                     <li><div class="square"></div><p>- free</p></li>
                 </ul>
             </div>
         </div>
-        <div class="season">
+        <div class="season" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
             <div class="cards">
                 <div class="column">
                     <div class="card autumn" style="margin-left: 0;">

@@ -10,11 +10,14 @@
 {{--</div>--}}
 
 <div class="skills_{{$themes[$theme]->theme}}">
-    <code class="tags top-tags"> &lt;body&gt;</code>
+{{--    <code class="tags top-tags"> &lt;body&gt;</code>--}}
     <div class="skills_column">
         <div class="text_zone">
 
-            <h2 class="head_text">
+            <h2 class="head_text" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                 <code class="tags top-tags"> &lt;h2&gt;</code>
                 <p><span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
                     <span>&</span><br><span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span>
@@ -29,11 +32,13 @@
                 main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps,
                 custom plugins, features, animations, and coding interactive layouts.</p>
 
-            <p>Visit my <a href="">LinkedIn</a> profile for more details or just <a href="">contact me</a>.</p>
             <code class="tags top-tags"> &lt;/p&gt;</code>
         </div>
         <div class="skills_status">
-            <div class="charts">
+            <div class="charts" style="-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;">
                 <div class="chart first">
                     <div class="text">
                         <p>Front-end</p>
@@ -69,9 +74,10 @@
                     <h3>Frontend developer</h3>
                     <p>To The End</p>
                     <time>2020-202?</time>
-                    <p class="desc">Award-winning Content Marketing Agency specialises in creating and sharing engaging content</p>
+                    <p class="desc">Award-winning Content Marketing Agency specialises in creating and sharing engaging
+                        content</p>
                 </div>
-                <div class="card second">
+                <div class="card first">
                     <h3>Full stack developer</h3>
                     <p></p>
                     <time></time>
@@ -81,7 +87,7 @@
         </div>
 
     </div>
-    <code class="tags top-tags"> &lt;/body&gt;</code>
+{{--    <code class="tags top-tags"> &lt;/body&gt;</code>--}}
 </div>
 <script src="{{asset("js/map.js")}}"></script>
 </body>

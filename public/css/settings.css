@@ -1,112 +1,135 @@
-.settings_vex {
+.settings_theme_blue {
   height: 100vh;
-  background: #E5F1ED;
+  background: #1d1d1d;
 }
-.settings_vex .settings_vex_content {
-  padding: 90px 60px;
+.settings_theme_blue .settings_vex_content {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .head_text {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .head_text {
   margin-bottom: 40px;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .head_text p {
-  color: #6ec531;
+.settings_theme_blue .settings_vex_content .left_column .text_zone .head_text p {
+  color: #08fdd8;
   font-weight: 600;
   position: relative;
   left: -10px;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .head_text p em {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .head_text p em {
   margin-left: 10px;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .head_text p em span {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .head_text p em span {
   transition: 0.5s;
   font-size: 73px;
   display: inline-block;
-  color: #6ec531;
+  color: #08fdd8;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .head_text p em .anim_text {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .head_text p em .anim_text {
   animation-name: text_anim;
   animation-duration: 0.5s;
   transform: scaleY(0.5);
-  color: #6ec531;
+  color: #08fdd8;
 }
-.settings_vex .settings_vex_content .left_column .text_zone h3 {
-  color: #6ec531;
+.settings_theme_blue .settings_vex_content .left_column .text_zone h3 {
+  color: #08fdd8;
   font-size: 30px;
   font-weight: 600;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .settings_vex_desc {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .settings_vex_desc {
   padding-left: 20px;
   margin-bottom: 40px;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .settings_vex_desc p {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .settings_vex_desc p {
   font-size: 23px;
   font-weight: 600;
+  color: #fff;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content {
-  border: 2px solid #6ec531;
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content {
+  border: 2px solid #08fdd8;
   border-radius: 10px;
   padding: 20px;
   background: #1d1d1d;
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .tag h4 {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .tag h4 {
   font-size: 20px;
   margin-bottom: 10px;
   color: rgb(87, 146, 66);
   font-weight: 600;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .tag li {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .tag li {
   margin-bottom: 4px;
   display: grid;
   grid-template-columns: auto 1fr;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .tag li p code {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .tag li p code {
   font-family: Arial, sans-serif;
   color: rgb(231, 166, 74);
   font-size: 15px;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .tag li span {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .tag li span {
   font-size: 15px;
   margin-left: 10px;
   color: rgb(187, 187, 187);
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .sizes h4 {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .sizes h4 {
   font-size: 20px;
   margin-bottom: 10px;
   color: rgb(173, 108, 121);
   font-weight: 600;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .sizes li {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .sizes li {
   margin-bottom: 4px;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .sizes li p {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .sizes li p {
   font-size: 15px;
   color: white;
   display: inline-block;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .sizes li em {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .sizes li em {
   margin-left: 3px;
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .sizes li em .number_color {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .sizes li em .number_color {
   color: rgb(85, 138, 183);
 }
-.settings_vex .settings_vex_content .left_column .text_zone .tags_content .sizes li em .text_color {
+.settings_theme_blue .settings_vex_content .left_column .text_zone .tags_content .sizes li em .text_color {
   color: rgb(144, 193, 81);
 }
-.settings_vex .settings_vex_content .right_column {
+.settings_theme_blue .settings_vex_content .right_column {
   margin-left: auto;
   margin-top: auto;
 }
-.settings_vex .settings_vex_content .right_column h3 {
-  font-size: 73px;
-  font-weight: 600;
-  color: #6ec531;
+.settings_theme_blue .settings_vex_content .right_column .head_text {
   margin-bottom: 40px;
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .card {
+.settings_theme_blue .settings_vex_content .right_column .head_text p {
+  color: #08fdd8;
+  font-weight: 600;
+  position: relative;
+  left: -10px;
+}
+.settings_theme_blue .settings_vex_content .right_column .head_text p em {
+  margin-left: 10px;
+}
+.settings_theme_blue .settings_vex_content .right_column .head_text p em span {
+  transition: 0.5s;
+  font-size: 73px;
+  display: inline-block;
+  color: #08fdd8;
+}
+.settings_theme_blue .settings_vex_content .right_column .head_text p em .anim_text {
+  animation-name: text_anim;
+  animation-duration: 0.5s;
+  transform: scaleY(0.5);
+  color: #08fdd8;
+}
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .card {
   position: relative;
   width: 700px;
   height: 100px;
@@ -117,10 +140,10 @@
   overflow: hidden;
   display: block;
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .card:hover p {
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .card:hover p {
   left: 400px;
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .card p {
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .card p {
   position: relative;
   z-index: 2;
   font-size: 30px;
@@ -132,7 +155,7 @@
   color: rgba(27, 27, 27, 0.87);
   font-weight: 600;
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .card em {
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .card em {
   width: 1000px;
   height: 600px;
   background: #FD2155;
@@ -144,22 +167,57 @@
   transform: translate(-106%, -30%) rotate(25deg);
   transition-duration: 0.7s;
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .card:hover em {
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .card:hover em {
   transform: translate(0, 0);
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .card .active {
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .card .active {
   transform: translate(0, 0);
   position: relative;
   z-index: 0;
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .select_theme_blue em {
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .select_theme_blue em {
   background: linear-gradient(to right, #08fdd8, #1b1b1b);
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .select_theme_green em {
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .select_theme_green em {
   background: linear-gradient(to right, #6ec531, #E5F1ED);
 }
-.settings_vex .settings_vex_content .right_column .colors .cards .select_theme_red em {
-  background: linear-gradient(to right, #F65151, #E5F1ED);
+.settings_theme_blue .settings_vex_content .right_column .colors .cards .select_theme_red em {
+  background: linear-gradient(to right, #F0EB8D, #8F43EE);
+}
+.settings_theme_blue .settings_vex_content a button {
+  border: 1px solid #08fdd8;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 220px;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  clear: both;
+}
+.settings_theme_blue .settings_vex_content a button p {
+  z-index: 1;
+  position: relative;
+  color: #08fdd8;
+  margin: 0;
+  font-size: 20px;
+}
+.settings_theme_blue .settings_vex_content a button:hover p {
+  color: #1d1d1d;
+}
+.settings_theme_blue .settings_vex_content a button .an {
+  z-index: 0;
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transform: translate(-106%, -20%) rotate(25deg);
+  background: #08fdd8;
+  transition-duration: 0.5s;
+}
+.settings_theme_blue .settings_vex_content a button:hover .an {
+  transform: translate(0, 0);
 }
 
 @keyframes text_anim {

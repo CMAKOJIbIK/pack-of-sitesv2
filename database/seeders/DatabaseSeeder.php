@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             ThemeSeeder::class,
+            MessageSeeder::class,
         ]);
     }
 }

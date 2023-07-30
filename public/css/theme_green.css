@@ -6,6 +6,26 @@ code {
   color: #515152;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1d24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #72eb3a;
+  border-radius: 3px;
+  height: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
 .preloader {
   position: fixed;
   left: 0;
@@ -564,7 +584,7 @@ code {
   margin-left: 2%;
   clear: none;
 }
-.theme_green .home .contact .column .text_zone .contact_form div button {
+.theme_green .home .contact .column .text_zone .contact_form form div button {
   border: 1px solid #72eb3a;
   background: none;
   position: relative;
@@ -576,17 +596,17 @@ code {
   clear: both;
   float: right;
 }
-.theme_green .home .contact .column .text_zone .contact_form div button p {
+.theme_green .home .contact .column .text_zone .contact_form form div button p {
   z-index: 1;
   position: relative;
   color: #72eb3a;
   margin: 0;
   font-size: 17px;
 }
-.theme_green .home .contact .column .text_zone .contact_form div button:hover p {
+.theme_green .home .contact .column .text_zone .contact_form form div button:hover p {
   color: black;
 }
-.theme_green .home .contact .column .text_zone .contact_form div button .an {
+.theme_green .home .contact .column .text_zone .contact_form form div button .an {
   z-index: 0;
   position: absolute;
   top: -35px;
@@ -597,7 +617,7 @@ code {
   background: #72eb3a;
   transition-duration: 0.5s;
 }
-.theme_green .home .contact .column .text_zone .contact_form div button:hover .an {
+.theme_green .home .contact .column .text_zone .contact_form form div button:hover .an {
   transform: translate(0, 0);
 }
 .theme_green .home .contact .column .contact_map {

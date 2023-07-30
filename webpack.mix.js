@@ -35,6 +35,10 @@ mix.sass('resources/css/work.scss', 'public/css/work.css');
 
 mix.sass('resources/css/settings.scss', 'public/css/settings.css');
 
+mix.sass('resources/css/settings_theme_green.scss', 'public/css/settings_theme_green.css');
+
+mix.sass('resources/css/settings_theme_red.scss', 'public/css/settings_theme_red.css');
+
 mix.sass('resources/css/theme_green.scss', 'public/css/theme_green.css');
 
 mix.sass('resources/css/menu_theme_green.scss', 'public/css/menu_theme_green.css');
@@ -56,5 +60,6 @@ mix.sass('resources/css/about_theme_red.scss', 'public/css/about_theme_red.css')
 mix.sass('resources/css/skills_theme_red.scss', 'public/css/skills_theme_red.css');
 
 mix.sass('resources/css/work_theme_red.scss', 'public/css/work_theme_red.css');
+
 mix.sass('resources/css/contact_theme_red.scss', 'public/css/contact_theme_red.css');
 

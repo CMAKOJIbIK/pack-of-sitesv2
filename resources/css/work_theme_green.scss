@@ -6,7 +6,12 @@
     .work_content {
         display: grid;
         grid-template-columns: 1fr 1.5fr;
-        padding: 90px 30px;
+        position: relative;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        top: 50%;
+        transform: translate(0, -50%);
         justify-content: space-between;
 
         .text_zone {

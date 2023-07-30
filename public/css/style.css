@@ -6,13 +6,33 @@ code {
   color: #515152;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #909096;
+  border-radius: 3px;
+  height: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #08fdd8;
+}
+
 .preloader {
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background: #181818;
+  background: #1d1d1d;
   z-index: 9999;
   transition: 1s all;
   opacity: 1;
@@ -48,13 +68,14 @@ code {
 .theme_blue {
   display: grid;
   grid-template-columns: auto 1fr;
+  scroll-behavior: unset;
 }
 .theme_blue .home {
   margin-left: 130px;
 }
 .theme_blue .home .greeting {
   padding: 90px 30px;
-  background: rgb(29, 29, 29);
+  background: #1d1d1d;
   display: grid;
   grid-template-rows: auto auto 1fr auto auto;
   font-family: "Times New Roman", sans-serif;
@@ -171,7 +192,7 @@ code {
   z-index: 1;
   position: relative;
   color: #08fdd8;
-  font-size: 17px;
+  font-size: 20px;
 }
 .theme_blue .home .greeting .title button:hover p {
   color: #1d1d1d;
@@ -257,7 +278,7 @@ code {
   z-index: 1;
   position: relative;
   color: #08fdd8;
-  font-size: 17px;
+  font-size: 20px;
 }
 .theme_blue .home .portfolio .text_zone a button:hover p {
   color: #1d1d1d;
@@ -586,7 +607,7 @@ code {
   margin-left: 2%;
   clear: none;
 }
-.theme_blue .home .contact .column .text_zone .contact_form div button {
+.theme_blue .home .contact .column .text_zone .contact_form form div button {
   border: 1px solid #08fdd8;
   background: none;
   position: relative;
@@ -598,16 +619,17 @@ code {
   clear: both;
   float: right;
 }
-.theme_blue .home .contact .column .text_zone .contact_form div button p {
+.theme_blue .home .contact .column .text_zone .contact_form form div button p {
   z-index: 1;
   position: relative;
   color: #08fdd8;
   margin: 0;
+  font-size: 20px;
 }
-.theme_blue .home .contact .column .text_zone .contact_form div button:hover p {
+.theme_blue .home .contact .column .text_zone .contact_form form div button:hover p {
   color: #1d1d1d;
 }
-.theme_blue .home .contact .column .text_zone .contact_form div button .an {
+.theme_blue .home .contact .column .text_zone .contact_form form div button .an {
   z-index: 0;
   position: absolute;
   top: -35px;
@@ -618,7 +640,7 @@ code {
   background: #08fdd8;
   transition-duration: 0.5s;
 }
-.theme_blue .home .contact .column .text_zone .contact_form div button:hover .an {
+.theme_blue .home .contact .column .text_zone .contact_form form div button:hover .an {
   transform: translate(0, 0);
 }
 .theme_blue .home .contact .column .contact_map {

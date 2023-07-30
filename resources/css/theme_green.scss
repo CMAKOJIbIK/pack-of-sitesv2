@@ -7,7 +7,27 @@ code {
     color: #515152;
     //position: absolute;
 }
+::-webkit-scrollbar {
+    width: 12px;
+}
 
+::-webkit-scrollbar-track {
+    background: #1b1d24;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #72eb3a;
+    border-radius: 3px;
+    height: 20px;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+
+
+}
 .preloader {
     position: fixed;
     left: 0;
@@ -768,56 +788,57 @@ code {
                                 margin-left: 2%;
                                 clear: none;
                             }
-                        }
-
-                        div {
+                            div {
 
 
-                            button {
-                                border: 1px solid #72eb3a;
-                                background: none;
-                                position: relative;
-                                overflow: hidden;
-                                height: 50px;
-                                width: 220px;
-                                font-family: "Open Sans", sans-serif;
-                                display: block;
-                                clear: both;
-                                float: right;
-
-                                p {
-                                    z-index: 1;
+                                button {
+                                    border: 1px solid #72eb3a;
+                                    background: none;
                                     position: relative;
-                                    color: #72eb3a;
-                                    margin: 0;
-                                    font-size: 17px;
+                                    overflow: hidden;
+                                    height: 50px;
+                                    width: 220px;
+                                    font-family: "Open Sans", sans-serif;
+                                    display: block;
+                                    clear: both;
+                                    float: right;
+
+                                    p {
+                                        z-index: 1;
+                                        position: relative;
+                                        color: #72eb3a;
+                                        margin: 0;
+                                        font-size: 17px;
+                                    }
+
+                                    &:hover p {
+                                        color: black;
+                                    }
+
+                                    .an {
+                                        z-index: 0;
+                                        position: absolute;
+                                        top: -35px;
+                                        left: -10px;
+                                        right: -10px;
+                                        bottom: -10px;
+                                        transform: translate(-106%, -20%) rotate(25deg);
+                                        background: #72eb3a;
+                                        transition-duration: 0.5s;
+
+
+                                    }
+
+                                    &:hover .an {
+                                        transform: translate(0, 0);
+
+                                    }
+
                                 }
-
-                                &:hover p {
-                                    color: black;
-                                }
-
-                                .an {
-                                    z-index: 0;
-                                    position: absolute;
-                                    top: -35px;
-                                    left: -10px;
-                                    right: -10px;
-                                    bottom: -10px;
-                                    transform: translate(-106%, -20%) rotate(25deg);
-                                    background: #72eb3a;
-                                    transition-duration: 0.5s;
-
-
-                                }
-
-                                &:hover .an {
-                                    transform: translate(0, 0);
-
-                                }
-
                             }
                         }
+
+
                     }
                 }
 

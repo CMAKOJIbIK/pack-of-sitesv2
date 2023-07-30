@@ -23,6 +23,7 @@ Route::get('/about' ,[PageController::class, "about"])->name("about");
 Route::get('/cursor_anim' ,[PageController::class, "cursor_anim"])->name("cursor_anim");
 Route::get('/contact' ,[PageController::class, "contact"])->name("contact");
 Route::get('/work' ,[PageController::class, "work"])->name("work");
+Route::post('/message' ,[PageController::class, "message"])->name("message");
 Route::get('/settings' ,[PageController::class, "settings"])->name("settings");
 Route::get('/theme_1' ,[PageController::class, "theme_1"])->name("theme_1");
 Route::get('/theme_2' ,[PageController::class, "theme_2"])->name("theme_2");

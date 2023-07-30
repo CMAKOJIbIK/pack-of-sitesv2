@@ -17,8 +17,8 @@ class ThemeSeeder extends Seeder
         DB::statement('truncate table themes');
         DB::table('themes')->insert([
             ['theme'=>'theme_blue', 'name'=>'Gray-Blue'],
-            ['theme'=>'theme_green', 'name'=>'Gray-Green'],
-            ['theme'=>'theme_red', 'name'=>'White-Red'],
+            ['theme'=>'theme_green', 'name'=>'Dark Blue-Green'],
+            ['theme'=>'theme_red', 'name'=>'Gray-Purple'],
         ]);
 
     }
