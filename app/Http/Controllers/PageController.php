@@ -116,7 +116,7 @@ class PageController extends Controller
         $themes = Theme::get();
 
         if($return_back == null){
-            session(['my_back_site' => 'http://127.0.0.1:8000/']);
+            session(['my_back_site' => '/']);
 
         }
         elseif (request()->url() != route("settings")) {
