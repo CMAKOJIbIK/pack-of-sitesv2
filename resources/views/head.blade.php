@@ -13,8 +13,7 @@
 
     <link rel="stylesheet" href="{{asset('css/cursor_anim.css')}}">
     <link rel="stylesheet" href="{{asset('css/breakout.css')}}">
-
-
+    <link rel="stylesheet" href="{{asset('css/admin.css')}}">
     @if($theme == 1)
         <link rel="stylesheet" href="{{asset('css/theme_green.css')}}">
         <link rel="stylesheet" href="{{asset('css/menu_theme_green.css')}}">

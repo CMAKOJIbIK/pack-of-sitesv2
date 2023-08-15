@@ -26,7 +26,7 @@
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		user-select: none;">
-                    <a href="{{asset("settings")}}"><img src="{{asset("res/settings.png")}}" alt=""></a>
+                    <a href="{{route("settings")}}"><img src="{{asset("res/settings.png")}}" alt=""></a>
                 </div>
             </div>
             <div class="title">
@@ -47,7 +47,7 @@
                     <code class="tags top-tags"> &lt;/h1&gt;</code>
                     <p>Front End Developer / WordPress Expert</p>
                 </div>
-                <a href="{{asset("contact")}}">
+                <a href="{{route("contact")}}">
                     <button><span class="an"></span>
                         <p>Contact me!</p></button>
                 </a>
@@ -78,12 +78,12 @@
                             only a
                             drop in
                             the ocean compared to the entire list.<br>Interested to see some more? Visit <a
-                                href="{{asset("work")}}">my
+                                href="{{route("work")}}">my
                                 work</a> page.</p>
                         <code class="tags top-tags"> &lt;p&gt;</code>
                     </div>
                 </div>
-                <a href="{{asset("about")}}" style="-ms-user-select: none;
+                <a href="{{route("about")}}" style="-ms-user-select: none;
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		user-select: none;">
@@ -212,28 +212,28 @@
                         other request or question, don’t hesitate to use the form.</p>
                     <code class="tags top-tags" style="margin-bottom: 15px;"> &lt;/p&gt;</code>
                     <div class="contact_form">
-                        <form action="">
+                        <form action="{{route("add_message")}}" method="post">
+                            @csrf
                             <ul>
                                 <li class="half">
                                     <label>
                                         <span class="an"></span>
-                                        <input type="text" placeholder="Name">
+                                        <input type="text" placeholder="Name" name="name" required>
                                     </label>
                                 </li>
                                 <li class="half">
-
                                     <label>
-                                        <input type="text" placeholder="Surname">
+                                        <input type="text" placeholder="Surname" name="surname" required>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="text" placeholder="G-mail">
+                                        <input type="text" placeholder="G-mail" name="mail" required>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <textarea placeholder="Message"></textarea>
+                                        <textarea placeholder="Message" name="message" required></textarea>
                                     </label>
                                 </li>
                             </ul>
@@ -261,6 +261,7 @@
         </div>
     </div>
 </div>
+
 {{--<button onclick="map(0)">Лево</button>--}}
 {{--<button onclick="map(1)">Верх</button>--}}
 {{--<button onclick="map(2)">Право</button>--}}

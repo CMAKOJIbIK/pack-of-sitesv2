@@ -116,7 +116,7 @@ class PageController extends Controller
         $themes = Theme::get();
 
         if($return_back == null){
-            session(['my_back_site' => back()->getTargetUrl()]);
+            session(['my_back_site' => route("index")]);
 
         }
         elseif (request()->url() != route("settings")) {
@@ -150,5 +150,15 @@ class PageController extends Controller
         return back();
 
     }
-
+    public function admin()
+    {
+        $theme = session('theme_active');
+        $themes = Theme::get();
+        if ($theme == null) {
+            $theme = 0;
+        }
+        return view("admin")
+            ->with('theme', $theme)
+            ->with('themes', $themes);
+    }
 }

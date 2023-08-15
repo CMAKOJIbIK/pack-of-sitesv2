@@ -51,6 +51,8 @@ mix.sass('resources/css/skills_theme_green.scss', 'public/css/skills_theme_green
 
 mix.sass('resources/css/work_theme_green.scss', 'public/css/work_theme_green.css');
 
+mix.sass('resources/css/admin.scss', 'public/css/admin.css');
+
 mix.sass('resources/css/contact_theme_green.scss', 'public/css/contact_theme_green.css');
 
 mix.sass('resources/css/theme_red.scss', 'public/css/theme_red.css');
