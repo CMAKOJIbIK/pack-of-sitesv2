@@ -687,3 +687,8 @@ code {
     color: #08fdd8;
   }
 }
+@media screen and (max-width: 500px) {
+  body .work_theme_blue {
+    background: red;
+  }
+}

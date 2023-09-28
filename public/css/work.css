@@ -168,6 +168,9 @@
   grid-template-columns: auto 1fr;
   padding: 5px;
 }
+.work_theme_blue .work_content .season .cards .column .card ul li.hidden {
+  display: none;
+}
 .work_theme_blue .work_content .season .cards .column .card ul li p {
   margin-top: 7px;
   font-size: 17px;

@@ -57,6 +57,7 @@ class PageController extends Controller
     {
         $theme = session('theme_active');
         $themes = Theme::get();
+
         if ($theme == null) {
             $theme = 0;
         }
@@ -140,7 +141,7 @@ class PageController extends Controller
     public function message(Request $request)
     {
         $name = $request->input('name');
-        dd($name);
+
         $message = new Message();
         $message->name = "serejenka";
         $message->surname = "nikitchenko";

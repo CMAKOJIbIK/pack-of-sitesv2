@@ -14,6 +14,7 @@ class WebhookController extends Controller
     {
         ini_set('max_execution_time', 86400);
         $this->telegram = $telegram;
+
     }
 
     public function index(Request $request): \Illuminate\Http\JsonResponse

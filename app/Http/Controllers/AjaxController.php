@@ -2,12 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\Telegram;
 use App\Models\Message;
+
 use Illuminate\Http\Request;
 
 class AjaxController extends Controller
 {
-    //
+    private Telegram $telegram;
+    public function __construct(Telegram $telegram)
+    {
+        $this->telegram = $telegram;
+    }
     public function add_message(Request $request){
 
         $name = $request->input('name');
@@ -21,6 +27,8 @@ class AjaxController extends Controller
         $message->gmail = $mail;
         $message->message = $text;
         $message->save();
+        $this->telegram->send_message_all_user($text);
         return back();
     }
+
 }

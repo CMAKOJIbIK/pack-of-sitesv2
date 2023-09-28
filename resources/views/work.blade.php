@@ -41,9 +41,9 @@
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		user-select: none;">
-                    <li><div class="around"></div><p>- very busy</p></li>
-                    <li><div class="triangle"></div><p>- not very busy</p></li>
-                    <li><div class="square"></div><p>- free</p></li>
+                    <li onclick="filter('season_around')"><div class="around" ></div><p>- very busy</p></li>
+                    <li onclick="filter('season_triangle')"><div class="triangle"></div><p>- not very busy</p></li>
+                    <li onclick="filter('season_square')"><div class="square"></div><p>- free</p></li>
                 </ul>
             </div>
         </div>
@@ -66,9 +66,9 @@
                         <img src="{{asset("res/winter.png")}}" alt="">
                         <h4>Winter</h4>
                         <ul>
-                            <li><p>December:</p><div class="around"></div></li>
-                            <li><p>January:</p><div class="square"></div></li>
-                            <li><p>February:</p><div class="triangle" style="background: none"></div></li>
+                            <li class="season_around"><p>December:</p><div class="around"></div></li>
+                            <li class="season_square"><p>January:</p><div class="square"></div></li>
+                            <li class="season_triangle"><p>February:</p><div class="triangle" style="background: none"></div></li>
                         </ul>
                     </div>
                 </div>
@@ -77,18 +77,18 @@
                         <img src="{{asset("res/spring.png")}}" alt="">
                         <h4>Spring</h4>
                         <ul>
-                            <li><p>March:</p><div class="around"></div></li>
-                            <li><p>April:</p><div class="triangle" style="background: none"></div></li>
-                            <li><p>May:</p><div class="square"></div></li>
+                            <li class="season_around"><p>March:</p><div class="around"></div></li>
+                            <li class="season_triangle"><p>April:</p><div class="triangle" style="background: none"></div></li>
+                            <li class="season_square"><p>May:</p><div class="square"></div></li>
                         </ul>
                     </div>
                     <div class="card summer">
                         <img src="{{asset("res/summer.png")}}" alt="">
                         <h4>Summer</h4>
                         <ul>
-                            <li><p>June:</p><div class="square"></div></li>
-                            <li><p>July:</p><div class="square"></div></li>
-                            <li><p>August:</p><div class="square"></div></li>
+                            <li class="season_square"><p>June:</p><div class="square"></div></li>
+                            <li class="season_square"><p>July:</p><div class="square"></div></li>
+                            <li class="season_square"><p>August:</p><div class="square"></div></li>
                         </ul>
                     </div>
                 </div>
@@ -97,6 +97,7 @@
         </div>
     </div>
 </div>
-<script src="{{asset("js/map.js")}}"></script>
+{{--<script src="{{asset("js/map.js")}}"></script>--}}
+<script src="{{asset("js/filter.js")}}"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Helpers;
-
+use App\Models\UserProfile;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
@@ -27,6 +27,7 @@ class Telegram
             'parse_mode' => 'html'
         ]);
     }
+
     public function edit_message($chat_id, $message, $message_id)
     {
 
@@ -37,6 +38,7 @@ class Telegram
             'message_id' => $message_id,
         ]);
     }
+
     public function edit_buttons($chat_id, $message, $button, $message_id)
     {
         $button = [];
@@ -60,7 +62,9 @@ class Telegram
             'message_id' => $message_id,
         ]);
     }
-    public function delete_message($chat_id, $message_id){
+
+    public function delete_message($chat_id, $message_id)
+    {
         Log::debug(
             $this->http::post(self::url . $this->bot . '/deleteMessage', [
                 'chat_id' => $chat_id,
@@ -78,7 +82,23 @@ class Telegram
 
     }
 
-    public function send_buttons($chat_id, $message, $test_id, $count_error=0)
+    public function send_message_all_user($message)
+    {
+        $user_profile = UserProfile::get();
+//        dd($user_profile[1]->telegram);
+
+//        for ($i = 0; $i <= count($users)-1; $i++) {
+//            $this->send_message($users[$i], $message);
+//        }
+
+        foreach ($user_profile as $item) {
+
+            $this->send_message($item->telegram, $message);
+
+        }
+    }
+
+    public function send_buttons($chat_id, $message, $test_id, $count_error = 0)
     {
         $data = ['description' => "emae",
             'file' => "netu peremennih",
