@@ -18,7 +18,8 @@ class CreateMessagesTable extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('gmail');
-            $table->string('message');
+            $table->text('message');
+            $table->string('page_name')->nullable();
             $table->timestamps();
         });
     }

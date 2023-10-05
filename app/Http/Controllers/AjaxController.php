@@ -20,14 +20,23 @@ class AjaxController extends Controller
         $surname = $request->input('surname');
         $mail = $request->input('mail');
         $text = $request->input('message');
+        $page_name = $request->input('page_name');
 
         $message = new Message();
         $message->name = $name;
         $message->surname = $surname;
         $message->gmail = $mail;
         $message->message = $text;
+        $message->page_name = $page_name;
         $message->save();
-        $this->telegram->send_message_all_user($text);
+        $data = [
+            'name' => $name,
+            'surname' => $surname,
+            'mail' => $mail,
+            'message' => $text,
+            'page_message' => $page_name,
+        ];
+        $this->telegram->send_message_all_user(view('bot_messages.user_message', $data));
         return back();
     }
 

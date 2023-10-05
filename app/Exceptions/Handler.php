@@ -43,25 +43,34 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $e)
     {
-        $route_name = Route::getFacadeRoot()->current()->uri();
-        if ($e->getMessage() === "Unauthenticated.") {
-            if($_SERVER['REMOTE_ADDR'] === "127.0.0.1"){
-                return parent::report($e);
-            }else{
-                $data = ['description' => "Ктото неавторизованный",
-                    'file' => $_SERVER['REMOTE_ADDR'],
+        if(Route::getFacadeRoot()->current() != null){
+            $route_name = Route::getFacadeRoot()->current()->uri();
+            if ($e->getMessage() === "Unauthenticated.") {
+                if($_SERVER['REMOTE_ADDR'] === "127.0.0.1"){
+                    return parent::report($e);
+                }else{
+                    $data = ['description' => "Ктото неавторизованный",
+                        'file' => $_SERVER['REMOTE_ADDR'],
+                        'line' => $e->getLine(),
+                        'route_name' => $route_name,
+                    ];
+                }
+
+            } else {
+                $data = ['description' => $e->getMessage(),
+                    'file' => $e->getFile(),
                     'line' => $e->getLine(),
                     'route_name' => $route_name,
                 ];
             }
-
-        } else {
+        }else{
             $data = ['description' => $e->getMessage(),
                 'file' => $e->getFile(),
                 'line' => $e->getLine(),
-                'route_name' => $route_name,
+                'route_name' => "console",
             ];
         }
+
         $this->telegram->send_message(env('REPORT_TELEGRAM_ID', "5057038547"), view('bot_messages.report', $data));
         return parent::report($e);
     }

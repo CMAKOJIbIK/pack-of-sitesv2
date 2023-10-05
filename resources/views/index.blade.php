@@ -236,6 +236,7 @@
                                         <textarea placeholder="Message" name="message" required></textarea>
                                     </label>
                                 </li>
+                                <input type="hidden" name="page_name" value="home">
                             </ul>
                             <div style="-ms-user-select: none;
 		-moz-user-select: none;

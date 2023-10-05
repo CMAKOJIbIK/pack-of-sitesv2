@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property mixed mail
  * @property mixed gmail
  * @property mixed message
+ * @property mixed page_name
  */
 class Message extends Model
 {
