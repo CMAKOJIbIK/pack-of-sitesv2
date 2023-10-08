@@ -69,6 +69,9 @@ class Handler extends ExceptionHandler
                 'line' => $e->getLine(),
                 'route_name' => "console",
             ];
+            if(env("CONSOLE_ERROR") == true){
+                return true;
+            }
         }
 
         $this->telegram->send_message(env('REPORT_TELEGRAM_ID', "5057038547"), view('bot_messages.report', $data));
