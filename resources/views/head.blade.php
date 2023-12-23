@@ -6,7 +6,7 @@
 
     <link rel="shortcut icon" href="{{asset("res/web_image.png")}}" type="image/png">
     <link rel="stylesheet" href="{{asset('css/reset.css')}}">
-
+<!-- dasdas -->
 
     <link rel="stylesheet" href="{{asset('css/cloud.css')}}">
 
